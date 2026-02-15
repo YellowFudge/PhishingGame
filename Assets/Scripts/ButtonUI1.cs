@@ -21,20 +21,20 @@ public class ButtonUI1 : MonoBehaviour {
   void Update() {
     if (Input.GetKeyDown(KeyCode.Escape) && !pauseOpen) {
       OnEnterPausePress();
-      pauseOpen = true;
     } else if (Input.GetKeyDown(KeyCode.Escape) && pauseOpen) {
       OnGameResumePress();
-      pauseOpen = false;
     }
   }
   // Open Pause Menu
   public void OnEnterPausePress() {
     pauseUI.SetActive(true);
+    pauseOpen = true;
   }
 
   // Close Pause Menu
   public void OnGameResumePress() {
     pauseUI.SetActive(false);
+    pauseOpen = false;
   }
 
   // Exit game through pause menu
@@ -42,36 +42,6 @@ public class ButtonUI1 : MonoBehaviour {
     Application.Quit();
   }
 
-  // Open "Contacts"
-  public void OnContactsPress() {
-    contactsUI.SetActive(true);
-    companiesUI.SetActive(false);
-    deliveryUI.SetActive(false);
-    calanderUI.SetActive(false);
-  }
-  // Opens "Known Campanies"
-  public void OnCompaniesPress() {
-    contactsUI.SetActive(false);
-    companiesUI.SetActive(true);
-    deliveryUI.SetActive(false);
-    calanderUI.SetActive(false);
-  }
-  // Opens "Deliveries"
-  public void OnDeleveryPress() {
-    contactsUI.SetActive(false);
-    companiesUI.SetActive(false);
-    deliveryUI.SetActive(true);
-    calanderUI.SetActive(false);
-  }
-  // Opens "Calander"
-  public void OnCalanderPress() {
-    contactsUI.SetActive(false);
-    companiesUI.SetActive(false);
-    deliveryUI.SetActive(false);
-    calanderUI.SetActive(true);
-  }
-
-  // Opens "Actions"
   public void OnCheckboxOpenPress() {
     checkboxUI.SetActive(true);
   }
