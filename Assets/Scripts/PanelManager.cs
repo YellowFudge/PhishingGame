@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PanelManager : MonoBehaviour {
   [SerializeField] private GameObject[] panels;
+  bool checkOpen = false;
 
   void Update() {
     if (Input.GetKeyDown(KeyCode.Alpha1)) {
@@ -14,6 +15,15 @@ public class PanelManager : MonoBehaviour {
     } else if (Input.GetKeyDown(KeyCode.Alpha4)) {
       ShowPanel(panels[3]);
       //panels[1].SetActive(true)
+    }
+    if (Input.GetKeyDown(KeyCode.Space)) {
+      if (!checkOpen) {
+        panels[4].SetActive(true);
+        checkOpen = true;
+      } else if (checkOpen) {
+        panels[4].SetActive(false);
+        checkOpen = false;
+      }
     }
   }
   // General panel manager.
