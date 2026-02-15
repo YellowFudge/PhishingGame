@@ -14,9 +14,19 @@ public class ButtonUI1 : MonoBehaviour {
   public GameObject companiesUI;
   public GameObject deliveryUI;
   public GameObject calanderUI;
+  bool pauseOpen = false;
 
   public GameObject checkboxUI;
 
+  void Update() {
+    if (Input.GetKeyDown(KeyCode.Escape) && !pauseOpen) {
+      OnEnterPausePress();
+      pauseOpen = true;
+    } else if (Input.GetKeyDown(KeyCode.Escape) && pauseOpen) {
+      OnGameResumePress();
+      pauseOpen = false;
+    }
+  }
   // Open Pause Menu
   public void OnEnterPausePress() {
     pauseUI.SetActive(true);
