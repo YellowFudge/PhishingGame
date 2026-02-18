@@ -29,7 +29,7 @@ public class TestScript : MonoBehaviour
     {
         Canvas clickedCanvas = canvasObject.GetComponent<Canvas>();
 
-        int currentI = 0;
+       // int currentI = 0;
 
         for (int i = 0; i < canvasList.Count; i++)
         {
