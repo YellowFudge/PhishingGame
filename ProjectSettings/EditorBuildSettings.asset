@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WIPScenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/WIPScenes/TitleScene.unity
+    guid: 539c5372d166fee77bcd498dc0edaea6
+  - enabled: 1
+    path: Assets/Scenes/WIPScenes/EdvinsTestScene.unity
+    guid: 53562717d3774f659b6c03b819e7b63f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
