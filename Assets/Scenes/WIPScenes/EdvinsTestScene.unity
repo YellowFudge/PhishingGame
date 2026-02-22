@@ -4381,11 +4381,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 550149239}
         m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-        m_MethodName: OnCheckboxSend
-        m_Mode: 2
+        m_MethodName: OnFinalRejectPressed
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1710108081}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6796,11 +6796,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 550149239}
         m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-        m_MethodName: OnCheckboxSend
-        m_Mode: 2
+        m_MethodName: OnFinalSendPressed
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 2065136737}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

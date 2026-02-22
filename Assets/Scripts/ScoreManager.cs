@@ -23,7 +23,6 @@ public class ScoreManager : MonoBehaviour
         {
             Debug.Log(check.name);
         }
-
         return toggles;
     }
 
@@ -37,5 +36,5 @@ public class ScoreManager : MonoBehaviour
     {
         List<Toggle> score = OnCheckboxPressed();
         Debug.Log("Wizard Rejected" + score.Count);
-    }
+    } 
 }
