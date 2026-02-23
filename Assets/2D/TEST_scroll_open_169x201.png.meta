@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: c63542099bab62646be02d68466ab375
+guid: 8cbfb370c88827360823a434cbbaac5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9151448625369572159
-    second: phish_ham_spreadsheet_57x36_0
-  - first:
-      213: -3691134105024176515
-    second: phish_ham_spreadsheet_57x36_1
-  - first:
-      213: -4285356165521937332
-    second: phish_ham_spreadsheet_57x36_2
-  - first:
-      213: 5572294947382304563
-    second: phish_ham_spreadsheet_57x36_3
+      213: 2028871253681131443
+    second: scroll_open_169x201_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 19, y: 34, z: 17, w: 36}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,57 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: phish_ham_spreadsheet_57x36_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 36
-        width: 57
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f33e36fc90a700f70800000000000000
-      internalID: 9151448625369572159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: phish_ham_spreadsheet_57x36_1
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 36
-        width: 57
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7e54b3861576ccc0800000000000000
-      internalID: -3691134105024176515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: phish_ham_spreadsheet_57x36_2
+      name: scroll_open_169x201_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 57
-        height: 36
+        width: 169
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4ce802b54b5784c0800000000000000
-      internalID: -4285356165521937332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: phish_ham_spreadsheet_57x36_3
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 0
-        width: 57
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 33f1d6a3bb4c45d40800000000000000
-      internalID: 5572294947382304563
+      spriteID: 3bf4aa2e7aff72c10800000000000000
+      internalID: 2028871253681131443
       vertices: []
       indices: 
       edges: []
@@ -200,8 +125,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ac74a363b13c79044933f5386d9ee809
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      phish_ham_spreadsheet_57x36_0: 9151448625369572159
-      phish_ham_spreadsheet_57x36_1: -3691134105024176515
-      phish_ham_spreadsheet_57x36_2: -4285356165521937332
-      phish_ham_spreadsheet_57x36_3: 5572294947382304563
+      scroll_open_169x201_0: 2028871253681131443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
