@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class ScoreManager : MonoBehaviour
 {
+    Dictionary<string, int> queDict = new Dictionary<string, int>();
     [SerializeField] private Toggle[] checklistOptions;
     private List<Toggle> toggles = new List<Toggle>();
     

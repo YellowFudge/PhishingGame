@@ -1,10 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System;
+using System.Collections.Generic;
 
 public class PanelManager : MonoBehaviour {
   [SerializeField] private GameObject[] panels;
+  //[SerializeField] private DynamicButtons dynamicButtons;
+  
   bool checkOpen = false;
 
-  void Update() {
+
+   void Update() {
     if (Input.GetKeyDown(KeyCode.Alpha1)) {
       //panels[0].SetActive(true);
       ShowPanel(panels[0]);
