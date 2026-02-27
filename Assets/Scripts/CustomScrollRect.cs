@@ -34,21 +34,21 @@ public class CustomScrollRect : ScrollRect
 
     public override void OnBeginDrag(PointerEventData eventData)
     {
-        //Only dragging if correct dragger
+        /*//Only dragging if correct dragger
         if(eventData.pointerId == _activePointerId)
         {
             base.OnBeginDrag(eventData);
-        }
+        }*/
         
     }
 
     public override void OnDrag(PointerEventData eventData)
     {
-        //Only dragging if correct dragger
+        /*//Only dragging if correct dragger
         if (eventData.pointerId == _activePointerId)
         {
             base.OnDrag(eventData);
-        }
+        }*/
         
     }
 

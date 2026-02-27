@@ -1,0 +1,63 @@
+
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler
+{
+    [SerializeField] Image objectBackground;
+    Vector3 _pointerOffsetToMiddle;
+
+    private void OnEnable()
+    {
+        _pointerOffsetToMiddle = Vector3.zero;
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        //calculate offset between mousepos and middle of object
+        _pointerOffsetToMiddle = transform.position - InputEventManager.pointPos;
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        //check that new center is inside frustum, setting it to inside coordinates if not
+        Rect screenBounds = new Rect(0f,0f,Screen.width, Screen.height);
+        Vector3 newCenterpos = InputEventManager.pointPos + _pointerOffsetToMiddle;
+
+        Vector3 newPos = transform.position;
+
+        if (newCenterpos.x > screenBounds.xMin && newCenterpos.x < screenBounds.xMax)
+        {
+            newPos.x = (InputEventManager.pointPos + _pointerOffsetToMiddle).x;
+        }
+        else
+        {
+            if (newCenterpos.x < screenBounds.xMin)
+            {
+                newPos.x = screenBounds.xMin;
+            }
+            else if (newCenterpos.x > screenBounds.xMax)
+            {
+                newPos.x = screenBounds.xMax;
+            }
+        }
+        if (newCenterpos.y > screenBounds.yMin && newCenterpos.y < screenBounds.yMax)
+        {
+            newPos.y = (InputEventManager.pointPos + _pointerOffsetToMiddle).y;
+        }
+        else
+        {
+            if (newCenterpos.y < screenBounds.yMin)
+            {
+                newPos.y = screenBounds.yMin;
+            }
+            else if (newCenterpos.y > screenBounds.yMax)
+            {
+                newPos.y = screenBounds.yMax;
+            }
+        }
+            transform.position = newPos;
+
+    }
+}

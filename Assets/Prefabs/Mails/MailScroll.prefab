@@ -500,6 +500,7 @@ GameObject:
   - component: {fileID: 2427330185761776052}
   - component: {fileID: 4729778020370848797}
   - component: {fileID: 4449113451734473175}
+  - component: {fileID: 8406126021274540280}
   m_Layer: 5
   m_Name: MailScroll
   m_TagString: Untagged
@@ -522,10 +523,10 @@ RectTransform:
   - {fileID: 2251085251144337045}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 349.33, y: -28.000002}
+  m_SizeDelta: {x: 287.3, y: 341.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4729778020370848797
 MonoBehaviour:
@@ -570,7 +571,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpamMail: 0
-  queTypeArray: 
+  cueTypeArray: 
+--- !u!114 &8406126021274540280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237521408551472954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9509df0354e173f47a7fa21c1c00c7a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectBackground: {fileID: 388555438487450571}
 --- !u!1 &5048902611165495874
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,7 +782,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 9175498581130004520}
   m_Direction: 2
   m_Value: 1.0000002
-  m_Size: 0.8326615
+  m_Size: 0.6334428
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

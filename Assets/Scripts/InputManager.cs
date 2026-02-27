@@ -27,4 +27,8 @@ public class InputManager : MonoBehaviour
     {
         InputEventManager.CancelButtonPressedEvent?.Invoke();
     }
+    void OnPoint(InputValue value) //mouse/pointerpen/touch pos
+    {
+        InputEventManager.pointPos = value.Get<Vector2>();
+    }
 }
