@@ -1,11 +1,9 @@
 
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler
 {
-    [SerializeField] Image objectBackground;
     Vector3 _pointerOffsetToMiddle;
 
     private void OnEnable()
