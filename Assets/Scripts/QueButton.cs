@@ -7,5 +7,5 @@ using TMPro;
 public class QueButton : MonoBehaviour
 {
    public TMP_Text buttonText;
-   private bool toggled;
+   public int toggled;
 }

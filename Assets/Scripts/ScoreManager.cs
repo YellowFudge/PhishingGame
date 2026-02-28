@@ -30,12 +30,13 @@ public class ScoreManager : MonoBehaviour
     public void OnFinalSendPressed()
     {
         List<Toggle> score = OnCheckboxPressed();
-        Debug.Log("Wizard sent" + score.Count);
+        Debug.Log("Wizard sent " + score.Count);
+        
     }
 
     public void OnFinalRejectPressed()
     {
         List<Toggle> score = OnCheckboxPressed();
-        Debug.Log("Wizard Rejected" + score.Count);
+        Debug.Log("Wizard Rejected " + score.Count);
     } 
 }
