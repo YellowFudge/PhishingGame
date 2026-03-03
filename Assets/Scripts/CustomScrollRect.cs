@@ -9,7 +9,7 @@ public class CustomScrollRect : ScrollRect
     public override void OnScroll(PointerEventData data)
     {
         base.OnScroll(data);
-        velocity = Vector2.zero;
+        velocity = Vector2.zero; //stops dragvelocity if scrolling
     }
 
 
