@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour
         CutsceneManager.EndOfGoToCreditsTriggered -= GoToCredits;
     }
 
-    void StartDay()
+    public void StartDay()
     {
         //Send away info to evaluation (honestly evaluation should subscribe and trigger Start day here instead)
 
