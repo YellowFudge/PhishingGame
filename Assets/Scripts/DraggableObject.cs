@@ -11,7 +11,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler
         _pointerOffsetToMiddle = Vector3.zero;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    public void OnBeginDrag(PointerEventData eventData) //TODO: MAKE IT AT FRONT OF OTHER THINGS WHEN SELECTED/DRAGGED
     {
         //calculate offset between mousepos and middle of object
         _pointerOffsetToMiddle = transform.position - InputEventManager.pointPos;
