@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using UnityEngine.UI;
 using UnityEngine;
@@ -26,7 +27,7 @@ public class DynamicButtons : MonoBehaviour
             GameObject newButton = Instantiate(buttonPrefab, buttonField.transform);
             newButton.name = "btn" + item.Key;
             QueButton qb = newButton.GetComponent<QueButton>();
-            qb.buttonText.text = item.Key.ToString();
+            qb.buttonText.text = FormatButtonName(item.Key.ToString());
             qb.toggled = item.Value;
             qb.cueType = item.Key;
             
@@ -82,5 +83,20 @@ public class DynamicButtons : MonoBehaviour
     public Dictionary<CueTypes, int> GetEnumDict()
     {
         return enumDict;
+    }
+
+    /*public string ToggleTextGenerator(string enumTypeName)
+    {
+        string toggleText;
+        
+        return toggleText;
+    }*/
+    public static string FormatButtonName(string input)
+    {
+        return Regex.Replace(
+            Regex.Replace(input, "^btn", ""),
+            "(?<=[a-z])([A-Z])|(?<=[A-Z])([A-Z])(?=[a-z])",
+            " $0"
+        );
     }
 }
