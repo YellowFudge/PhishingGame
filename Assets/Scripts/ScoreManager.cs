@@ -27,6 +27,8 @@ public class ScoreManager : MonoBehaviour
         return toggles;
     }
 
+   
+
     public void OnFinalSendPressed()
     {
         List<Toggle> score = OnCheckboxPressed();

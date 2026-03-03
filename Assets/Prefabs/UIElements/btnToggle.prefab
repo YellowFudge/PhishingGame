@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2886816436853342878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5358097604508742374}
+  - component: {fileID: 5976065822638990569}
+  - component: {fileID: 4465871727538006376}
+  m_Layer: 0
+  m_Name: DynamicButtons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5358097604508742374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886816436853342878}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.056885, y: -6.9795837, z: 0.7076174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8206645172019647861}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5976065822638990569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886816436853342878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2379d72ece6ba7fb0d3c05dd16ae6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checklistOptions: []
+--- !u!114 &4465871727538006376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886816436853342878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5c3c6a7098635f181c499dea373cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPrefab: {fileID: 0}
+  buttonField: {fileID: 0}
 --- !u!1 &3305136486931510333
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,8 +129,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 908bf12b09d599749960f1eeb3588c02, type: 2}
+  m_sharedMaterial: {fileID: 7923541554164843301, guid: 908bf12b09d599749960f1eeb3588c02, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -246,6 +306,7 @@ RectTransform:
   m_Children:
   - {fileID: 5455640476761698267}
   - {fileID: 1528221795532076444}
+  - {fileID: 5358097604508742374}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -313,7 +374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948d90158504daae29ad7e905a603c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cueType: 0
   buttonText: {fileID: 6005072097004702882}
+  toggled: 0
+  toggle: {fileID: 8215147999171835657}
 --- !u!1 &8633151828230701753
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,19 +1,17 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class DynamicButtons : MonoBehaviour
 {
     public GameObject buttonPrefab;
     public GameObject buttonField;
-    
-    private List<GameObject> buttons = new List<GameObject>();                      
-    
     // Key = CueType (Name of button), Value = int (If toggled)
     Dictionary<CueTypes, int> enumDict = new Dictionary<CueTypes, int>();           // Stores QueTypes and toggled(0/1)
-    Dictionary<GameObject, int> CueButtons = new Dictionary<GameObject, int>();     // Stores the GameObject buttons and toggled (0/1)
+    private List<GameObject> buttons = new List<GameObject>();                      // Stores UI Toggles and state
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         ConvertEnumToDict();
@@ -22,14 +20,7 @@ public class DynamicButtons : MonoBehaviour
     }
     public void PrintButtons()
     {
-        /*for (int i = 0; i < enumArr.Count; i++)
-        {
-            GameObject newButton = Instantiate(buttonPrefab, buttonField.transform);
-            newButton.name = "btn" + enumArr[i];
-            newButton.GetComponent<QueButton>().buttonText.text = enumArr[i].ToString();
-            buttons.Add(newButton);
-        }*/
-        CueButtons.Clear();
+        buttons.Clear();
         foreach (KeyValuePair<CueTypes, int> item in enumDict)
         {
             GameObject newButton = Instantiate(buttonPrefab, buttonField.transform);
@@ -37,13 +28,10 @@ public class DynamicButtons : MonoBehaviour
             QueButton qb = newButton.GetComponent<QueButton>();
             qb.buttonText.text = item.Key.ToString();
             qb.toggled = item.Value;
+            qb.cueType = item.Key;
+            
             buttons.Add(newButton);
         }
-        /*foreach (var item in enumArr)
-        {
-            Debug.Log(item);
-        }*/
-        UpdateDictionaryFromUI();
     }
 
     // Convert enum items from CueTypes in MailCueTypes.cs to dict for checklist and score.
@@ -58,21 +46,41 @@ public class DynamicButtons : MonoBehaviour
         return enumDict;
     }
 
-    public void ToggleQueButtons()
+    // Yerp you guessed it. This prints out the active state values in dictEnum. 
+    public void PrintActiveStates()
     {
-        foreach (GameObject button in buttons)
+        Dictionary<CueTypes, int> dict = GetEnumDict();
+        foreach (KeyValuePair<CueTypes, int> item in dict)
         {
-            button.SetActive(!button.activeSelf);
+            Debug.unityLogger.Log("ToggleQueButtons " + item.Key + ", " + item.Value);
         }
     }
-    public void UpdateDictionaryFromUI()
+    public void ToggleCounter(CueTypes cueType, int toggled)
     {
-        foreach (GameObject obj in buttons)
-        {
-            Debug.Log(obj.GetComponent<QueButton>().buttonText.text + " Exists!");
-            /*QueButton qb = obj.GetComponent<QueButton>();
-            enumDict[qb.toggled] = qb.toggled.isOn;*/
-        }
-        Debug.Log("Buttons do exist actually!!!!!");
+        Debug.Log("------------------------------------------------------------------------------");
+        enumDict[cueType] = toggled;
+        Debug.Log($"{cueType} toggled state updated to: {toggled}");
+        
+        //PrintActiveStates();
+        //Debug.Log(qb.cueType + " updated to: " + state);
+        //Debug.Log(GetResult());
+        
+        PrintActiveStates();
+    }
+
+    public List<int> GetResult()
+    {
+            List<int> toggleStates = new List<int>();
+            toggleStates.Clear();
+            foreach (KeyValuePair<CueTypes, int> item in enumDict)
+            {
+                toggleStates.Add(item.Value);
+            }
+            return toggleStates;
+    }
+
+    public Dictionary<CueTypes, int> GetEnumDict()
+    {
+        return enumDict;
     }
 }
