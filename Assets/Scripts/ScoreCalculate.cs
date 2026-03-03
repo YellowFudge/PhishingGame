@@ -67,7 +67,10 @@ public class ScoreCalculate : MonoBehaviour
     public int[] pQue = {1, 0, 1, 0};
     public int[] eQue = {1, 1, 0, 0};
     public int level = 1;
-    
+    public int correctQue;
+    public int incorrectQue;
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start() {
@@ -93,8 +96,6 @@ public class ScoreCalculate : MonoBehaviour
             Debug.Log("Score before quecalc : " + score);
 
             CalculateCue();
-
-            //Debug.Log("current score: " + score);
             // Call script that sends the values
         }
         else {
@@ -108,20 +109,19 @@ public class ScoreCalculate : MonoBehaviour
         Debug.Log("Initilize Calculate Cue");
 
         for (int i = 0; i < eQue.Length; i++) {
-            //Debug.Log("Player ques: " + pQue[i]);
-            //Debug.Log("Email ques: " + eQue[i]);
-
+            //Fix according to enum which is correct and not correct
             if (pQue[i] == eQue[i]) {
                 Debug.Log("Equal");
+                correctQue++;
             }
             else {
                 Debug.Log("Incorrect");
+                incorrectQue++;
             }
-
-            // Calculate
-            // Max point possible divided by Cue siez = Cue points per correct
-            // Make rewards more rewarding 
         }
+
+        scoreQue = (scoreQueMax / eQue.Length) * correctQue;
+        Debug.Log(scoreQue);
     }
 
     public void God() {
