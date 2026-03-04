@@ -11,17 +11,17 @@ public class EvaluationSystem : MonoBehaviour
     public int totalPlayerQuePoints = 2000;
     public int totalQuePoints = 2400;
 
-    private void Start() {
+    /*private void Start() {
         button.onClick.AddListener(CompareAnswer);
     }
 
     private void OnDestroy() {
         button.onClick.RemoveListener(CompareAnswer);
-    }
+    }*/
 
     //  Change to %, do math
 
-    private void CheckCorrectTotal() {
+    private void CheckCorrectTotal() {/*
         //Great Success
         if (totalCorrectMail == 7 || 8) {
 
@@ -42,14 +42,14 @@ public class EvaluationSystem : MonoBehaviour
 
         }
 
-        else { Debug.Log("Something went wrong"); }
+        else { Debug.Log("Something went wrong"); } */
 
         CheckCorrectQue();
     }
 
     private void CheckCorrectQue() {
         //Great Success
-        if () {
+        /*if () {
             //76%+
         }
 
@@ -63,6 +63,6 @@ public class EvaluationSystem : MonoBehaviour
 
         else if () {
             //0 -> 24%
-        }
+        }*/
     }
 }
