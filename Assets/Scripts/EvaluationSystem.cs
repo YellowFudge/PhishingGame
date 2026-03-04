@@ -8,8 +8,12 @@ public class EvaluationSystem : MonoBehaviour
     /* Temporary variables */
     public int totalCorrectMail = 8;
     public int totalMail = 8;
+
     public int totalPlayerQuePoints = 2000;
     public int totalQuePoints = 2400;
+
+    public int valueA;
+    public int valueB;
 
     private void Start() {
         button.onClick.AddListener(CheckCorrectTotal);
@@ -22,58 +26,82 @@ public class EvaluationSystem : MonoBehaviour
     //  Change to %, do math
 
     private void CheckCorrectTotal() {
-        //Great Success
-        /*if (totalCorrectMail == 7 || 8) {
+        double greatSuccessMail = totalMail * 0.75;
+        double minorSuccessMail = totalMail * 0.50;
+        double minorFailureMail = totalMail * 0.25;
 
+        Debug.Log("greatSuccess: " + greatSuccessMail + "+ minorSuccess: " + minorSuccessMail + "+ minorFailure: " + minorFailureMail + "+ majorFailure: <" + minorFailureMail);
+
+        //Great Success 75% +
+        if (totalCorrectMail >= greatSuccessMail)
+        { //75%+
+            Debug.Log("75%+ Great Success: " + totalCorrectMail + " points out of: " + totalMail);
+            valueA = 4;
         }
 
-        //Minor Success
-        else if (totalCorrectMail == 5 || 6) {
-
+        else if (totalCorrectMail >= minorSuccessMail || totalCorrectMail < greatSuccessMail)
+        { //50 -> 75%
+            Debug.Log("50% -> <75% Minor Success: " + totalCorrectMail + " points out of: " + totalMail);
+            valueA = 3;
         }
 
-        //Minor Failure
-        else if (totalCorrectMail == 3 || 4) {
-
+        else if (totalCorrectMail >= minorFailureMail || totalCorrectMail < minorSuccessMail)
+        { //25 -> 49%
+            Debug.Log("25% -> <50% Minor Failure: " + totalCorrectMail + " points out of: " + totalMail);
+            valueA = 2;
         }
 
-        //Great Failure
-        else if (totalCorrectMail <= 2) {
-
+        else if (totalCorrectMail < minorFailureMail)
+        { //less than 25%-
+            Debug.Log("<25% -> 0% Great Failure: " + totalCorrectMail + " points out of: " + totalMail);
+            valueA = 1;
         }
-
-        else { Debug.Log("Something went wrong"); }*/
+        else { Debug.Log("Something went horrible wrong"); }
 
         CheckCorrectQue();
     }
 
     private void CheckCorrectQue() {
-        double greatSuccess = totalQuePoints * 0.75;
-        double minorSuccess = totalQuePoints * 0.50;
-        double minorFailure = totalQuePoints * 0.25;
+        double greatSuccessQue = totalQuePoints * 0.75;
+        double minorSuccessQue = totalQuePoints * 0.50;
+        double minorFailureQue = totalQuePoints * 0.25;
 
-        Debug.Log("greatSuccess: " + greatSuccess + "+ minorSuccess: " + minorSuccess + "+ minorFailure: " + minorFailure + "+ majorFailure: <" + minorFailure);
+        Debug.Log("greatSuccess: " + greatSuccessQue + "+ minorSuccess: " + minorSuccessQue + "+ minorFailure: " + minorFailureQue + "+ majorFailure: <" + minorFailureQue);
 
         //Great Success 75% +
-        if (totalPlayerQuePoints >= greatSuccess)
+        if (totalPlayerQuePoints >= greatSuccessQue)
         { //75%+
             Debug.Log("75%+ Great Success: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
+            valueB = 4;
         }
 
-        else if (totalPlayerQuePoints >= minorSuccess || totalPlayerQuePoints < greatSuccess)
+        else if (totalPlayerQuePoints >= minorSuccessQue || totalPlayerQuePoints < greatSuccessQue)
         { //50 -> 75%
             Debug.Log("50% -> <75% Minor Success: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
+            valueB = 3;
         }
 
-        else if (totalPlayerQuePoints >= minorFailure || totalPlayerQuePoints < minorSuccess)
+        else if (totalPlayerQuePoints >= minorFailureQue || totalPlayerQuePoints < minorSuccessQue)
         { //25 -> 49%
             Debug.Log("25% -> <50% Minor Failure: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
+            valueB = 2;
         }
 
-        else if (totalPlayerQuePoints < minorFailure)
+        else if (totalPlayerQuePoints < minorFailureQue)
         { //less than 25%-
             Debug.Log("<25% -> 0% Great Failure: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
+            valueB = 1;
         }
         else { Debug.Log("Something went horrible wrong"); }
+
+        ChooseBossResponse();
+    }
+
+    // Function to choose response
+    private void ChooseBossResponse()
+    {
+        // Map out the responses
+        // Day x (level x) + valueA (correct mail types value) + valueB (correct que types)
+        // This makes it so we need per level: A x B amount of responses (in this case 16, can easily be changed)
     }
 }
