@@ -16,14 +16,21 @@ public class LevelManager : MonoBehaviour
     //IT info mail (what to look out for extra today) also from scriptable object list? Can they vary depending on gameplay?
     //takes current day's mails from a scriptable object holding them in order
 
+
+    /*Tutorial should show player how to:
+    * Click phish/ham 
+    * Check the cue checkboxes they think a mail that is phishing has
+    * where to get all info (infostations) (?)
+    */
+
     [SerializeField] DailyMailArrayScriptObj dailyMailsScriptObj;
-    [SerializeField] Canvas mainCanvas;
+    [SerializeField] Transform mailSpawnPoint;
 
     [SerializeField] CutsceneManager cutsceneManager;
     int _currentDay = 1;
     int _currentMail = 0;
-    int _amountOfDays; //from scriptObjlist length later
-    GameObject _currentMailObject;
+    int _amountOfDays; 
+    GameObject _currentMailObject; //garbage collector going to hate this?
 
     private void Start()
     {
@@ -46,7 +53,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void StartDay()
-    {
+    { 
         //Send away info to evaluation (honestly evaluation should subscribe and trigger Start day here instead)
 
         //Special function for day 1? (trigger tutorial? Ask if want tutorial?)
@@ -61,19 +68,17 @@ public class LevelManager : MonoBehaviour
     public void NextMail()
     {
         _currentMail++;
-        Debug.Log("NextMail");
         //destroy old
         Destroy(_currentMailObject);
 
         //if last mail of the day-> go to next
         if (!dailyMailsScriptObj.GetCurrentMail(_currentDay, _currentMail, out GameObject mailObj))
         {
-            Debug.Log("NextDay");
             NextDay();
             return;
         }
         
-        _currentMailObject = Instantiate(mailObj, mainCanvas.transform);
+        _currentMailObject = Instantiate(mailObj, mailSpawnPoint);
     }
 
     void NextDay()//Starts next day
