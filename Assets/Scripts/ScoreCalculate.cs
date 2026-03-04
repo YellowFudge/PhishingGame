@@ -42,7 +42,7 @@ using UnityEngine.UI;
 
 public class ScoreCalculate : MonoBehaviour
 {
-
+    public ScoreScriptableObjectScript scoreScriptableObjectScript;
 
     //Player Variables
     //Public PlayerEmailType playerEmailType; // Ham or Phising
