@@ -62,10 +62,8 @@ public class DynamicButtons : MonoBehaviour
         enumDict[cueType] = toggled;
         Debug.Log($"{cueType} toggled state updated to: {toggled}");
         
-        //PrintActiveStates();
         //Debug.Log(qb.cueType + " updated to: " + state);
         //Debug.Log(GetResult());
-        
         PrintActiveStates();
     }
 
@@ -85,12 +83,6 @@ public class DynamicButtons : MonoBehaviour
         return enumDict;
     }
 
-    /*public string ToggleTextGenerator(string enumTypeName)
-    {
-        string toggleText;
-        
-        return toggleText;
-    }*/
     public static string FormatButtonName(string input)
     {
         return Regex.Replace(
