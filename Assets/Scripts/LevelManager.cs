@@ -42,13 +42,13 @@ public class LevelManager : MonoBehaviour
 
     private void OnEnable()
     {
-        CutsceneManager.EndOfStartDayTriggered += StartDay;//REMOVE LATER
+        //CutsceneManager.EndOfStartDayTriggered += StartDay;//REMOVE LATER
         CutsceneManager.EndOfGoToCreditsTriggered += GoToCredits;
     }
 
     private void OnDisable()
     {
-        CutsceneManager.EndOfStartDayTriggered -= StartDay;//REMOVE LATER
+        //CutsceneManager.EndOfStartDayTriggered -= StartDay;//REMOVE LATER
         CutsceneManager.EndOfGoToCreditsTriggered -= GoToCredits;
     }
 
