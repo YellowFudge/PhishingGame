@@ -26,7 +26,14 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
         //return if dragging or clicking on object marked as to be ignored by this script
         if (_dragging || eventData.rawPointerPress.TryGetComponent(out IgnoreOpenClose ignorer)) return;
 
-        _rectTrans.SetAsLastSibling(); //making in front of everything under the same parent
+
+        //checking position under parent
+        if (!(_rectTrans.parent.childCount - 1).Equals(_rectTrans.GetSiblingIndex()))
+        {
+            _rectTrans.SetAsLastSibling(); //making in front of everything under the same parent
+            return;
+        }
+        
 
         if (_opened)
         {
