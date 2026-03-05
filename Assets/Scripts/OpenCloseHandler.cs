@@ -2,12 +2,14 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(RectTransform))]
 public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHandler,*/ IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] GameObject openedObject;
     [SerializeField] GameObject closedObject;
     bool _opened;
     bool _dragging;
+    RectTransform _rectTrans;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,12 +18,15 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
         closedObject.SetActive(false);
         _opened = true;
         _dragging = false;
+        _rectTrans = GetComponent<RectTransform>();
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         //return if dragging or clicking on object marked as to be ignored by this script
         if (_dragging || eventData.rawPointerPress.TryGetComponent(out IgnoreOpenClose ignorer)) return;
+
+        _rectTrans.SetAsLastSibling(); //making in front of everything under the same parent
 
         if (_opened)
         {

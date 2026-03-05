@@ -2,13 +2,16 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(RectTransform))]
 public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler
 {
     Vector3 _pointerOffsetToMiddle;
+    RectTransform _rectTrans;
 
     private void OnEnable()
     {
         _pointerOffsetToMiddle = Vector3.zero;
+        _rectTrans = GetComponent<RectTransform>();
     }
 
     public void OnBeginDrag(PointerEventData eventData) //TODO: MAKE IT AT FRONT OF OTHER THINGS WHEN SELECTED/DRAGGED
@@ -55,7 +58,9 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler
                 newPos.y = screenBounds.yMax;
             }
         }
-            transform.position = newPos;
+
+        transform.position = newPos;
+        _rectTrans.SetAsLastSibling(); //making in front of everything under the same parent
 
     }
 }
