@@ -29,6 +29,10 @@ public class InputManager : MonoBehaviour
     }
     void OnPoint(InputValue value) //mouse/pointerpen/touch pos
     {
-        InputEventManager.pointPos = value.Get<Vector2>();
+        InputEventManager.PointPos = value.Get<Vector2>();
+    }
+    void OnClick(InputValue value) //mouse/pointerpen/touch click and release
+    {
+        InputEventManager.ClickedPointerChangeEvent?.Invoke();
     }
 }

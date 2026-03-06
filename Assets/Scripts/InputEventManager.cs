@@ -9,5 +9,6 @@ public static class InputEventManager
     public static UnityAction FourButtonPressedEvent;
     public static UnityAction SpaceButtonPressedEvent;
     public static UnityAction CancelButtonPressedEvent;
-    public static Vector3 pointPos;//z will always be 0
+    public static Vector3 PointPos;//z will always be 0
+    public static UnityAction ClickedPointerChangeEvent;//Only when is pressed and released
 }

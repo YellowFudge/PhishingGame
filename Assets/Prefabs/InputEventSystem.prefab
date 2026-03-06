@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3321454644954622339}
   - component: {fileID: 8939082603014317472}
   - component: {fileID: 5590813811044822218}
+  - component: {fileID: 7403003492314455874}
   m_Layer: 0
   m_Name: InputEventSystem
   m_TagString: Untagged
@@ -123,3 +124,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5e3911a82c16f41a7a28cc0f3c2e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7403003492314455874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8898955329603451278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b3959fdffebb9448e4fabeef02b0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regularCursor: {fileID: 2800000, guid: b7df92266eb195e4e9b7e81aba8815b9, type: 3}
+  clickedCursor: {fileID: 2800000, guid: 355e5508277841549995be96872d89a3, type: 3}
