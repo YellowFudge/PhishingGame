@@ -861,6 +861,7 @@ GameObject:
   - component: {fileID: 324628061}
   - component: {fileID: 324628060}
   - component: {fileID: 324628059}
+  - component: {fileID: 324628063}
   - component: {fileID: 324628062}
   m_Layer: 5
   m_Name: Button5
@@ -978,12 +979,41 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324628057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8529418aaa19e74581288d10c352373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreScriptableObjectScript: {fileID: 0}
+  score: 0
+  scoreQue: 0
   button: {fileID: 324628059}
+  variableA: Ham
+  variableB: Ham
+  pQue: 01000000000000000100000000000000
+  eQue: 01000000010000000000000000000000
+  level: 1
+  correctQue: 0
+  incorrectQue: 0
+--- !u!114 &324628063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324628057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc9c86326a03ad49b5afa86bea85499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 324628059}
+  totalCorrectMail: 8
+  totalMail: 8
+  totalPlayerQuePoints: 2000
+  totalQuePoints: 2400
+  valueA: 0
+  valueB: 0
 --- !u!1 &495699817
 GameObject:
   m_ObjectHideFlags: 0

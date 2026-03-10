@@ -1,5 +1,7 @@
+using NUnit.Framework;
 using System;
 using System.Runtime.CompilerServices;
+using UnityEditor.Experimental.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -59,12 +61,13 @@ public class ScoreCalculate : MonoBehaviour
     public int scoreQue = 0;
 
     //Other Variables
-    public Button button;
+    private Button button;
+    private DynamicButtons dynamicButtons;
 
     //Temporary variables
     public string variableA = "Ham"; // Placeholder for Player email type
     public string variableB = "Ham"; // Placeholder for Email Type
-    public int[] pQue = {1, 0, 1, 0};
+    public List<int> pQue = new List<int>();
     public int[] eQue = {1, 1, 0, 0};
     public int level = 1;
     public int correctQue;
@@ -74,7 +77,12 @@ public class ScoreCalculate : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start() {
-        button.onClick.AddListener(CompareAnswer);
+        dynamicButtons = GetComponent<DynamicButtons>();
+        dynamicButtons.GetResult();
+        pQue = dynamicButtons.GetResult();
+        Debug.Log(pQue);
+        button.onClick.AddListener(God);
+        
     }
     
     // Unsubscribe to prevent strange behavious (according to person on the internet, confirm w head of unity)
