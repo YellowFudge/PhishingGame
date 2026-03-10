@@ -77,11 +77,8 @@ public class ScoreCalculate : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start() {
-        dynamicButtons = GetComponent<DynamicButtons>();
-        dynamicButtons.GetResult();
-        pQue = dynamicButtons.GetResult();
-        Debug.Log(pQue);
-        button.onClick.AddListener(God);
+        
+        button.onClick.AddListener(StartCalculation);
         
     }
     
@@ -89,6 +86,17 @@ public class ScoreCalculate : MonoBehaviour
     // TEST LATER
     private void OnDestroy() {
         button.onClick.RemoveListener(CompareAnswer);
+    }
+
+    public void StartCalculation() {
+        //Fetch parameters
+        dynamicButtons = GetComponent<DynamicButtons>();
+        dynamicButtons.GetResult();
+        pQue = dynamicButtons.GetResult();
+        Debug.Log(pQue);
+
+        //Start calculation
+        CompareAnswer();
     }
     
     private void CompareAnswer () {
