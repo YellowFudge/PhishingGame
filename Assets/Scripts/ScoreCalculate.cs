@@ -50,7 +50,6 @@ public class ScoreCalculate : MonoBehaviour
     // Score variables
     private const int scoreCorrect = 100; //Read up on Readonly vs const - which is better in this case
     private const int scoreQueMax = 100; // --depening on method, might remove
-    public float score = 0; // Change variable name to more fitting - somthing related to active score for this 
 
     //Other Variables
     private Button button;
@@ -70,13 +69,15 @@ public class ScoreCalculate : MonoBehaviour
         //button.onClick.RemoveListener(StartCalculation);
     }
 
-    public void StartCalculation(string playerMailType, string realMailType, List<int> emailQue, List<int> playerQue) {
+    public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
 
         //Start calculation
         CompareAnswer(playerMailType, realMailType, emailQue, playerQue);
     }
     
-    private void CompareAnswer (string playerMailType, string realMailType, List<int> emailQue, List<int> playerQue) {
+    private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
+        double score;
+
         if (playerMailType == realMailType) {
             /* if (level == 1) {
                  score = scoreCorrect;
@@ -95,14 +96,14 @@ public class ScoreCalculate : MonoBehaviour
         }
         else {
             Debug.Log("A and B are diffrent");
+            //FinalScore();
             // End script
         }
     }
 
-    private float CalculateCue(List<int> emailQue, List<int> playerQue) {
+    private double CalculateCue(List<int> emailQue, List<int> playerQue) {
         // Check playerEmailQue against emailQue
         Debug.Log("Initilize Calculate Cue");
-        float scoreQue = 0;
         int correctQue = 0;
 
         for (int i = 0; i < emailQue.Count; i++) {
@@ -113,12 +114,14 @@ public class ScoreCalculate : MonoBehaviour
             }
         }
 
-        scoreQue = (scoreQueMax / emailQue.Count) * correctQue;
+        double scoreQue = (scoreQueMax / emailQue.Count) * correctQue;
         Debug.Log(scoreQue);
         return scoreQue;
     }
 
-    public void God() {
-        Debug.Log("If you’re without sin, cast the first stone – (John 8:7)");
-    }
+
+
+    /*public void FinalScore() {
+        return scoreQueMax;
+    }*/
 }
