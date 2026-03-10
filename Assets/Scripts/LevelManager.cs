@@ -32,7 +32,14 @@ public class LevelManager : MonoBehaviour
     int _amountOfDays; 
     GameObject _currentMailObject; //garbage collector going to hate this?
 
-    private void Start()
+
+    public MailCueTypes GetCurrentMailinfo()
+    {
+        dailyMailsScriptObj.GetCurrentMailinfo(_currentDay, _currentMail, out MailCueTypes mailCues);
+        return mailCues;
+    }
+
+private void Start()
     {
         _amountOfDays = dailyMailsScriptObj.GetNumOfDays();
         

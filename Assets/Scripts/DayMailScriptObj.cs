@@ -27,6 +27,21 @@ public class DailyMailArrayScriptObj : ScriptableObject
         mail = null;
         return false;
     }
+
+    public bool GetCurrentMailinfo(int dayNum, int mailNum, out MailCueTypes mailCues)
+    {
+        if(dailyMails.Length > dayNum-1 && dailyMails[dayNum-1].mailPrefabs.Length > mailNum-1)
+        {
+            GameObject mail = dailyMails[dayNum - 1].mailPrefabs[mailNum-1]; 
+            mailCues = mail.GetComponent<MailCueTypes>(); //check if false too
+
+            return true;
+        }
+        mailCues = null;
+        return false;
+    }
+
+
 }
 
 [Serializable]
