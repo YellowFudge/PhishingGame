@@ -25,7 +25,7 @@ public class EvaluationSystem : MonoBehaviour
 
     //  Change to %, do math
 
-    private void CheckCorrectTotal() {
+    public void CheckCorrectTotal() {
         double greatSuccessMail = totalMail * 0.75;
         double minorSuccessMail = totalMail * 0.50;
         double minorFailureMail = totalMail * 0.25;

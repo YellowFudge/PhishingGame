@@ -510,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dynamicButtons: {fileID: 1989151474}
   levelManager: {fileID: 660287721}
-  scoreCalculate: {fileID: 0}
+  scoreCalculate: {fileID: 1980686744}
   isSpamButton: 1
 --- !u!114 &464755100
 MonoBehaviour:
@@ -555,7 +555,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 464755101}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 464755099}
+        m_TargetAssemblyTypeName: HamSpamButton, Assembly-CSharp
+        m_MethodName: SendToScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &464755101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,7 +783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dynamicButtons: {fileID: 1989151474}
   levelManager: {fileID: 660287721}
-  scoreCalculate: {fileID: 0}
+  scoreCalculate: {fileID: 1980686744}
   isSpamButton: 0
 --- !u!114 &695945214
 MonoBehaviour:
@@ -816,7 +828,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 695945215}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 695945213}
+        m_TargetAssemblyTypeName: HamSpamButton, Assembly-CSharp
+        m_MethodName: SendToScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &695945215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3019,6 +3043,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968978147}
   m_CullTransparentMesh: 1
+--- !u!1 &1980686743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980686745}
+  - component: {fileID: 1980686744}
+  m_Layer: 0
+  m_Name: ScoreCalculate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1980686744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980686743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8529418aaa19e74581288d10c352373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreScriptableObjectScript: {fileID: 0}
+--- !u!4 &1980686745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980686743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 692.429, y: 346.49313, z: 2.862826}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1989151472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3615,3 +3684,4 @@ SceneRoots:
   - {fileID: 660287722}
   - {fileID: 1878667083}
   - {fileID: 172671258}
+  - {fileID: 1980686745}
