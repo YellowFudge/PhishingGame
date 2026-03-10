@@ -69,14 +69,14 @@ public class ScoreCalculate : MonoBehaviour
         //button.onClick.RemoveListener(StartCalculation);
     }
 
-    public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
+    public void StartCalculation(string playerMailType, string realMailType, List<int> emailQue, List<int> playerQue) {
 
         //Start calculation
         CompareAnswer(playerMailType, realMailType, emailQue, playerQue);
     }
     
-    private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
-        double score;
+    private void CompareAnswer (string playerMailType, string realMailType, List<int> emailQue, List<int> playerQue) {
+        double playerScore = 0;
 
         if (playerMailType == realMailType) {
             /* if (level == 1) {
@@ -87,21 +87,20 @@ public class ScoreCalculate : MonoBehaviour
              }
              else { Debug.Log("Error: Level not found"); } */
 
-            score = scoreCorrect;
+            playerScore = scoreCorrect;
 
-            Debug.Log("Score before quecalc : " + score);
+            Debug.Log("Score before quecalc : " + playerScore);
 
-            CalculateCue(emailQue, playerQue);
-            // Call script that sends the values
+            CalculateCue(emailQue, playerQue, playerScore);
         }
         else {
             Debug.Log("A and B are diffrent");
-            //FinalScore();
-            // End script
+            FinalScore(playerScore);
         }
     }
 
-    private double CalculateCue(List<int> emailQue, List<int> playerQue) {
+    private double CalculateCue(double playerScore, List<int> emailQue, List<int> playerQue)
+    {
         // Check playerEmailQue against emailQue
         Debug.Log("Initilize Calculate Cue");
         int correctQue = 0;
@@ -115,13 +114,12 @@ public class ScoreCalculate : MonoBehaviour
         }
 
         double scoreQue = (scoreQueMax / emailQue.Count) * correctQue;
-        Debug.Log(scoreQue);
-        return scoreQue;
+        playerScore = playerScore + scoreQue;
+
+        FinalScore(playerScore);
     }
 
-
-
-    /*public void FinalScore() {
-        return scoreQueMax;
-    }*/
+    public double FinalScore(double playerScore) {
+        return playerScore;
+    }
 }
