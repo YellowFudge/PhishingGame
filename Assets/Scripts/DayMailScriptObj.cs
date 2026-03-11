@@ -12,9 +12,16 @@ public class DailyMailArrayScriptObj : ScriptableObject
         return dailyMails.Length;
     }
 
-    public DailyMails GetTodaysMails(int dayNum)
+    public bool GetTodaysMails(int dayNum, out DailyMails mails)
     {
-        return dailyMails[dayNum-1];
+        if (dailyMails.Length > dayNum - 1)
+        {
+            mails = dailyMails[dayNum - 1];
+            return true;
+        }
+
+        mails = null;
+        return false;
     }
 
     public bool GetCurrentMail(int dayNum, int mailNum, out GameObject mail)
