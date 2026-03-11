@@ -61,6 +61,10 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
 
                 if (_rectTrans.parent.GetChild(i).childCount > 1)
                 {
+                    if(_rectTrans.parent.GetChild(i).TryGetComponent(out CutsceneManager cutManager)){ //Make this prettier later on
+                        continue;
+                    }
+
                     for( int j = 0; j < _rectTrans.parent.GetChild(i).childCount; j++)
                     {
                         Debug.Log(_rectTrans.parent.GetChild(i).GetChild(j).gameObject.name);

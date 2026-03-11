@@ -51,13 +51,13 @@ private void Start()
 
     private void OnEnable()
     {
-        CutsceneManager.EndOfStartDayTriggeredEvent += StartDay;//REMOVE LATER
+        //CutsceneManager.EndOfStartDayTriggeredEvent += StartDay;//REMOVE LATER
         CutsceneManager.EndOfGoToCreditsTriggeredEvent += GoToCredits;
     }
 
     private void OnDisable()
     {
-        CutsceneManager.EndOfStartDayTriggeredEvent -= StartDay;//REMOVE LATER
+        //CutsceneManager.EndOfStartDayTriggeredEvent -= StartDay;//REMOVE LATER
         CutsceneManager.EndOfGoToCreditsTriggeredEvent -= GoToCredits;
     }
 

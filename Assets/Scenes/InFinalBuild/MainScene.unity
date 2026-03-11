@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dailyMailsScriptObj: {fileID: 11400000, guid: 2eb74838c12cbd540936f06450f3ebb7, type: 2}
-  mailSpawnPoint: {fileID: 1878667083}
+  mailSpawnPoint: {fileID: 2008261693}
   cutsceneManager: {fileID: 925017688}
 --- !u!224 &660287722
 RectTransform:
