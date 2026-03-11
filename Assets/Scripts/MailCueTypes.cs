@@ -67,5 +67,6 @@ public enum CueTypes
     NoBranding,
     URLOrAttachment,
     RequestInfo,
-    Urgency
+    Urgency,
+    PosesAs
 }
