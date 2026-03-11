@@ -10,8 +10,8 @@ public class CutsceneManager : MonoBehaviour
     Animator _animator;
     bool _goToCredits = false;
 
-    public static UnityAction EndOfStartDayTriggered;
-    public static UnityAction EndOfGoToCreditsTriggered;
+    public static UnityAction EndOfStartDayTriggeredEvent;
+    public static UnityAction EndOfGoToCreditsTriggeredEvent;
 
 
     
@@ -50,11 +50,11 @@ public class CutsceneManager : MonoBehaviour
             _animator.SetTrigger("StartDay");
             return;
         }
-        EndOfGoToCreditsTriggered?.Invoke();
+        EndOfGoToCreditsTriggeredEvent?.Invoke();
     }
 
     public void EndOfStartDayCutScene()//triggered by animation
     {
-        EndOfStartDayTriggered?.Invoke();
+        EndOfStartDayTriggeredEvent?.Invoke();
     }
 }

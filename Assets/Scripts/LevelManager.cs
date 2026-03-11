@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class LevelManager : MonoBehaviour
     * Check the cue checkboxes they think a mail that is phishing has
     * where to get all info (infostations) (?)
     */
+    public static UnityAction NextMailEvent;
 
     [SerializeField] DailyMailArrayScriptObj dailyMailsScriptObj;
     [SerializeField] Transform mailSpawnPoint;
@@ -49,14 +51,14 @@ private void Start()
 
     private void OnEnable()
     {
-        //CutsceneManager.EndOfStartDayTriggered += StartDay;//REMOVE LATER
-        CutsceneManager.EndOfGoToCreditsTriggered += GoToCredits;
+        CutsceneManager.EndOfStartDayTriggeredEvent += StartDay;//REMOVE LATER
+        CutsceneManager.EndOfGoToCreditsTriggeredEvent += GoToCredits;
     }
 
     private void OnDisable()
     {
-        //CutsceneManager.EndOfStartDayTriggered -= StartDay;//REMOVE LATER
-        CutsceneManager.EndOfGoToCreditsTriggered -= GoToCredits;
+        CutsceneManager.EndOfStartDayTriggeredEvent -= StartDay;//REMOVE LATER
+        CutsceneManager.EndOfGoToCreditsTriggeredEvent -= GoToCredits;
     }
 
     public void StartDay()
@@ -86,6 +88,7 @@ private void Start()
         }
         
         _currentMailObject = Instantiate(mailObj, mailSpawnPoint);
+        NextMailEvent?.Invoke();
     }
 
     void NextDay()//Starts next day

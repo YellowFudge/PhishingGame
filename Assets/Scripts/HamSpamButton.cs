@@ -8,11 +8,32 @@ public class HamSpamButton : MonoBehaviour
     [SerializeField] DynamicButtons dynamicButtons;
     [SerializeField] LevelManager levelManager;
     [SerializeField] ScoreCalculate scoreCalculate;
-    [SerializeField] bool isSpamButton;
+    bool _buttonPressed;
 
-
-    public void SendToScore()
+    private void OnEnable()
     {
+        LevelManager.NextMailEvent += ResetButtons;
+    }
+
+    private void OnDisable()
+    {
+        LevelManager.NextMailEvent -= ResetButtons;
+    }
+
+    void ResetButtons()
+    {
+        _buttonPressed = false;
+    }
+
+    public void SendToScore(bool isSpam)
+    {
+        if (_buttonPressed) //prevent doubleklicks
+        {
+            Debug.Log("No");
+            return;
+        }
+        _buttonPressed = true;
+        Debug.Log("YEs");
         MailCueTypes mailCue = levelManager.GetCurrentMailinfo();
 
         //creates list where 1 exists in mail and 0 does not
@@ -36,6 +57,6 @@ public class HamSpamButton : MonoBehaviour
             }
         }
 
-        scoreCalculate.StartCalculation(isSpamButton, mailCue.IsSpamMail, emailCueStates, dynamicButtons.GetResult());
+        scoreCalculate.StartCalculation(isSpam, mailCue.IsSpamMail, emailCueStates, dynamicButtons.GetResult());
     }
 }
