@@ -26,7 +26,10 @@ public class LevelManager : MonoBehaviour
     public static UnityAction NextMailEvent;
 
     [SerializeField] DailyMailArrayScriptObj dailyMailsScriptObj;
+    [SerializeField] DailyMailArrayScriptObj iTMailsScriptObj;
+    [SerializeField] GameObject wizStartMail;
     [SerializeField] Transform mailSpawnPoint;
+    [SerializeField] Transform InfoMailSpawnPoint;
 
     [SerializeField] CutsceneManager cutsceneManager;
     int _currentDay = 1;
@@ -46,7 +49,10 @@ private void Start()
         _amountOfDays = dailyMailsScriptObj.GetNumOfDays();
         
         cutsceneManager.StartFirstDayCutScene();
-        
+
+        //StartTutorial();
+
+
     }
 
     private void OnEnable()
@@ -61,17 +67,34 @@ private void Start()
         CutsceneManager.EndOfGoToCreditsTriggeredEvent -= GoToCredits;
     }
 
-    public void StartDay()
-    { 
-        //Send away info to evaluation (honestly evaluation should subscribe and trigger Start day here instead)
+    public void StartTutorial()//Special function for day 1? (trigger tutorial? Ask if want tutorial?)
+    {
+        _currentMailObject = Instantiate(wizStartMail, InfoMailSpawnPoint);
+    }
 
-        //Special function for day 1? (trigger tutorial? Ask if want tutorial?)
+    public void StartDay()
+    {
+        //Send away info to evaluation (honestly evaluation should subscribe and trigger Start day here instead)
 
         //send IT info (cannot be sent as ham/spam)
         //TODO:function for that
 
         //get all mails for the day and present player with first
         NextMail();
+    }
+
+    public void ShowITMail()
+    {
+        //only one itmail per day so only pick first in day's array
+        if (!dailyMailsScriptObj.GetTodaysMails(_currentDay, out DailyMails mailArray))
+        {
+            Debug.LogError("There is no IT mail array for this day");
+        }
+
+        //destroy old
+        Destroy(_currentMailObject);
+        _currentMailObject = Instantiate(mailArray.mailPrefabs[0], mailSpawnPoint);
+        
     }
 
     public void NextMail()
