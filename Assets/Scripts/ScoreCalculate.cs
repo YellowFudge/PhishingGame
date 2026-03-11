@@ -24,23 +24,11 @@ using UnityEngine.UI;
  * 
  * CASE 6 clear code
  * After function is done, cleanslate the script - prevents score piling from previous.
- *
- *
- * NOTES:
- * Replace: VariableA with playerEmailType
- * Replace: VariableB with emailType
- * Email cues can be an array with 1s and zeros to easily compare
  */
 
 /* TODO:
- * 1. Que points system
- * 2. Make it rewarding for clicking right ques
- *  - To prevent people choosing non or all
- * 3. Create score variables
- * 4. Send score variables
- * 5.1 Clean up Debug
- * 5.2 Clean up comments
- * 5.3 Change temporary variables
+ * 1. Send score variables
+ * 2. Further develop score
  */
 
 public class ScoreCalculate : MonoBehaviour
@@ -48,29 +36,15 @@ public class ScoreCalculate : MonoBehaviour
     public ScoreScriptableObjectScript scoreScriptableObjectScript;
 
     // Score variables
-    private const int scoreCorrect = 100; //Read up on Readonly vs const - which is better in this case
-    private const int scoreQueMax = 100; // --depening on method, might remove
+    private const int scoreCorrect = 100; 
+    private const int scoreQueMax = 100;
 
     //Other Variables
     private Button button;
     private DynamicButtons dynamicButtons;
     
 
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Start() {
-        //button.onClick.AddListener(StartCalculation);
-    }
-    
-    // Unsubscribe to prevent strange behavious (according to person on the internet, confirm w head of unity)
-    // TEST LATER
-    private void OnDestroy() {
-        //button.onClick.RemoveListener(StartCalculation);
-    }
-
     public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
-
         //Start calculation
         CompareAnswer(playerMailType, realMailType, emailQue, playerQue);
     }
