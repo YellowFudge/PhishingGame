@@ -52,7 +52,6 @@ public class ScoreCalculate : MonoBehaviour
         scoreScriptableObjectScript = ScoreCreatePlayerScoreList.Create();
         PlayerScore newScore = new PlayerScore();
         newScore.mailName = "name"; //Change to mail name variable
-        Debug.Log("Chaos");
 
         if (playerMailType == realMailType) {
             playerScore = scoreCorrect;
