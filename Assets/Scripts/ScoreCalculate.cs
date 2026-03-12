@@ -38,10 +38,6 @@ public class ScoreCalculate : MonoBehaviour
     // Score variables
     private const int scoreCorrect = 100; 
     private const int scoreQueMax = 100;
-
-    //Other Variables
-    private Button button;
-    private DynamicButtons dynamicButtons;
     
 
     public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
@@ -54,21 +50,13 @@ public class ScoreCalculate : MonoBehaviour
         Debug.Log("CompareAnswer");
 
         if (playerMailType == realMailType) {
-            /* if (level == 1) {
-                 score = scoreCorrect;
-             }
-             else if (level > 1) {
-                 score = (scoreCorrect + (scoreCorrect / 2)) * (level - 1); // Fix math so it is 100 base and if statement not required?
-             }
-             else { Debug.Log("Error: Level not found"); } */
-
             playerScore = scoreCorrect;
-
-            Debug.Log("Score before quecalc : " + playerScore);
+            //Return mail correct to scriptable obj
 
             CalculateCue(emailQue, playerQue, playerScore);
         }
         else {
+            //Return mail incorrect to scriptable obj
             Debug.Log("A and B are diffrent");
         }
         //Send playerscore
