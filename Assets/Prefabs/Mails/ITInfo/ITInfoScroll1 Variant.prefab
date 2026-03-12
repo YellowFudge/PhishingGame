@@ -258,7 +258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6679224433047237299, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Date: 02-11
+      value: 'Date: 01-11
 
 '
       objectReference: {fileID: 0}
