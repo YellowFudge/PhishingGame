@@ -23,14 +23,14 @@ public class DynamicButtons : MonoBehaviour
         mailNo = 1;
         ConvertEnumToDict();
         PrintButtons();
-        Debug.Log("Buttons Generated!!!!!!!!????");
+        Debug.Log("Buttons Generated");
         UpdateCueList();
     }
 
     public void UpdateCueList()
     {
         CueTypes cue = dailyCues.dailyCuesArray[0].cues[2];
-        Debug.Log("Test: " + cue);
+        //Debug.Log("Test: " + cue);
         //ConvertEnumToDict();
     }
     public void PrintButtons()
@@ -57,11 +57,16 @@ public class DynamicButtons : MonoBehaviour
         {laz
             enumDict.Add(type, 0);
         }*/
-        foreach (CueTypes type in dailyCues.dailyCuesArray[mailNo].cues)
+        
+        for (int i = 0; i < dailyCues.dailyCuesArray.Length; i++)
         {
-            enumDict.Add(type, 0);
+            foreach (CueTypes mail in dailyCues.dailyCuesArray[i].cues)
+            {
+                enumDict.Add(mail, 0);
+            }
         }
-        Debug.Log(enumDict.Count + " items converted to enumDict");
+        
+        //Debug.Log(enumDict.Count + " items converted to enumDict");
         return enumDict;
     }
 
@@ -76,9 +81,9 @@ public class DynamicButtons : MonoBehaviour
     }
     public void ToggleCounter(CueTypes cueType, int toggled)
     {
-        Debug.Log("------------------------------------------------------------------------------");
+        //Debug.Log("------------------------------------------------------------------------------");
         enumDict[cueType] = toggled;
-        Debug.Log($"{cueType} toggled state updated to: {toggled}");
+        //Debug.Log($"{cueType} toggled state updated to: {toggled}");
         
         //Debug.Log(qb.cueType + " updated to: " + state);
         //Debug.Log(GetResult());
