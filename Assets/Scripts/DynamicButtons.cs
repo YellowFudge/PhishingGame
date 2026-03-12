@@ -58,12 +58,16 @@ public class DynamicButtons : MonoBehaviour
             enumDict.Add(type, 0);
         }*/
         
-        for (int i = 0; i < dailyCues.dailyCuesArray.Length; i++)
+        /*for (int i = 0; i < dailyCues.dailyCuesArray.Length; i++)
         {
             foreach (CueTypes mail in dailyCues.dailyCuesArray[i].cues)
             {
                 enumDict.Add(mail, 0);
             }
+        }*/
+        foreach (CueTypes mail in dailyCues.dailyCuesArray[mailNo].cues)
+        {
+            enumDict.Add(mail, 0);
         }
         
         //Debug.Log(enumDict.Count + " items converted to enumDict");
