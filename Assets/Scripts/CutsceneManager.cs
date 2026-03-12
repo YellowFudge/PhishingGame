@@ -12,6 +12,7 @@ public class CutsceneManager : MonoBehaviour
 
     public static UnityAction EndOfStartDayTriggeredEvent;
     public static UnityAction EndOfGoToCreditsTriggeredEvent;
+    public static UnityAction EndOfScrollThrowTriggeredEvent;
 
 
     
@@ -29,6 +30,11 @@ public class CutsceneManager : MonoBehaviour
     {
         SetStartDayTextNum(1);
         _animator.SetTrigger("StartDay");
+    }
+
+    public void StartThrowScrollsCutScene()
+    {
+        _animator.SetTrigger("ThrowScrolls");
     }
 
     public void StartEndOfDayCutScene(int NextDayNum)
@@ -56,5 +62,10 @@ public class CutsceneManager : MonoBehaviour
     public void EndOfStartDayCutScene()//triggered by animation
     {
         EndOfStartDayTriggeredEvent?.Invoke();
+    }
+
+    public void EndOfThrowScrollsCutScene()//triggered by animation
+    {
+        EndOfScrollThrowTriggeredEvent?.Invoke();
     }
 }

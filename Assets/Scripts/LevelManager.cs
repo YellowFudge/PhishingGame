@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -50,7 +51,7 @@ private void Start()
         
         cutsceneManager.StartFirstDayCutScene();
 
-        //StartTutorial();
+        StartTutorial();
 
 
     }
@@ -58,18 +59,25 @@ private void Start()
     private void OnEnable()
     {
         //CutsceneManager.EndOfStartDayTriggeredEvent += StartDay;//REMOVE LATER
+        CutsceneManager.EndOfScrollThrowTriggeredEvent += StartDay;//REMOVE LATER?
         CutsceneManager.EndOfGoToCreditsTriggeredEvent += GoToCredits;
     }
 
     private void OnDisable()
     {
         //CutsceneManager.EndOfStartDayTriggeredEvent -= StartDay;//REMOVE LATER
+        CutsceneManager.EndOfScrollThrowTriggeredEvent -= StartDay;//REMOVE LATER?
         CutsceneManager.EndOfGoToCreditsTriggeredEvent -= GoToCredits;
     }
 
     public void StartTutorial()//Special function for day 1? (trigger tutorial? Ask if want tutorial?)
     {
         _currentMailObject = Instantiate(wizStartMail, InfoMailSpawnPoint);
+    }
+
+    public void RemoveCurrentMailObject()//UGLY AS HECK REMOVE LATER WHEN REBUILDING BUTTONS
+    {
+        Destroy(_currentMailObject);
     }
 
     public void StartDay()
@@ -86,14 +94,14 @@ private void Start()
     public void ShowITMail()
     {
         //only one itmail per day so only pick first in day's array
-        if (!dailyMailsScriptObj.GetTodaysMails(_currentDay, out DailyMails mailArray))
+        if (!iTMailsScriptObj.GetTodaysMails(_currentDay, out DailyMails mailArray))
         {
             Debug.LogError("There is no IT mail array for this day");
         }
 
         //destroy old
         Destroy(_currentMailObject);
-        _currentMailObject = Instantiate(mailArray.mailPrefabs[0], mailSpawnPoint);
+        _currentMailObject = Instantiate(mailArray.mailPrefabs[0], InfoMailSpawnPoint);
         
     }
 
@@ -132,6 +140,7 @@ private void Start()
     void GoToCredits()//Changes to statistics scene
     {
         Debug.Log("CREDITS");
+        SceneManager.LoadScene(2);
         
     }
 
