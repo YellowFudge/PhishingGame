@@ -9,6 +9,8 @@ public class DynamicButtons : MonoBehaviour
 {
     public GameObject buttonPrefab;
     public GameObject buttonField;
+
+    [SerializeField] ScriptableObject dailyCues;
     // Key = CueType (Name of button), Value = int (If toggled)
     Dictionary<CueTypes, int> enumDict = new Dictionary<CueTypes, int>();           // Stores QueTypes and toggled(0/1)
     private List<GameObject> buttons = new List<GameObject>();                      // Stores UI Toggles and state

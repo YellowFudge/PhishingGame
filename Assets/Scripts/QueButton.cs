@@ -22,4 +22,9 @@ public class QueButton : MonoBehaviour
         toggled = isOn ? 1 : 0;
         dynamicButtons.ToggleCounter(cueType, toggled);
     }
+
+    public void ResetValue()
+    {
+        toggle.isOn = false;
+    }
 }
