@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEditor.Experimental.Rendering;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -46,18 +47,25 @@ public class ScoreCalculate : MonoBehaviour
     }
     
     private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
-        double playerScore = 0;
-        Debug.Log("CompareAnswer");
+        double playerScore;
+
+        scoreScriptableObjectScript = ScoreCreatePlayerScoreList.Create();
+        PlayerScore newScore = new PlayerScore();
+        newScore.mailName = "name"; //Change to mail name variable
 
         if (playerMailType == realMailType) {
             playerScore = scoreCorrect;
+
             //Return mail correct to scriptable obj
+            newScore.isCorrect = true;
+            scoreScriptableObjectScript.playerScore.Add(newScore);
 
             CalculateCue(emailQue, playerQue, playerScore);
         }
         else {
             //Return mail incorrect to scriptable obj
-            Debug.Log("A and B are diffrent");
+            newScore.isCorrect = false;
+            scoreScriptableObjectScript.playerScore.Add(newScore);
         }
         //Send playerscore
     }
