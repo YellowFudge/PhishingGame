@@ -9,17 +9,29 @@ public class DynamicButtons : MonoBehaviour
 {
     public GameObject buttonPrefab;
     public GameObject buttonField;
-
-    [SerializeField] ScriptableObject dailyCues;
+    
+    [SerializeField] DailyCues dailyCues;
     // Key = CueType (Name of button), Value = int (If toggled)
     Dictionary<CueTypes, int> enumDict = new Dictionary<CueTypes, int>();           // Stores QueTypes and toggled(0/1)
-    private List<GameObject> buttons = new List<GameObject>();                      // Stores UI Toggles and state
+    private List<GameObject> buttons = new List<GameObject>();                   // Stores UI Toggles and state
+    
+    private int day;
+    private int mailNo;
     
     void Start()
     {
+        mailNo = 1;
         ConvertEnumToDict();
         PrintButtons();
-        Debug.Log("Buttons Generated");
+        Debug.Log("Buttons Generated!!!!!!!!????");
+        UpdateCueList();
+    }
+
+    public void UpdateCueList()
+    {
+        CueTypes cue = dailyCues.dailyCuesArray[0].cues[2];
+        Debug.Log("Test: " + cue);
+        //ConvertEnumToDict();
     }
     public void PrintButtons()
     {
@@ -41,7 +53,11 @@ public class DynamicButtons : MonoBehaviour
     public Dictionary<CueTypes, int> ConvertEnumToDict()
     {
         enumDict.Clear();
-        foreach (CueTypes type in (CueTypes[])System.Enum.GetValues(typeof(CueTypes)))
+        /*foreach (CueTypes type in (CueTypes[])System.Enum.GetValues(typeof(CueTypes)))
+        {laz
+            enumDict.Add(type, 0);
+        }*/
+        foreach (CueTypes type in dailyCues.dailyCuesArray[mailNo].cues)
         {
             enumDict.Add(type, 0);
         }

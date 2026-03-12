@@ -3893,7 +3893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 5535958553593769579, guid: 92630aaca257167ebafe5b3cada4ad8f, type: 3}
   buttonField: {fileID: 868990224}
-  dailyCues: {fileID: 0}
+  dailyCues: {fileID: 11400000, guid: 777ade8a36e556141a2d3f2d07c32e7e, type: 2}
 --- !u!114 &1989151475
 MonoBehaviour:
   m_ObjectHideFlags: 0
