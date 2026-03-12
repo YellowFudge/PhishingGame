@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1472480256938062074, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Size
-      value: 0.3797872
+      value: 0.38595742
       objectReference: {fileID: 0}
     - target: {fileID: 2149603191952542333, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
@@ -252,7 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6679224433047237299, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Date: 02-11
+      value: 'Date: 01-11
 
 '
       objectReference: {fileID: 0}

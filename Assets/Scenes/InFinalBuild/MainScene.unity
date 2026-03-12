@@ -906,6 +906,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663647619}
   m_CullTransparentMesh: 1
+--- !u!1 &690907687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 690907688}
+  - component: {fileID: 690907690}
+  - component: {fileID: 690907689}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &690907688
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690907687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1878667083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &690907689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690907687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9fe3056b107b1f142a315d27a75c916b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &690907690
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690907687}
+  m_CullTransparentMesh: 1
 --- !u!1 &695945211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 725654388}
   closedObject: {fileID: 1076396940}
+  startOpen: 0
 --- !u!114 &771980130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,7 +1310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 5dc772bc46835b3458409de194250f2e, type: 3}
+  m_Texture: {fileID: 2800000, guid: f076db89b1695f746aa77ee0dec3dae0, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1302,6 +1378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 615952276}
   closedObject: {fileID: 1239212128}
+  startOpen: 0
 --- !u!114 &817430724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,6 +1691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1968978147}
   closedObject: {fileID: 269463822}
+  startOpen: 0
 --- !u!114 &888068979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2099,6 +2177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 100361816}
   closedObject: {fileID: 806412381}
+  startOpen: 0
 --- !u!114 &1055608830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2445,6 +2524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1556044068}
   closedObject: {fileID: 1926129917}
+  startOpen: 0
 --- !u!114 &1298433835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3402,6 +3482,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 690907688}
   - {fileID: 2008261693}
   - {fileID: 1984272634}
   - {fileID: 925017687}
@@ -3963,6 +4044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 5535958553593769579, guid: 92630aaca257167ebafe5b3cada4ad8f, type: 3}
   buttonField: {fileID: 868990224}
+  dailyCues: {fileID: 0}
 --- !u!114 &1989151475
 MonoBehaviour:
   m_ObjectHideFlags: 0
