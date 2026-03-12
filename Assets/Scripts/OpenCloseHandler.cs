@@ -7,6 +7,7 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
 {
     [SerializeField] GameObject openedObject;
     [SerializeField] GameObject closedObject;
+    [SerializeField] bool startOpen;
     bool _opened;
     bool _dragging;
     RectTransform _rectTrans;
@@ -14,9 +15,19 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        openedObject.SetActive(true);
-        closedObject.SetActive(false);
-        _opened = true;
+        if (startOpen)
+        {
+            openedObject.SetActive(true);
+            closedObject.SetActive(false);
+            _opened = true;
+        }
+        else
+        {
+            openedObject.SetActive(false);
+            closedObject.SetActive(true);
+            _opened = false;
+        }
+
         _dragging = false;
         _rectTrans = GetComponent<RectTransform>();
     }
