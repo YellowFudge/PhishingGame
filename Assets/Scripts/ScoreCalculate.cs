@@ -41,12 +41,12 @@ public class ScoreCalculate : MonoBehaviour
     private const int scoreQueMax = 100;
     
 
-    public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
+    public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue, int dayNum) {
         //Start calculation
-        CompareAnswer(playerMailType, realMailType, emailQue, playerQue);
+        CompareAnswer(playerMailType, realMailType, emailQue, playerQue, dayNum);
     }
     
-    private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
+    private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue, int dayNum) {
         double playerScore;
 
         //scoreScriptableObjectScript = ScoreCreatePlayerScoreList.Create();
@@ -62,7 +62,7 @@ public class ScoreCalculate : MonoBehaviour
             newScore.isCorrect = true;
             scoreScriptableObjectScript.playerScore.Add(newScore);
 
-            CalculateCue(emailQue, playerQue, playerScore);
+            CalculateCue(emailQue, playerQue, playerScore, dayNum);
         }
         else {
             //Return mail incorrect to scriptable obj
@@ -72,17 +72,24 @@ public class ScoreCalculate : MonoBehaviour
         //Send playerscore
     }
 
-    private double CalculateCue(List<int> emailQue, List<int> playerQue, double playerScore)
+    private double CalculateCue(List<int> emailQue, List<int> playerQue, double playerScore, int dayNum)
     {
         // Check playerEmailQue against emailQue
         Debug.Log("Initilize Calculate Cue");
         int correctQue = 0;
 
-        for (int i = 0; i < emailQue.Count; i++) {
+        Debug.Log(emailQue[1]);
+        Debug.Log(emailQue[2]);
+        Debug.Log(emailQue[3]);
+        Debug.Log("day num: " + dayNum);
+
+        for (int i = 0; i < 3 * dayNum; i++) {
             //Fix according to enum which is correct and not correct
             if (playerQue[i] == emailQue[i]) {
                 Debug.Log("Equal");
                 correctQue++;
+            } else {
+                Debug.Log("Not Equal");
             }
         }
 
