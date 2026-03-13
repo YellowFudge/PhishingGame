@@ -49,9 +49,11 @@ public class ScoreCalculate : MonoBehaviour
     private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue) {
         double playerScore;
 
-        scoreScriptableObjectScript = ScoreCreatePlayerScoreList.Create();
+        //scoreScriptableObjectScript = ScoreCreatePlayerScoreList.Create();
         PlayerScore newScore = new PlayerScore();
         newScore.mailName = "name"; //Change to mail name variable
+
+        //create if for ham/phis
 
         if (playerMailType == realMailType) {
             playerScore = scoreCorrect;
