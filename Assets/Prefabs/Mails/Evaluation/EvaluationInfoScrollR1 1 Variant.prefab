@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2325638661160457269, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
+      propertyPath: idName
+      value: R1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 99834625671576179, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 877069525923806927, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -22,9 +30,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197998251120221818, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Kindly,
+      value: 'Hilaire Fortune
 
-        Arcane Communications
+        Geldmeister
 
         Pendragon & Kin
 
@@ -40,7 +48,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2149603191952542333, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: Arcane Communications
+      value: Hilaire Fortune
       objectReference: {fileID: 0}
     - target: {fileID: 2704635693674076383, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y
@@ -112,7 +120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5745364661629860837, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Phishing seals
+      value: 'Missing Gold
 
 '
       objectReference: {fileID: 0}
@@ -212,6 +220,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6127856429818454288, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6128970301296371974, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_SizeDelta.y
       value: 283.7
@@ -268,40 +280,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887109798693059037, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Name
-      value: EvaluationInfoScroll Variant
+      value: EvaluationInfoScrollR1 1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6934771362746267280, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: <ac@pendragonkin.ob>
+      value: <h.fortune@pendragonkin.ob>
       objectReference: {fileID: 0}
     - target: {fileID: 6960384995030027612, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6960384995030027612, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6960384995030027612, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 164.8
       objectReference: {fileID: 0}
     - target: {fileID: 6960384995030027612, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -86
       objectReference: {fileID: 0}
     - target: {fileID: 7222691419828877991, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Greetings,
-
-
-
-        We continue working on the reporting form. Make
-        sure to check out the new reporting points if you happen upon a dangerous
-        scroll.
-
-
-'
+      value: "Hello assistant. \r\n\r\nDo you happen to know why we are missing 300
+        gold from our vault? Gwendolen was supposed to receive 300 gold as an award.
+        Do you know anything about this??\r\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7264021137394121308, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y

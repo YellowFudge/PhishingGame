@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -316.94998
       objectReference: {fileID: 0}
+    - target: {fileID: 92165158558339784, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -254068648, guid: c9823dc93247c4d438f6ba019b8f0a2a, type: 3}
     - target: {fileID: 1388041628468510839, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: <attunement@tome-hq.com>
@@ -62,19 +66,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1707125885935996091, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1707125885935996091, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1707125885935996091, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 22.5
       objectReference: {fileID: 0}
     - target: {fileID: 1707125885935996091, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -116
       objectReference: {fileID: 0}
     - target: {fileID: 2427330185761776052, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Pivot.x
@@ -178,11 +182,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 339.1
+      value: 355.6
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -169.55
+      value: -177.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771004301008754679, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2878755135678528303, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -232,6 +240,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3652030937307933693, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3727884097072658493, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: https://system-update-center.win/install
@@ -241,6 +253,10 @@ PrefabInstance:
       value: 'SPECIAL tome
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449113451734473175, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: idName
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4449113451734473175, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: isSpamMail
@@ -308,23 +324,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5808904293672786966, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -334.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6428476032215998412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -351,14 +367,14 @@ PrefabInstance:
     - target: {fileID: 7397421104985081161, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2093159594, guid: 27e1440f177282f44aadd5484ac75f68, type: 3}
+      objectReference: {fileID: -254068648, guid: c9823dc93247c4d438f6ba019b8f0a2a, type: 3}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Size
-      value: 0.53494537
+      value: 0.51012367
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Value
-      value: 0.9999998
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text

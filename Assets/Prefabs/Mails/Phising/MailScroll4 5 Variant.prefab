@@ -177,11 +177,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 323.1
+      value: 345.9
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -161.55
+      value: -172.95003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771004301008754679, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2878755135678528303, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -234,6 +238,10 @@ PrefabInstance:
       value: 'Staff increase
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449113451734473175, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: idName
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4449113451734473175, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: isSpamMail
@@ -346,14 +354,14 @@ PrefabInstance:
     - target: {fileID: 7397421104985081161, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 451456509, guid: 27e1440f177282f44aadd5484ac75f68, type: 3}
+      objectReference: {fileID: 1868342105, guid: c9823dc93247c4d438f6ba019b8f0a2a, type: 3}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Size
-      value: 0.561436
+      value: 0.5244291
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Value
-      value: 0.99999976
+      value: 1.0000004
       objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text

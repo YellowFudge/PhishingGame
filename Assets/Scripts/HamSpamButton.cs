@@ -57,6 +57,6 @@ public class HamSpamButton : MonoBehaviour
             }
         }
 
-        scoreCalculate.StartCalculation(isSpam, mailCue.IsSpamMail, emailCueStates, dynamicButtons.GetResult());
+        scoreCalculate.StartCalculation(isSpam, mailCue.IsSpamMail, emailCueStates, dynamicButtons.GetResult(), levelManager.CurrentDay);
     }
 }

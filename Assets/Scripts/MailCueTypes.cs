@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MailCueTypes : MonoBehaviour
+public class MailCueTypes : MailId
 {
     [SerializeField] bool isSpamMail;
     [SerializeField, Tooltip("The cue types of the mail")] CueTypes[] cueTypeArray;

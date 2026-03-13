@@ -226,11 +226,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 431.1
+      value: 438.9
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -215.55002
+      value: -219.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771004301008754679, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2878755135678528303, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -331,6 +335,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "Next month\u2019s orders\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 4449113451734473175, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: idName
+      value: L1
+      objectReference: {fileID: 0}
     - target: {fileID: 4903118287106457032, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -426,11 +434,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Size
-      value: 0.42078403
+      value: 0.41330597
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Value
-      value: 1.0000001
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text

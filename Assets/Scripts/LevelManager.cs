@@ -38,6 +38,7 @@ public class LevelManager : MonoBehaviour
     int _amountOfDays; 
     GameObject _currentMailObject; //garbage collector going to hate this?
 
+    public int CurrentDay { get { return _currentDay; } }
 
     public MailCueTypes GetCurrentMailinfo()
     {
