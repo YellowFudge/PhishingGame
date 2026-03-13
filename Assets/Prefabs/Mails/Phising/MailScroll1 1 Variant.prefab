@@ -245,6 +245,10 @@ PrefabInstance:
 '
       objectReference: {fileID: 0}
     - target: {fileID: 4449113451734473175, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: idName
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449113451734473175, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: isSpamMail
       value: 1
       objectReference: {fileID: 0}
