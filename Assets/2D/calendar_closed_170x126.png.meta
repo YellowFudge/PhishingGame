@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8044af9e10e80846adfafaf80da7145
+guid: a7bd9a2d9f679584389b900ab21bd72b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -192709437795785035
-    second: calendar_closed_170x126_0
+      213: -8239476393136830736
+    second: calendar_correct_closed_170x177_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: calendar_closed_170x126_0
+      name: calendar_correct_closed_170x177_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 170
-        height: 126
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b6215f89cb535df0800000000000000
-      internalID: -192709437795785035
+      spriteID: 0f6ccd300ef77ad80800000000000000
+      internalID: -8239476393136830736
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      calendar_closed_170x126_0: -192709437795785035
+      calendar_correct_closed_170x177_0: -8239476393136830736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,6 +11,7 @@ public class CutsceneManager : MonoBehaviour
     bool _goToCredits = false;
 
     public static UnityAction EndOfStartDayTriggeredEvent;
+    public static UnityAction EndOfEndDayTriggeredEvent;
     public static UnityAction EndOfGoToCreditsTriggeredEvent;
     public static UnityAction EndOfScrollThrowTriggeredEvent;
 
@@ -54,6 +55,7 @@ public class CutsceneManager : MonoBehaviour
         if (!_goToCredits)
         {
             _animator.SetTrigger("StartDay");
+            EndOfEndDayTriggeredEvent?.Invoke();
             return;
         }
         EndOfGoToCreditsTriggeredEvent?.Invoke();
