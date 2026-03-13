@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 27e1440f177282f44aadd5484ac75f68
+guid: c9823dc93247c4d438f6ba019b8f0a2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6778136948441094249
-    second: fake_logo_spritesheet_21x20_0
+      213: -7978783431006045558
+    second: fake_logo_spritesheet_21x20 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,10 +113,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 797e7358b583fe1a0800000000000000
-      internalID: -6778136948441094249
+      spriteID: 234075a100ab41f4ea97511965241b6a
+      internalID: 305923306
       vertices: []
       indices: 
       edges: []
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1f7011d62389da45a39e38a4508ac5a
-      internalID: 2093159594
+      spriteID: 25e787dc95c33f24abb0ae28752797e1
+      internalID: -175371810
       vertices: []
       indices: 
       edges: []
@@ -159,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12131650bb718f54a87dcfc00c7bd1fc
-      internalID: -1433865020
+      spriteID: 89758bf3bc9496641af8aab172c119e5
+      internalID: 1868342105
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 621ee3dbb41dfc249ad3a53e5520b86a
-      internalID: 451456509
+      spriteID: bc2fc5cae6834c24fac4760c3a8f5612
+      internalID: 710623417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fake_logo_spritesheet_21x20_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3814f2a1c93204d4c9b79c91fd08c304
+      internalID: -254068648
       vertices: []
       indices: 
       edges: []
@@ -191,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 19e7d1a4113c85e448c573cb8fdde37d
+    spriteID: ad34b98c23f853f48a29d75d3133321c
     internalID: 0
     vertices: []
     indices: 
@@ -201,10 +223,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fake_logo_spritesheet_21x20_0: -6778136948441094249
-      fake_logo_spritesheet_21x20_1: 2093159594
-      fake_logo_spritesheet_21x20_2: -1433865020
-      fake_logo_spritesheet_21x20_3: 451456509
+      fake_logo_spritesheet_21x20_0: 305923306
+      fake_logo_spritesheet_21x20_1: -175371810
+      fake_logo_spritesheet_21x20_2: 1868342105
+      fake_logo_spritesheet_21x20_3: 710623417
+      fake_logo_spritesheet_21x20_4: -254068648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

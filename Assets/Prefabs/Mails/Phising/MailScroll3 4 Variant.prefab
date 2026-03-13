@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 75806420346625672, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 75806420346625672, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 75806420346625672, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -22,12 +22,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 75806420346625672, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 164.8
       objectReference: {fileID: 0}
     - target: {fileID: 75806420346625672, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -380.9
       objectReference: {fileID: 0}
+    - target: {fileID: 92165158558339784, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 710623417, guid: c9823dc93247c4d438f6ba019b8f0a2a, type: 3}
     - target: {fileID: 1388041628468510839, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: <conference@event-services.win>
@@ -86,13 +90,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1831528766500276704, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2398543086475009157, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
-      value: 'Best regards
-
-        Conference Coordination Council'
+      value: body2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422547246682509387, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2427330185761776052, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Pivot.x
@@ -176,19 +182,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2620234197485226007, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2620234197485226007, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620234197485226007, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.2
       objectReference: {fileID: 0}
     - target: {fileID: 2620234197485226007, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 164.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2620234197485226007, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -404.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2764353630039016617, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Enabled
@@ -196,11 +206,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 398
+      value: 459.5
       objectReference: {fileID: 0}
     - target: {fileID: 2769831736721842145, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -199
+      value: -229.74998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771004301008754679, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2878755135678528303, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -296,6 +310,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -395.7
       objectReference: {fileID: 0}
+    - target: {fileID: 4983582040031947944, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5706169581260734690, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -318,23 +336,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5808904293672786966, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6266436292214648376, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -395.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6428476032215998412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -351,14 +369,20 @@ PrefabInstance:
     - target: {fileID: 6428476032215998412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196246712033716381, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_text
+      value: 'Best regards
+
+        Conference Coordination Council'
       objectReference: {fileID: 0}
     - target: {fileID: 7397421104985081161, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ca3cdf292dfd96a44873f87385c6f3e9, type: 3}
+      objectReference: {fileID: 21300000, guid: 957a527f425497344ad2d9a694d9e84b, type: 3}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Size
-      value: 0.45577887
+      value: 0.39292702
       objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
