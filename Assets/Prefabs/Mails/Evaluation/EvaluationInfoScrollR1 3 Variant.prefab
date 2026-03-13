@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2325638661160457269, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: idName
-      value: R1.1
+      value: R1.3
       objectReference: {fileID: 0}
     - target: {fileID: 99834625671576179, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_IsActive
@@ -30,25 +30,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197998251120221818, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Hilaire Fortune
-
-        Geldmeister
-
-        Pendragon & Kin
-
-'
+      value: "Gwendolen Ambrosius\r\nWizard \r\nPendragon & Kin\r\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1472480256938062074, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Size
-      value: 0.63940775
+      value: 0.44417235
       objectReference: {fileID: 0}
     - target: {fileID: 1472480256938062074, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 2149603191952542333, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: Hilaire Fortune
+      value: Gwendolen Ambrosius
       objectReference: {fileID: 0}
     - target: {fileID: 2704635693674076383, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y
@@ -108,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4345536371309901317, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.2
+      value: 149.9
       objectReference: {fileID: 0}
     - target: {fileID: 4345536371309901317, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -120,9 +114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5745364661629860837, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Missing Gold
-
-'
+      value: Close call
       objectReference: {fileID: 0}
     - target: {fileID: 5967703537402058579, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Pivot.x
@@ -226,11 +218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6128970301296371974, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 283.7
+      value: 408.4
       objectReference: {fileID: 0}
     - target: {fileID: 6128970301296371974, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -141.85
+      value: -204.2
       objectReference: {fileID: 0}
     - target: {fileID: 6134718206999360078, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Enabled
@@ -246,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6278827466927177456, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40.5
+      value: 55.3
       objectReference: {fileID: 0}
     - target: {fileID: 6278827466927177456, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -280,11 +272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887109798693059037, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Name
-      value: EvaluationInfoScrollR1 1 Variant
+      value: EvaluationInfoScrollR1 3 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6934771362746267280, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: <h.fortune@pendragonkin.ob>
+      value: <g.ambrosius@pendragonkin.ob>
       objectReference: {fileID: 0}
     - target: {fileID: 6960384995030027612, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y
@@ -304,9 +296,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222691419828877991, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: "Hello assistant. \r\n\r\nDo you happen to know why we are missing 300
-        gold from our vault? Gwendolen was supposed to receive 300 gold as an award.
-        Do you know anything about this??\r\n\n"
+      value: "Hello assistant. \r\n\r\nThank the magical wonders that you brought
+        me Meredith\u2019s scroll! If I would have ignored her scrolls three times
+        in a row, the skies would have turned purple and the thunder would be the
+        least of our worries.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7264021137394121308, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y
