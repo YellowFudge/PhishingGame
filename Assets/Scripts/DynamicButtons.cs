@@ -20,7 +20,7 @@ public class DynamicButtons : MonoBehaviour
     
     void Start()
     {
-        mailNo = 1;
+        mailNo = 0;
         ConvertEnumToDict();
         PrintButtons();
         Debug.Log("Buttons Generated");

@@ -592,6 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1166519882}
   closedObject: {fileID: 1163847663}
+  startOpen: 0
 --- !u!114 &92784200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,6 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1712339924}
   closedObject: {fileID: 1704858061}
+  startOpen: 0
 --- !u!114 &101363454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,11 +689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontSize
-      value: 2.3
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontSizeBase
-      value: 2.3
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 2358648120416264700, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_Sprite
@@ -1243,6 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1812755265}
   closedObject: {fileID: 2039027140}
+  startOpen: 0
 --- !u!114 &195378066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,11 +1348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontSize
-      value: 2.5
+      value: 3.06
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontSizeBase
-      value: 2.5
+      value: 3.06
       objectReference: {fileID: 0}
     - target: {fileID: 2358648120416264700, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_Sprite
@@ -1769,11 +1772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontSize
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontSizeBase
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2358648120416264700, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_Sprite
@@ -3276,6 +3279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 731529007}
   closedObject: {fileID: 1959393310}
+  startOpen: 0
 --- !u!114 &900468242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3689,6 +3693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 5535958553593769579, guid: 92630aaca257167ebafe5b3cada4ad8f, type: 3}
   buttonField: {fileID: 976469613}
+  dailyCues: {fileID: 0}
 --- !u!114 &1032155552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3983,6 +3988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 665830523}
   closedObject: {fileID: 0}
+  startOpen: 0
 --- !u!114 &1147137670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6635,12 +6641,44 @@ PrefabInstance:
       value: Boss. Always swamped in work (be kind)
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontSize
+      value: 3.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontStyle
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontColor.a
-      value: 0.6745098
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.24737452
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.3097099
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 3.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_characterSpacing
+      value: -17.12
       objectReference: {fileID: 0}
     - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 2885681152
+      value: 4282339195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 2358648120416264700, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_Sprite
@@ -7539,6 +7577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 5535958553593769579, guid: 92630aaca257167ebafe5b3cada4ad8f, type: 3}
   buttonField: {fileID: 976469613}
+  dailyCues: {fileID: 0}
 --- !u!4 &1752096517
 Transform:
   m_ObjectHideFlags: 0
@@ -8096,7 +8135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dailyMailsScriptObj: {fileID: 11400000, guid: 2eb74838c12cbd540936f06450f3ebb7, type: 2}
+  iTMailsScriptObj: {fileID: 0}
+  wizStartMail: {fileID: 0}
   mailSpawnPoint: {fileID: 517964695}
+  InfoMailSpawnPoint: {fileID: 0}
   cutsceneManager: {fileID: 1049699931}
 --- !u!224 &1989607223
 RectTransform:
@@ -8795,10 +8837,74 @@ PrefabInstance:
       propertyPath: m_text
       value: Boss's boss. Scary.
       objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontSize
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.24737452
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.3097099
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4282339195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038264374340241155, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 2358648120416264700, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 773338839, guid: cbaaebf98ba18f2479a942cb5990e904, type: 3}
+    - target: {fileID: 3359550917116965671, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 32.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359550917116965671, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945730558796817383, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontSize
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945730558796817383, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_margin.w
+      value: -1.4705379
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945730558796817383, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945730558796817383, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_wordSpacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945730558796817383, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945730558796817383, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_characterSpacing
+      value: -15.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945730558796817383, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 4096
+      objectReference: {fileID: 0}
     - target: {fileID: 5693498387730357908, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_Name
       value: High Wizard
@@ -8882,6 +8988,10 @@ PrefabInstance:
     - target: {fileID: 6352883985881975840, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458480857877831910, guid: 9fc119709189e9675bee13b355b3e361, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -26.666
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
