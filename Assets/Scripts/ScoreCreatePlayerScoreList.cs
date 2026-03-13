@@ -6,7 +6,7 @@ public class ScoreCreatePlayerScoreList {
     public static ScoreScriptableObjectScript Create() {
         ScoreScriptableObjectScript asset = ScriptableObject.CreateInstance<ScoreScriptableObjectScript>();
 
-        AssetDatabase.CreateAsset(asset, "Assets/ScoreScriptableObjectScript.asset");
+        //AssetDatabase.CreateAsset(asset, "Assets/ScoreScriptableObjectScript.asset");
         AssetDatabase.SaveAssets();
         return asset;
     }
