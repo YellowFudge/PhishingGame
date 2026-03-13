@@ -1,19 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class EvaluationSystem : MonoBehaviour
 {
+    public ScoreScriptableObjectScript scoreScriptableObjectScript;
     public Button button;
-
-    /* Temporary variables */
-    public int totalCorrectMail = 8;
-    public int totalMail = 8;
-
-    public int totalPlayerQuePoints = 2000;
-    public int totalQuePoints = 2400;
-
-    public int valueA;
-    public int valueB;
 
     private void Start() {
         button.onClick.AddListener(CheckCorrectTotal);
@@ -23,85 +15,51 @@ public class EvaluationSystem : MonoBehaviour
         button.onClick.RemoveListener(CheckCorrectTotal);
     }
 
-    //  Change to %, do math
+    public void CheckCorrectTotal() { //change to int?
+        // Fetch ScriptObj from ScoreScriptableObjectScript -> PlayerScore -> mailName + isCorrect
+        // Loop through all the mails to choose which one to use
+        // Temp var, remove
+        int dayNum = 1;
+        int correctTempVar = 3;
+        bool[] arr = new bool[3];
+        arr[0] = true;
+        arr[1] = true;
+        arr[2] = false;
+        string mailToReturn;
+        int mailVariable;
 
-    public void CheckCorrectTotal() {
-        double greatSuccessMail = totalMail * 0.75;
-        double minorSuccessMail = totalMail * 0.50;
-        double minorFailureMail = totalMail * 0.25;
+        List<PlayerScore> playerScore = new List<PlayerScore>();
 
-        Debug.Log("greatSuccess: " + greatSuccessMail + "+ minorSuccess: " + minorSuccessMail + "+ minorFailure: " + minorFailureMail + "+ majorFailure: <" + minorFailureMail);
+        Debug.Log("Are we there yet?");
+        Debug.Log("Score debug" + playerScore);
+        Debug.Log(scoreScriptableObjectScript);
+        Debug.Log(scoreScriptableObjectScript.playerScore);
 
-        //Great Success 75% +
-        if (totalCorrectMail >= greatSuccessMail)
-        { //75%+
-            Debug.Log("75%+ Great Success: " + totalCorrectMail + " points out of: " + totalMail);
-            valueA = 4;
+        for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
+        {
+            Debug.Log("Test: " + i);
         }
 
-        else if (totalCorrectMail >= minorSuccessMail || totalCorrectMail < greatSuccessMail)
-        { //50 -> 75%
-            Debug.Log("50% -> <75% Minor Success: " + totalCorrectMail + " points out of: " + totalMail);
-            valueA = 3;
+
+        int[] test = {1, 1, 1};
+
+        for (int i = 0; i < correctTempVar; i++)
+        {
+            //Or send new varible, ham vs no ham
+            if (arr[i] == false)
+            {
+                test[i] = i + 4;
+            }
+            else
+            {
+                test[i] = i + 1;
+            }
+            Debug.Log(test[i]);
         }
 
-        else if (totalCorrectMail >= minorFailureMail || totalCorrectMail < minorSuccessMail)
-        { //25 -> 49%
-            Debug.Log("25% -> <50% Minor Failure: " + totalCorrectMail + " points out of: " + totalMail);
-            valueA = 2;
-        }
+        mailVariable = test[2]; //Change to random
 
-        else if (totalCorrectMail < minorFailureMail)
-        { //less than 25%-
-            Debug.Log("<25% -> 0% Great Failure: " + totalCorrectMail + " points out of: " + totalMail);
-            valueA = 1;
-        }
-        else { Debug.Log("Something went horrible wrong"); }
-
-        CheckCorrectQue();
-    }
-
-    private void CheckCorrectQue() {
-        double greatSuccessQue = totalQuePoints * 0.75;
-        double minorSuccessQue = totalQuePoints * 0.50;
-        double minorFailureQue = totalQuePoints * 0.25;
-
-        Debug.Log("greatSuccess: " + greatSuccessQue + "+ minorSuccess: " + minorSuccessQue + "+ minorFailure: " + minorFailureQue + "+ majorFailure: <" + minorFailureQue);
-
-        //Great Success 75% +
-        if (totalPlayerQuePoints >= greatSuccessQue)
-        { //75%+
-            Debug.Log("75%+ Great Success: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
-            valueB = 4;
-        }
-
-        else if (totalPlayerQuePoints >= minorSuccessQue || totalPlayerQuePoints < greatSuccessQue)
-        { //50 -> 75%
-            Debug.Log("50% -> <75% Minor Success: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
-            valueB = 3;
-        }
-
-        else if (totalPlayerQuePoints >= minorFailureQue || totalPlayerQuePoints < minorSuccessQue)
-        { //25 -> 49%
-            Debug.Log("25% -> <50% Minor Failure: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
-            valueB = 2;
-        }
-
-        else if (totalPlayerQuePoints < minorFailureQue)
-        { //less than 25%-
-            Debug.Log("<25% -> 0% Great Failure: " + totalPlayerQuePoints + " points out of: " + totalQuePoints);
-            valueB = 1;
-        }
-        else { Debug.Log("Something went horrible wrong"); }
-
-        ChooseBossResponse();
-    }
-
-    // Function to choose response
-    private void ChooseBossResponse()
-    {
-        // Map out the responses
-        // Day x (level x) + valueA (correct mail types value) + valueB (correct que types)
-        // This makes it so we need per level: A x B amount of responses (in this case 16, can easily be changed)
+        mailToReturn = "R" + dayNum + "." + mailVariable;
+        //return mailToReturn;
     }
 }

@@ -48,6 +48,10 @@ public class ScoreCalculate : MonoBehaviour
     
     private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue, int dayNum) {
         double playerScore;
+        for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
+        {
+            Debug.Log("Test: " + i);
+        }
 
         //scoreScriptableObjectScript = ScoreCreatePlayerScoreList.Create();
         PlayerScore newScore = new PlayerScore();
@@ -93,8 +97,10 @@ public class ScoreCalculate : MonoBehaviour
             }
         }
 
-        double scoreQue = (scoreQueMax / emailQue.Count) * correctQue;
+        double scoreQue = (scoreQueMax / (3 * dayNum)) * correctQue;
         playerScore = playerScore + scoreQue;
+
+        Debug.Log(playerScore);    
 
         return playerScore;
     }
