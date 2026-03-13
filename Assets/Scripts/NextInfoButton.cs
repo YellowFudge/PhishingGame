@@ -12,16 +12,17 @@ public class NextInfoButton : MonoBehaviour
         openITButton.gameObject.SetActive(false);
         startDayButton.gameObject.SetActive(false);
         blockingChild.SetActive(false);
+        ResetInfoObjects();
     }
 
     private void OnEnable()
     {
-        CutsceneManager.EndOfStartDayTriggeredEvent += ResetInfoObjects;//REMOVE LATER?
+        CutsceneManager.EndOfEndDayTriggeredEvent += ResetInfoObjects;//REMOVE LATER?
     }
 
     private void OnDisable()
     {
-        CutsceneManager.EndOfStartDayTriggeredEvent -= ResetInfoObjects;//REMOVE LATER?
+        CutsceneManager.EndOfEndDayTriggeredEvent -= ResetInfoObjects;//REMOVE LATER?
     }
 
     void ResetInfoObjects()
