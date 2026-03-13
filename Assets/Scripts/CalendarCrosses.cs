@@ -23,6 +23,7 @@ public class CalendarCrosses : MonoBehaviour
     {
         _currentCross = 0;
         UpdateCross();
+        UpdateCross();
     }
 
     void UpdateCross()
@@ -40,10 +41,13 @@ public class CalendarCrosses : MonoBehaviour
 
         if(_currentCross.Equals(2))
         {
+            crossDayOne.SetActive(true);
             crossDayTwo.SetActive(true);
             return;
         }
 
+        crossDayOne.SetActive(true);
+        crossDayTwo.SetActive(true);
         crossDayThree.SetActive(true);
     }
 
