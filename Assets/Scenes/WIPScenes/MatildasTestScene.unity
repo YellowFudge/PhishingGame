@@ -1323,6 +1323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 125674788}
   closedObject: {fileID: 326169222}
+  startOpen: 0
 --- !u!1 &322371566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 693236761}
   closedObject: {fileID: 1528629804}
+  startOpen: 0
 --- !u!114 &340035089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,6 +1839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 485726590}
   closedObject: {fileID: 1727714955}
+  startOpen: 0
 --- !u!1 &485726590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1083931186195284415, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
@@ -2532,6 +2535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1553317695}
   closedObject: {fileID: 850062988}
+  startOpen: 0
 --- !u!1 &652744331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,6 +3715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 8727804}
   closedObject: {fileID: 1594659875}
+  startOpen: 0
 --- !u!114 &845762577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4212,6 +4217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 2136426554}
   closedObject: {fileID: 1074502355}
+  startOpen: 0
 --- !u!114 &941796104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4416,6 +4422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 906479146}
   closedObject: {fileID: 875246539}
+  startOpen: 0
 --- !u!114 &998355641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4481,6 +4488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 2079628568}
   closedObject: {fileID: 1739935295}
+  startOpen: 0
 --- !u!114 &1042746567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4587,6 +4595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 682093803}
   closedObject: {fileID: 881093439}
+  startOpen: 0
 --- !u!1 &1127321322
 GameObject:
   m_ObjectHideFlags: 0
@@ -8162,6 +8171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 564039869}
   closedObject: {fileID: 1263688287}
+  startOpen: 0
 --- !u!1 &2079628568
 GameObject:
   m_ObjectHideFlags: 0
