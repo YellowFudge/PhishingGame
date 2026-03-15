@@ -39,68 +39,57 @@ public class ScoreCalculate : MonoBehaviour
     // Score variables
     private const int scoreCorrect = 100; 
     private const int scoreQueMax = 100;
-    
 
+    // Initiate calculation
     public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue, int dayNum) {
-        //Start calculation
         CompareAnswer(playerMailType, realMailType, emailQue, playerQue, dayNum);
     }
     
     private void CompareAnswer (bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue, int dayNum) {
         double playerScore;
-        for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
-        {
-            Debug.Log("Test: " + i);
-        }
 
-        //scoreScriptableObjectScript = ScoreCreatePlayerScoreList.Create();
+        // Create new instance for the current mail
         PlayerScore newScore = new PlayerScore();
         newScore.mailName = "name"; //Change to mail name variable
 
-        //create if for ham/phis
-
+        // Check if player mail type is equal to the mail
+        // If true, return true to scriptableObj and call que calculation
+        // If false, return false to scriptableObj
         if (playerMailType == realMailType) {
             playerScore = scoreCorrect;
 
-            //Return mail correct to scriptable obj
             newScore.isCorrect = true;
             scoreScriptableObjectScript.playerScore.Add(newScore);
 
             CalculateCue(emailQue, playerQue, playerScore, dayNum);
         }
         else {
-            //Return mail incorrect to scriptable obj
             newScore.isCorrect = false;
             scoreScriptableObjectScript.playerScore.Add(newScore);
         }
-        //Send playerscore
+        //Send playerscore to ScriptObj
     }
 
     private double CalculateCue(List<int> emailQue, List<int> playerQue, double playerScore, int dayNum)
     {
-        // Check playerEmailQue against emailQue
-        Debug.Log("Initilize Calculate Cue");
         int correctQue = 0;
 
-        Debug.Log(emailQue[1]);
-        Debug.Log(emailQue[2]);
-        Debug.Log(emailQue[3]);
-        Debug.Log("day num: " + dayNum);
-
         for (int i = 0; i < 3 * dayNum; i++) {
-            //Fix according to enum which is correct and not correct
+            // Fix according to enum which is correct and not correct
+            // Temporary Fix
             if (playerQue[i] == emailQue[i]) {
-                Debug.Log("Equal");
+                //Debug.Log("Equal");
                 correctQue++;
-            } else {
+            } /* else {
                 Debug.Log("Not Equal");
-            }
+            } */
         }
 
+        // Temp fix for que score calculation
+        // Divides the maximum score (100) by the total amount of ques each day
+        // and multiply the outcome by total correct ques by players
         double scoreQue = (scoreQueMax / (3 * dayNum)) * correctQue;
-        playerScore = playerScore + scoreQue;
-
-        Debug.Log(playerScore);    
+        playerScore = playerScore + scoreQue;   
 
         return playerScore;
     }
