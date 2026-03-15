@@ -1,65 +1,49 @@
+using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class EvaluationSystem : MonoBehaviour
 {
     public ScoreScriptableObjectScript scoreScriptableObjectScript;
-    public Button button;
 
-    private void Start() {
-        button.onClick.AddListener(CheckCorrectTotal);
-    }
-
-    private void OnDestroy() {
-        button.onClick.RemoveListener(CheckCorrectTotal);
-    }
-
-    public void CheckCorrectTotal() { //change to int?
+    public string CheckCorrectTotal(int dayNum) { //change to int?
         // Fetch ScriptObj from ScoreScriptableObjectScript -> PlayerScore -> mailName + isCorrect
         // Loop through all the mails to choose which one to use
-        // Temp var, remove
-        int dayNum = 1;
-        int correctTempVar = 3;
-        bool[] arr = new bool[3];
-        arr[0] = true;
-        arr[1] = true;
-        arr[2] = false;
-        string mailToReturn;
-        int mailVariable;
+        int mailVariable; // Will be assigned by rand
+        int[] returnMailNr = { 1, 1, 1 }; // Temp solution, fix later
 
-        List<PlayerScore> playerScore = new List<PlayerScore>();
-
-        Debug.Log("Are we there yet?");
-        Debug.Log("Score debug" + playerScore);
-        Debug.Log(scoreScriptableObjectScript);
-        Debug.Log(scoreScriptableObjectScript.playerScore);
-
+        // Main function for determining return mail value
+        // For each itteration
         for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
         {
-            Debug.Log("Test: " + i);
+            if (scoreScriptableObjectScript.playerScore[i].playerMailTypeResponse == false)
+            {
+                returnMailNr[i] = i + 4;
+            } else {
+                returnMailNr[i] = i + 1;
+            }
         }
 
+        var randomBytes = new byte[4];
 
-        int[] test = {1, 1, 1};
-
-        for (int i = 0; i < correctTempVar; i++)
+        // Random function for generating a respons
+        // Swap for value based system later, so each response carry a higher or lower value to be choosen
+        using (var rng = RandomNumberGenerator.Create())
         {
-            //Or send new varible, ham vs no ham
-            if (arr[i] == false)
-            {
-                test[i] = i + 4;
-            }
-            else
-            {
-                test[i] = i + 1;
-            }
-            Debug.Log(test[i]);
+            rng.GetBytes(randomBytes);
+            uint trueRandom = BitConverter.ToUInt32(randomBytes, 0);
+
+            int randNr = (int)(trueRandom % 3); // 0, 1, or 2
+
+            mailVariable = returnMailNr[randNr];
         }
 
-        mailVariable = test[2]; //Change to random
-
-        mailToReturn = "R" + dayNum + "." + mailVariable;
-        //return mailToReturn;
+        // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
+        // Will return "R1.3" for example
+        string mailToReturn = "R" + dayNum + "." + mailVariable;
+        
+        return mailToReturn;
     }
 }
