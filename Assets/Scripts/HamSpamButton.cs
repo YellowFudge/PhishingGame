@@ -33,6 +33,9 @@ public class HamSpamButton : MonoBehaviour
             return;
         }
         _buttonPressed = true;
+
+        levelManager.NextMail(); //calling for next mail
+
         Debug.Log("YEs");
         MailCueTypes mailCue = levelManager.GetCurrentMailinfo();
 
