@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
@@ -71,19 +70,17 @@ public class EvaluationSystem : MonoBehaviour
 
         // Main function for determining return mail value
         // For each itteration
-        //for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
-
         for (int i = 0; i < 3; i++)
         {
-            Debug.Log("pResp" + scoreScriptableObjectScript.playerScore[scoreScriptableObjectScript.playerScore.Count - (i + 1)].playerMailTypeResponse);
-            //if (scoreScriptableObjectScript.playerScore[i].playerMailTypeResponse == false)
+            // Since statemount counts backwards, retun variables requires to count down rahter than up
+            // Otherwise the wrong mail will get the wrong return variable
             if (scoreScriptableObjectScript.playerScore[scoreScriptableObjectScript.playerScore.Count - (i + 1)].playerMailTypeResponse == true)
             {
-                returnMailNr[i] = i + 4;
+                returnMailNr[i] = 6 - i;
                 //returnMailNr[i] = i + 3;
                 //Debug.Log("We in the if?");
             } else {
-                returnMailNr[i] = i + 1;
+                returnMailNr[i] = 3 - i;
                 //returnMailNr[i] = i;
                 //Debug.Log("We in the else?");
             }
@@ -106,8 +103,8 @@ public class EvaluationSystem : MonoBehaviour
         // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
         // Will return "R1.3" for example
         string mailToReturn = "R" + (dayNum - 1) + "." + mailVariable;
-        
-        Debug.Log("mailToReturn" + mailToReturn);
+
+        Debug.Log("mailToReturn rand" + mailToReturn);
 
         return mailToReturn;
     }
