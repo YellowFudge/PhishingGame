@@ -8,6 +8,7 @@ public class EvaluationSystem : MonoBehaviour
 {
     [SerializeField] GameObject mailToSpawnGameObject;
     [SerializeField] Transform MailSpawnPoint;
+    [SerializeField] DailyMailArrayScriptObj responseArrayScriptObj;
     public ScoreScriptableObjectScript scoreScriptableObjectScript;
     public LevelManager levelManager;
     GameObject _currentMailObject;
@@ -42,7 +43,7 @@ public class EvaluationSystem : MonoBehaviour
     public void ShowITMail()
     {
         //only one itmail per day so only pick first in day's array
-        if (!iTMailsScriptObj.GetTodaysMails(_currentDay, out DailyMails mailArray))
+        if (!responseArrayScriptObj.GetTodaysMails(1, out DailyMails mailArray))
         {
             Debug.LogError("There is no IT mail array for this day");
         }
