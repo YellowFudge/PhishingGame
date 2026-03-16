@@ -66,8 +66,9 @@ public class ScoreCalculate : MonoBehaviour
         else {
             newScore.isCorrect = false;
             scoreScriptableObjectScript.playerScore.Add(newScore);
+            playerScore = 0;
         }
-        //Send playerscore to ScriptObj
+        scoreScriptableObjectScript.highScore = scoreScriptableObjectScript.highScore + playerScore;
     }
 
     private double CalculateCue(List<int> emailQue, List<int> playerQue, double playerScore, int dayNum)
