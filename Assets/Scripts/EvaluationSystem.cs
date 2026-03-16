@@ -1,12 +1,9 @@
 using System;
-using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EvaluationSystem : MonoBehaviour
 {
-    [SerializeField] GameObject mailToSpawnGameObject;
     [SerializeField] Transform MailSpawnPoint;
     [SerializeField] DailyMailArrayScriptObj responseArrayScriptObj;
     public ScoreScriptableObjectScript scoreScriptableObjectScript;
@@ -31,8 +28,11 @@ public class EvaluationSystem : MonoBehaviour
 
     public void InstantiateMail(int dayNum)
     {
-        CheckCorrectTotal(dayNum);
-        _currentMailObject = Instantiate(mailToSpawnGameObject, MailSpawnPoint);
+        string mailIDNum = CheckCorrectTotal(dayNum);
+        GameObject findPrefab = FindMailPrefab(mailIDNum);
+        //destroy old
+        Destroy(_currentMailObject);
+        _currentMailObject = Instantiate(findPrefab, MailSpawnPoint);
     }
 
     public void RemoveCurrentMailObject()
@@ -40,18 +40,26 @@ public class EvaluationSystem : MonoBehaviour
         Destroy(_currentMailObject);
     }
 
-    public void ShowITMail()
+    public GameObject FindMailPrefab(string mailIDNum)
     {
         //only one itmail per day so only pick first in day's array
         if (!responseArrayScriptObj.GetTodaysMails(1, out DailyMails mailArray))
         {
             Debug.LogError("There is no IT mail array for this day");
+            return null;
         }
 
-        //destroy old
-        Destroy(_currentMailObject);
-        _currentMailObject = Instantiate(mailArray.mailPrefabs[0], MailSpawnPoint);
-        
+        foreach (GameObject mailPrefab in mailArray.mailPrefabs)
+        {
+            string idNum = mailPrefab.GetComponent<MailId>().IdName;
+
+            if (idNum == mailIDNum)
+            {
+                return mailPrefab;
+            }
+        }
+
+        return null;
     }
 
     public string CheckCorrectTotal(int dayNum) { //change to int?
@@ -64,6 +72,7 @@ public class EvaluationSystem : MonoBehaviour
         // For each itteration
         for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
         {
+            Debug.Log("scoreScriptableObjectScript.playerScore.Count" + scoreScriptableObjectScript.playerScore.Count);
             if (scoreScriptableObjectScript.playerScore[i].playerMailTypeResponse == false)
             {
                 returnMailNr[i] = i + 4;
@@ -88,8 +97,10 @@ public class EvaluationSystem : MonoBehaviour
 
         // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
         // Will return "R1.3" for example
-        string mailToReturn = "R" + dayNum + "." + mailVariable;
+        string mailToReturn = "R" + (dayNum - 1) + "." + mailVariable;
         
+        Debug.Log("mailToReturn" + mailToReturn);
+
         return mailToReturn;
     }
 }
