@@ -6,4 +6,5 @@ using UnityEngine;
 public class ScoreScriptableObjectScript : ScriptableObject
 {
     public List<PlayerScore> playerScore;
+    public double highScore;
 }
