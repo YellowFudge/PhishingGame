@@ -50,27 +50,33 @@ public class ScoreCalculate : MonoBehaviour
 
         // Create new instance for the current mail
         PlayerScore newScore = new PlayerScore();
-        newScore.mailName = "name"; //Change to mail name variable
+        //newScore.mailName = "name"; //Change to mail name variable
 
         // Check if player mail type is equal to the mail
         // If true, return true to scriptableObj and call que calculation
         // If false, return false to scriptableObj
         if (playerMailType == realMailType) {
             playerScore = scoreCorrect;
-
             newScore.isCorrect = true;
             scoreScriptableObjectScript.playerScore.Add(newScore);
+
             if (realMailType == true)
             {
                 CalculateCue(emailQue, playerQue, playerScore, dayNum);
+            }
+            //Remove else and move highScore script outside if statement when fixed, temp solution
+            else
+            {
+                scoreScriptableObjectScript.highScore = scoreScriptableObjectScript.highScore + playerScore;
             }
         }
         else {
             newScore.isCorrect = false;
             scoreScriptableObjectScript.playerScore.Add(newScore);
             playerScore = 0;
+            scoreScriptableObjectScript.highScore = scoreScriptableObjectScript.highScore + playerScore; //Remove when global solutions is fixed
         }
-        scoreScriptableObjectScript.highScore = scoreScriptableObjectScript.highScore + playerScore;
+        //scoreScriptableObjectScript.highScore = scoreScriptableObjectScript.highScore + playerScore;
     }
 
     private double CalculateCue(List<int> emailQue, List<int> playerQue, double playerScore, int dayNum)
@@ -81,19 +87,25 @@ public class ScoreCalculate : MonoBehaviour
             // Fix according to enum which is correct and not correct
             // Temporary Fix
             if (playerQue[i] == emailQue[i]) {
-                //Debug.Log("Equal");
+
+                //Debug.Log("Eq: " + emailQue[i]);
+                //Debug.Log("Pq: " + playerQue[i]);
+
                 correctQue++;
-            } /* else {
-                Debug.Log("Not Equal");
-            } */
+            }
         }
+        
+        //Debug.Log("Correct: " + correctQue);
 
         // Temp fix for que score calculation
         // Divides the maximum score (100) by the total amount of ques each day
         // and multiply the outcome by total correct ques by players
         double scoreQue = (scoreQueMax / (3 * dayNum)) * correctQue;
-        playerScore = playerScore + scoreQue;   
+        playerScore = playerScore + scoreQue;
+        scoreScriptableObjectScript.highScore = scoreScriptableObjectScript.highScore + playerScore;
 
-        return playerScore;
+        // Temp fix, should be playerScore, and player highscore should be calculated in CompareAnswer
+        // need to send value back
+        return scoreQue; 
     }
 }
