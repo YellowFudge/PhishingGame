@@ -12,5 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7197ba9fcf85046be0bc2aa29ad35a, type: 3}
   m_Name: ScoreScriptableObjectScript
   m_EditorClassIdentifier: 
-  playerScore: []
-  highScore: 0
+  playerScore:
+  - mailName: 
+    isCorrect: 0
+    playerMailTypeResponse: 0
+    queCorrect: 0
+  - mailName: 
+    isCorrect: 0
+    playerMailTypeResponse: 0
+    queCorrect: 0
+  - mailName: 
+    isCorrect: 1
+    playerMailTypeResponse: 0
+    queCorrect: 0
+  - mailName: 
+    isCorrect: 0
+    playerMailTypeResponse: 0
+    queCorrect: 0
+  - mailName: 
+    isCorrect: 0
+    playerMailTypeResponse: 0
+    queCorrect: 0
+  - mailName: 
+    isCorrect: 0
+    playerMailTypeResponse: 0
+    queCorrect: 0
+  highScore: 100
