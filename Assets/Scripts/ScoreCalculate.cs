@@ -60,8 +60,10 @@ public class ScoreCalculate : MonoBehaviour
 
             newScore.isCorrect = true;
             scoreScriptableObjectScript.playerScore.Add(newScore);
-
-            CalculateCue(emailQue, playerQue, playerScore, dayNum);
+            if (realMailType == true)
+            {
+                CalculateCue(emailQue, playerQue, playerScore, dayNum);
+            }
         }
         else {
             newScore.isCorrect = false;
