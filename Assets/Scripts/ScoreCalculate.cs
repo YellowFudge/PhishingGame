@@ -1,11 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor.Experimental.Rendering;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
-using UnityEngine.UI;
 
 /* CASE 1 - Player press send btn
  * Initiate score sequence
