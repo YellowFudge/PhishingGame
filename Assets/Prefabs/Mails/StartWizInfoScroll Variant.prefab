@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1472480256938062074, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Size
-      value: 0.38595742
+      value: 0.30676144
       objectReference: {fileID: 0}
     - target: {fileID: 2149603191952542333, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
@@ -90,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4345536371309901317, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 274.6
+      value: 307.2
       objectReference: {fileID: 0}
     - target: {fileID: 4345536371309901317, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -202,13 +202,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6127856429818454288, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6128970301296371974, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 470
+      value: 520.6
       objectReference: {fileID: 0}
     - target: {fileID: 6128970301296371974, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -234.99998
+      value: -260.3
       objectReference: {fileID: 0}
     - target: {fileID: 6134718206999360078, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Enabled
@@ -282,13 +286,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222691419828877991, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: "Hello new assistant and welcome to Pendragon & Kin,\r\n\r\nI\u2019m
-        swamped with research, which is why you likely will not see much of me in
-        the coming days. It also means I do not have the time to check my scrolls
-        properly, so I trust that you vet them properly before leaving them on my
-        desk. Trent, my old assistant, has left you with enough information to do
-        so. \r\n\r\nOn that note: if anyone tries to book a meeting in the coming
-        week, tell them I\u2019m unavailable.\n\r\n"
+      value: "Hello new assistant and welcome to Pendragon & Kin,\r\n\r\nApologies
+        for not meeting in person, I\u2019m swamped with research. I  just want to
+        make one thing clear: \n\nGiven the vampire's new passtime of sending us
+        dangerous scrolls, I trust that you vet ALL my mail before leaving it on
+        my desk. I do not have time to do so myself. Trent, my old assistant, has
+        left you with enough information to do so. \r\n\r\nOn that note: if anyone
+        tries to book a meeting in the coming week, tell them I\u2019m unavailable.\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7264021137394121308, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y
