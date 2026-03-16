@@ -47,11 +47,9 @@ public class HamSpamButton : MonoBehaviour
         {
             foreach (CueTypes type in (dailyCues.dailyCuesArray[i].cues))
             {
-                
-                Debug.Log(mailCue.CueTypeArray.Length);
                 isChecked = false;
                 for (int j = 0; j < mailCue.CueTypeArray.Length; j++)
-                {Debug.Log(j);
+                {
                     if (type.Equals(mailCue.CueTypeArray[i]))
                     {
                         emailCueStates.Add(1);
