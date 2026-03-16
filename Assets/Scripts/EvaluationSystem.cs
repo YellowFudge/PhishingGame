@@ -81,11 +81,11 @@ public class EvaluationSystem : MonoBehaviour
             {
                 returnMailNr[i] = i + 4;
                 //returnMailNr[i] = i + 3;
-                Debug.Log("We in the if?");
+                //Debug.Log("We in the if?");
             } else {
                 returnMailNr[i] = i + 1;
                 //returnMailNr[i] = i;
-                Debug.Log("We in the else?");
+                //Debug.Log("We in the else?");
             }
         }
 
