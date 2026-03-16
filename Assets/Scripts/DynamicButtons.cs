@@ -36,7 +36,7 @@ public class DynamicButtons : MonoBehaviour
     public void UpdateCueList()
     {
         mailNo = levelManager.CurrentDay - 1;
-        Debug.Log(mailNo);
+        //Debug.Log(mailNo);
         //CueTypes cue = dailyCues.dailyCuesArray[0].cues[2];
         //Debug.Log("Test: " + cue);
         ConvertEnumToDict();
