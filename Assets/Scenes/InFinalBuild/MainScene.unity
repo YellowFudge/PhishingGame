@@ -14875,7 +14875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- 5x Couldrons
+  m_text: '- 5x Cauldrons
 
     - 2x Magic Gems'
   m_isRightToLeft: 0
