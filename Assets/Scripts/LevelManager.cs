@@ -42,8 +42,12 @@ public class LevelManager : MonoBehaviour
 
     public MailCueTypes GetCurrentMailinfo()
     {
-        dailyMailsScriptObj.GetCurrentMailinfo(_currentDay, _currentMail, out MailCueTypes mailCues);
-        return mailCues;
+        if(dailyMailsScriptObj.GetCurrentMailinfo(_currentDay, _currentMail, out MailCueTypes mailCues))
+        {
+            return mailCues;
+        }
+            
+        return null;
     }
 
 private void Start()

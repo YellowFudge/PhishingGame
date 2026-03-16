@@ -9373,14 +9373,14 @@ RectTransform:
   m_GameObject: {fileID: 1420921409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.61916673, y: 0.61916673, z: 0.61916673}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2008261693}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -66.60003, y: 102.969986}
+  m_AnchoredPosition: {x: 774.36395, y: 39.63584}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1420921411
@@ -9398,6 +9398,7 @@ MonoBehaviour:
   dynamicButtons: {fileID: 1989151474}
   levelManager: {fileID: 193130625}
   scoreCalculate: {fileID: 1980686744}
+  dailyCues: {fileID: 11400000, guid: 777ade8a36e556141a2d3f2d07c32e7e, type: 2}
 --- !u!224 &1432020786 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4750404846365941091, guid: ac327d9adb6e6388a9322f2912cae7fa, type: 3}
@@ -13775,7 +13776,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1420921410}
   - {fileID: 969420904}
   - {fileID: 1304364227}
   - {fileID: 579111099}
@@ -14509,6 +14509,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 2059976989}
   - {fileID: 1755046894}
+  - {fileID: 1420921410}
   - {fileID: 1878667083}
   - {fileID: 172671258}
   - {fileID: 1980686745}
