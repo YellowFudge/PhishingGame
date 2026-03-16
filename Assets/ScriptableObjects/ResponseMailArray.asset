@@ -12,4 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28811b043d9357c4bbacf303e6b11f1a, type: 3}
   m_Name: ResponseMailArray
   m_EditorClassIdentifier: 
-  dailyMails: []
+  dailyMails:
+  - mailPrefabs:
+    - {fileID: 6590516809040147131, guid: 97f4460e413154a47be440ba6d021cdf, type: 3}
+    - {fileID: 6590516809040147131, guid: cfdf544b6c79a104c951434d9baa1c68, type: 3}
+    - {fileID: 6590516809040147131, guid: 710cbe7569b21a94a8b97629dde98584, type: 3}
+    - {fileID: 6590516809040147131, guid: 08b2a766a9483024fac859fb6baa48a1, type: 3}
+    - {fileID: 6590516809040147131, guid: 490e9abb09e56d642aae9999d3f3f08b, type: 3}
+    - {fileID: 6590516809040147131, guid: 064d93b10f81aab42a3886508c6e330d, type: 3}
+    - {fileID: 6590516809040147131, guid: 3a45a9ddb42fbb446a7d223653c7866b, type: 3}
+    - {fileID: 6590516809040147131, guid: 23a482aa28dcff9418269d049edb9464, type: 3}
+    - {fileID: 6590516809040147131, guid: ffa8b6c9e0d6b704695be497c76565e8, type: 3}
+    - {fileID: 6590516809040147131, guid: 9d0953a09f2d9974ba1ad8dfb013f55a, type: 3}
+    - {fileID: 6590516809040147131, guid: 9b26cc03a3f13714bbb7c9a13a082d66, type: 3}
+    - {fileID: 6590516809040147131, guid: f048bdaf49cb6ab478ac0e19208f091c, type: 3}
+    - {fileID: 6590516809040147131, guid: b424c9b777fea5a4cbf2f47af7f32e43, type: 3}
+    - {fileID: 6590516809040147131, guid: 10c22af6381c536449649baea575dd22, type: 3}
+    - {fileID: 6590516809040147131, guid: 3d3eb2820a66e4c48b10529575fae7fe, type: 3}
+    - {fileID: 6590516809040147131, guid: 8c0b40427fadf5c4ba1672ebcf6e2cbc, type: 3}
+    - {fileID: 6590516809040147131, guid: 74eee8fb7ac8d694c88c0fb5c7ac72bc, type: 3}
+    - {fileID: 6590516809040147131, guid: 454bed60b595f5f45939c1623aae1534, type: 3}

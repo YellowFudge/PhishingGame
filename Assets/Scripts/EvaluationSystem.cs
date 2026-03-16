@@ -6,8 +6,13 @@ using UnityEngine.UI;
 
 public class EvaluationSystem : MonoBehaviour
 {
+    [SerializeField] GameObject mailToSpawnGameObject;
+    [SerializeField] Transform MailSpawnPoint;
+    [SerializeField] DailyMailArrayScriptObj responseArrayScriptObj;
     public ScoreScriptableObjectScript scoreScriptableObjectScript;
     public LevelManager levelManager;
+    GameObject _currentMailObject;
+
 
     private void OnEnable()
     {
@@ -20,7 +25,33 @@ public class EvaluationSystem : MonoBehaviour
     }
 
     void OnEndDayTriggered() {
-        CheckCorrectTotal(levelManager.CurrentDay); 
+        InstantiateMail(levelManager.CurrentDay);
+        //CheckCorrectTotal(levelManager.CurrentDay); 
+    }
+
+    public void InstantiateMail(int dayNum)
+    {
+        CheckCorrectTotal(dayNum);
+        _currentMailObject = Instantiate(mailToSpawnGameObject, MailSpawnPoint);
+    }
+
+    public void RemoveCurrentMailObject()
+    {
+        Destroy(_currentMailObject);
+    }
+
+    public void ShowITMail()
+    {
+        //only one itmail per day so only pick first in day's array
+        if (!responseArrayScriptObj.GetTodaysMails(1, out DailyMails mailArray))
+        {
+            Debug.LogError("There is no IT mail array for this day");
+        }
+
+        //destroy old
+        Destroy(_currentMailObject);
+        _currentMailObject = Instantiate(mailArray.mailPrefabs[0], MailSpawnPoint);
+        
     }
 
     public string CheckCorrectTotal(int dayNum) { //change to int?
