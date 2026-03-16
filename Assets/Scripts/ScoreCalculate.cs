@@ -48,6 +48,11 @@ public class ScoreCalculate : MonoBehaviour
         PlayerScore newScore = new PlayerScore();
         //newScore.mailName = "name"; //Change to mail name variable
 
+        if (playerMailType == true)
+        {
+            newScore.playerMailTypeResponse = true; //Change playerMailTypeResponse to playerRespPhising or something, missleading as a goblin
+        }
+
         // Check if player mail type is equal to the mail
         // If true, return true to scriptableObj and call que calculation
         // If false, return false to scriptableObj

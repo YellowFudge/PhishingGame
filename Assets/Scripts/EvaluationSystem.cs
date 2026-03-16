@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
@@ -70,14 +71,21 @@ public class EvaluationSystem : MonoBehaviour
 
         // Main function for determining return mail value
         // For each itteration
-        for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
+        //for (int i = 0; i < scoreScriptableObjectScript.playerScore.Count; i++)
+
+        for (int i = 0; i < 3; i++)
         {
-            Debug.Log("scoreScriptableObjectScript.playerScore.Count" + scoreScriptableObjectScript.playerScore.Count);
-            if (scoreScriptableObjectScript.playerScore[i].playerMailTypeResponse == false)
+            Debug.Log("pResp" + scoreScriptableObjectScript.playerScore[scoreScriptableObjectScript.playerScore.Count - (i + 1)].playerMailTypeResponse);
+            //if (scoreScriptableObjectScript.playerScore[i].playerMailTypeResponse == false)
+            if (scoreScriptableObjectScript.playerScore[scoreScriptableObjectScript.playerScore.Count - (i + 1)].playerMailTypeResponse == true)
             {
                 returnMailNr[i] = i + 4;
+                //returnMailNr[i] = i + 3;
+                Debug.Log("We in the if?");
             } else {
                 returnMailNr[i] = i + 1;
+                //returnMailNr[i] = i;
+                Debug.Log("We in the else?");
             }
         }
 
