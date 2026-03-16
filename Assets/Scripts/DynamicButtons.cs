@@ -11,27 +11,36 @@ public class DynamicButtons : MonoBehaviour
     public GameObject buttonField;
     
     [SerializeField] DailyCues dailyCues;
+    [SerializeField] LevelManager levelManager;
+    
     // Key = CueType (Name of button), Value = int (If toggled)
     Dictionary<CueTypes, int> enumDict = new Dictionary<CueTypes, int>();           // Stores QueTypes and toggled(0/1)
     private List<GameObject> buttons = new List<GameObject>();                   // Stores UI Toggles and state
     
     private int day;
     private int mailNo;
+    private GameObject _currentMailObject;
     
     void Start()
     {
-        mailNo = 0;
+        enumDict.Clear();
+        mailNo = levelManager.CurrentDay - 1;
+        //Debug.Log(mailNo);
+        enumDict.Clear();
         ConvertEnumToDict();
         PrintButtons();
-        Debug.Log("Buttons Generated");
-        UpdateCueList();
+        //Debug.Log("Buttons Generated");
+        //UpdateCueList();
     }
 
     public void UpdateCueList()
     {
-        CueTypes cue = dailyCues.dailyCuesArray[0].cues[2];
+        mailNo = levelManager.CurrentDay - 1;
+        Debug.Log(mailNo);
+        //CueTypes cue = dailyCues.dailyCuesArray[0].cues[2];
         //Debug.Log("Test: " + cue);
-        //ConvertEnumToDict();
+        ConvertEnumToDict();
+        PrintButtons();
     }
     public void PrintButtons()
     {
@@ -72,6 +81,11 @@ public class DynamicButtons : MonoBehaviour
         
         //Debug.Log(enumDict.Count + " items converted to enumDict");
         return enumDict;
+    }
+
+    public void ClearCueList()
+    {
+        enumDict.Clear();
     }
 
     // Yerp you guessed it. This prints out the active state values in dictEnum. 
@@ -117,5 +131,19 @@ public class DynamicButtons : MonoBehaviour
             "(?<=[a-z])([A-Z])|(?<=[A-Z])([A-Z])(?=[a-z])",
             " $0"
         );
+    }
+    private void OnEnable()
+    {
+        CutsceneManager.EndOfEndDayTriggeredEvent += OnEndDayTriggered;
+    }
+
+    private void OnDisable()
+    {
+        CutsceneManager.EndOfEndDayTriggeredEvent -= OnEndDayTriggered;
+    }
+
+    void OnEndDayTriggered()
+    {
+        UpdateCueList();
     }
 }
