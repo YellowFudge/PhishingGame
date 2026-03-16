@@ -24,9 +24,9 @@ public class DynamicButtons : MonoBehaviour
     void Start()
     {
         enumDict.Clear();
+        buttons.Clear();
         mailNo = levelManager.CurrentDay - 1;
         //Debug.Log(mailNo);
-        enumDict.Clear();
         ConvertEnumToDict();
         PrintButtons();
         //Debug.Log("Buttons Generated");
@@ -35,6 +35,7 @@ public class DynamicButtons : MonoBehaviour
 
     public void UpdateCueList()
     {
+        enumDict.Clear();
         mailNo = levelManager.CurrentDay - 1;
         //Debug.Log(mailNo);
         //CueTypes cue = dailyCues.dailyCuesArray[0].cues[2];
@@ -44,6 +45,10 @@ public class DynamicButtons : MonoBehaviour
     }
     public void PrintButtons()
     {
+        foreach (GameObject button in buttons)
+        {
+            Destroy(button);
+        }
         buttons.Clear();
         foreach (KeyValuePair<CueTypes, int> item in enumDict)
         {
@@ -55,17 +60,14 @@ public class DynamicButtons : MonoBehaviour
             qb.cueType = item.Key;
             
             buttons.Add(newButton);
+            Debug.Log(newButton.name);
         }
     }
 
     // Convert enum items from CueTypes in MailCueTypes.cs to dict for checklist and score.
     public Dictionary<CueTypes, int> ConvertEnumToDict()
     {
-        enumDict.Clear();
-        /*foreach (CueTypes type in (CueTypes[])System.Enum.GetValues(typeof(CueTypes)))
-        {laz
-            enumDict.Add(type, 0);
-        }*/
+        // enumDict.Clear();
         
         /*for (int i = 0; i < dailyCues.dailyCuesArray.Length; i++)
         {
@@ -74,10 +76,19 @@ public class DynamicButtons : MonoBehaviour
                 enumDict.Add(mail, 0);
             }
         }*/
-        foreach (CueTypes mail in dailyCues.dailyCuesArray[mailNo].cues)
+        for (int i = 0; i <= mailNo; i++)
+        {
+            foreach (CueTypes mail in dailyCues.dailyCuesArray[i].cues)
+            {
+                enumDict.Add(mail, 0);
+                Debug.Log(enumDict[mail]);
+            }
+        }
+        /*foreach (CueTypes mail in dailyCues.dailyCuesArray[mailNo].cues)
         {
             enumDict.Add(mail, 0);
-        }
+            Debug.Log(enumDict[mail]);
+        }*/
         
         //Debug.Log(enumDict.Count + " items converted to enumDict");
         return enumDict;
@@ -94,7 +105,7 @@ public class DynamicButtons : MonoBehaviour
         Dictionary<CueTypes, int> dict = GetEnumDict();
         foreach (KeyValuePair<CueTypes, int> item in dict)
         {
-            Debug.unityLogger.Log("ToggleQueButtons " + item.Key + ", " + item.Value);
+            //Debug.unityLogger.Log("ToggleQueButtons " + item.Key + ", " + item.Value);
         }
     }
     public void ToggleCounter(CueTypes cueType, int toggled)
@@ -111,7 +122,7 @@ public class DynamicButtons : MonoBehaviour
     public List<int> GetResult()
     {
             List<int> toggleStates = new List<int>();
-            toggleStates.Clear();
+            //toggleStates.Clear();
             foreach (KeyValuePair<CueTypes, int> item in enumDict)
             {
                 toggleStates.Add(item.Value);
