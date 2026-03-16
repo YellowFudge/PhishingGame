@@ -23,7 +23,6 @@ public class CalendarCrosses : MonoBehaviour
     {
         _currentCross = 0;
         UpdateCross();
-        UpdateCross();
     }
 
     void UpdateCross()
