@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: ScoreScriptableObjectScript
   m_EditorClassIdentifier: 
   playerScore: []
+  highScore: 0
