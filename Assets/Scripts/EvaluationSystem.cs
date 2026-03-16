@@ -7,6 +7,21 @@ using UnityEngine.UI;
 public class EvaluationSystem : MonoBehaviour
 {
     public ScoreScriptableObjectScript scoreScriptableObjectScript;
+    public LevelManager levelManager;
+
+    private void OnEnable()
+    {
+        CutsceneManager.EndOfEndDayTriggeredEvent += OnEndDayTriggered;
+    }
+
+    private void OnDisable()
+    {
+        CutsceneManager.EndOfEndDayTriggeredEvent -= OnEndDayTriggered;
+    }
+
+    void OnEndDayTriggered() {
+        CheckCorrectTotal(levelManager.CurrentDay); 
+    }
 
     public string CheckCorrectTotal(int dayNum) { //change to int?
         // Fetch ScriptObj from ScoreScriptableObjectScript -> PlayerScore -> mailName + isCorrect
