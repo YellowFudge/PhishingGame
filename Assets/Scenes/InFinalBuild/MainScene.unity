@@ -9252,7 +9252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1989151472}
   closedObject: {fileID: 1868655705}
-  startOpen: 0
+  startOpen: 1
 --- !u!114 &1326935235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14543,7 +14543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7350782590575872528, guid: eeb95dd6d8fc24045b578f35916ad9b8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8745051841704872357, guid: eeb95dd6d8fc24045b578f35916ad9b8, type: 3}
       propertyPath: m_IsActive
