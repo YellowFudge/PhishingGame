@@ -114,9 +114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5745364661629860837, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: 'Help!!
-
-'
+      value: Blackmail
       objectReference: {fileID: 0}
     - target: {fileID: 5967703537402058579, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_Pivot.x
@@ -298,10 +296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222691419828877991, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_text
-      value: "Assistant!\r\n\r\nI need your help, someone knows a dark secret of
-        mine and need to send them GP. Can you help me set up this arrangement ASAP?
-        I\u2019ll send over their pidegeon number so that you can work out the details.
-        \r\n\r\nThanks for letting me know this info, you\u2019re a lifesaver!!!\r\n"
+      value: "Thank you for your hard work. My friend over on Oberon Reanimation
+        got a concerning scroll the other day, blackmailing her about her dark secrets.
+        Luckily, all her dark secrets are already out in the open, so it must be
+        a scam, haha! If I had gotten such a scroll I would have sent them all my
+        gold\u2026\r\n\r\nKeep your eyes peeled!\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7264021137394121308, guid: cdf805fec9c199045ba01bc8b49027ed, type: 3}
       propertyPath: m_AnchorMax.y
