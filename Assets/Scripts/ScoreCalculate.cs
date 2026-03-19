@@ -2,29 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/* CASE 1 - Player press send btn
- * Initiate score sequence
- * 
- * CASE 2 - Player forwards mail
- * System checks Mail variable (Phising or Ham) against anwser (Phsing or Ham)
- * 
- * CASE 3 - Player forwards correct mail to wizard
- * Player is awarded base score for correct Ham/Phising
- * System initiates checkbox calulation (For loop for scalability?)
- * 
- * Case 4 - Score measurment
- * Track: Correct/Incorrect email type, score points gained, 
- * 
- * CASE 5
- * Forward score points gained, correct/incorrect responses 
- * 
- * CASE 6 clear code
- * After function is done, cleanslate the script - prevents score piling from previous.
- */
-
 /* TODO:
- * 1. Send score variables
- * 2. Further develop score
+ * 1. Change Score to %
+ * 2. Add enum for ques
+ * 3. Create storage for wrong/right response - so they can be compared
  */
 
 public class ScoreCalculate : MonoBehaviour
@@ -87,17 +68,13 @@ public class ScoreCalculate : MonoBehaviour
             // Fix according to enum which is correct and not correct
             // Temporary Fix
             if (playerQue[i] == emailQue[i]) {
-
-                //Debug.Log("Eq: " + emailQue[i]);
-                //Debug.Log("Pq: " + playerQue[i]);
-
                 correctQue++;
             }
         }
         
         //Debug.Log("Correct: " + correctQue);
 
-        // Temp fix for que score calculation
+        // Change to % calculations
         // Divides the maximum score (100) by the total amount of ques each day
         // and multiply the outcome by total correct ques by players
         double scoreQue = (scoreQueMax / (3 * dayNum)) * correctQue;
