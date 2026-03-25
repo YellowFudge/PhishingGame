@@ -81,7 +81,7 @@ public class DynamicButtons : MonoBehaviour
             foreach (CueTypes mail in dailyCues.dailyCuesArray[i].cues)
             {
                 enumDict.Add(mail, 0);
-                Debug.Log(enumDict[mail]);
+                //Debug.Log(enumDict[mail]);
             }
         }
         /*foreach (CueTypes mail in dailyCues.dailyCuesArray[mailNo].cues)
