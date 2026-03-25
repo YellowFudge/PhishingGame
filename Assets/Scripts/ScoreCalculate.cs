@@ -30,7 +30,7 @@ public class ScoreCalculate : MonoBehaviour
 
         if (playerMailType == true)
         {
-            newScore.playerMailTypeResponse = true; //Change playerMailTypeResponse to playerRespPhising or something, missleading as a goblin
+            newScore.playerSelectedPhising = true;
         }
 
         // Check if player mail type is equal to the mail

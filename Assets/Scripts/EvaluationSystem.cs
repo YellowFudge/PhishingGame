@@ -23,13 +23,13 @@ public class EvaluationSystem : MonoBehaviour
 
     void OnEndDayTriggered() {
         InstantiateMail(levelManager.CurrentDay);
-        //CheckCorrectTotal(levelManager.CurrentDay); 
     }
 
     public void InstantiateMail(int dayNum)
     {
         string mailIDNum = CheckCorrectTotal(dayNum);
         GameObject findPrefab = FindMailPrefab(mailIDNum);
+
         //destroy old
         Destroy(_currentMailObject);
         _currentMailObject = Instantiate(findPrefab, MailSpawnPoint);
@@ -74,15 +74,11 @@ public class EvaluationSystem : MonoBehaviour
         {
             // Since statemount counts backwards, retun variables requires to count down rahter than up
             // Otherwise the wrong mail will get the wrong return variable
-            if (scoreScriptableObjectScript.playerScore[scoreScriptableObjectScript.playerScore.Count - (i + 1)].playerMailTypeResponse == true)
+            if (scoreScriptableObjectScript.playerScore[^(i + 1)].playerSelectedPhising == true)
             {
                 returnMailNr[i] = 6 - i;
-                //returnMailNr[i] = i + 3;
-                //Debug.Log("We in the if?");
             } else {
                 returnMailNr[i] = 3 - i;
-                //returnMailNr[i] = i;
-                //Debug.Log("We in the else?");
             }
         }
 
@@ -100,11 +96,14 @@ public class EvaluationSystem : MonoBehaviour
             mailVariable = returnMailNr[randNr];
         }
 
+        //Add if statement
+        //So general can be choosen, not clue with what logic, that's you issue when you read this mr programmer man
+
         // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
         // Will return "R1.3" for example
         string mailToReturn = "R" + (dayNum - 1) + "." + mailVariable;
 
-        Debug.Log("mailToReturn rand" + mailToReturn);
+        //Debug.Log("mailToReturn rand" + mailToReturn);
 
         return mailToReturn;
     }
