@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dailyMailsScriptObj: {fileID: 11400000, guid: 2eb74838c12cbd540936f06450f3ebb7, type: 2}
-  iTMailsScriptObj: {fileID: 11400000, guid: 1b87f6deffe74f148be9861b7c53f0eb, type: 2}
-  wizStartMail: {fileID: 6590516809040147131, guid: e0c8477892bcac345a308b48e94f7338, type: 3}
+  iTCutsceneIDArray: {fileID: 11400000, guid: 1bee346cdb31c9e4db0be9fcfd0e4a9e, type: 2}
+  wizStartDialougeID: wizard_first_day
   mailSpawnPoint: {fileID: 0}
   cutsceneManager: {fileID: 0}

@@ -1,0 +1,79 @@
+﻿
+title: wizard_first_day
+position: -205,-174
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: Hello new attendant and welcome to Pendragon & Kin!
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwen: I’m swamped with research, So I’ll keep this short.  
+<<trigger_talk>>
+Gwen: Given the vampires' new pastime of sending us dangerous scrolls, I trust that you vet ALL my mail before leaving it on my desk. I do not have time to do so myself. 
+<<trigger_talk>>
+Gwen: Trent, my old, trusted assistant, has left you with enough information to do so. 
+<<trigger_exit>>
+<<wait_until_exited>>
+<<trigger_enter>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: Just one more thing - if anyone tries to book a meeting in the coming week, tell them I’m unavailable, would you?
+<<end_of_response>>
+===
+
+title: it_day_one
+position: 18,-190
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<trigger_talk>>
+Thistle: Good morning attendant! As it is your first day here, Arthur wanted me to tell you about the “Report Phishing” stamp on your desk. 
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Thistle: We have had a few incidents lately with seal thefts and dangerous spells originating from scrolls.
+<<trigger_talk>>
+Thistle: If you see anything concerning, please seal the scroll using the stamp and fill out a report form checking the suspicious signs.
+<<set_mood "Happy">>
+<<trigger_talk>>
+Thistle: I’ll collect them at the end of the day and hand them to Arthur, ok? 
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Thistle: Ah, yes! And remember to check addresses, links and THINK. That’s what Cressida always hounds Gwendolen about anyway!
+<<end_of_it>>
+===
+
+title: it_day_two
+position: 14,-37
+---
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<endif>>
+<<trigger_talk>>
+Arthur: Do you have a minute?
+<<trigger_talk>>
+Arthur: Thank you for your feedback yesterday. I think you will be pleased to hear that we have added some points to the phishing report form accordingly.
+<<trigger_talk>>
+Arthur: We also added some other signs that according to our intel are on the rise among the vampires. 
+<<trigger_talk>>
+Arthur: That would be all. Carry on.
+<<end_of_it>>
+===
+
+title: it_day_three
+position: 15,106
+---
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<endif>>
+<<trigger_talk>>
+Thistle: Psst!
+<<set_mood "Happy">>
+<<trigger_talk>>
+Thistle: Check out the improved report form! 
+<<trigger_talk>>
+Thistle: I had Arthur add some points according to the scrolls I gathered from everyone yesterday. 
+<<set_mood "Angry">>
+<<trigger_talk>>
+Thistle: I hope he tells Cressida so that she forgets about the pigeons I lost a few days ago…
+<<end_of_it>>
+===
