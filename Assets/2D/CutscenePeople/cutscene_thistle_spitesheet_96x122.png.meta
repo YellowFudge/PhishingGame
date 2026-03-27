@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 083f04d5ec42ed14c83aec52a9622824
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4563759766949385287
+    second: cutscene_thistle_spitesheet_96x122_0
+  - first:
+      213: -8112624297138980790
+    second: cutscene_thistle_spitesheet_96x122_1
+  - first:
+      213: -245224658147584583
+    second: cutscene_thistle_spitesheet_96x122_2
+  - first:
+      213: -2539895522714762693
+    second: cutscene_thistle_spitesheet_96x122_3
+  - first:
+      213: 1395742162857986724
+    second: cutscene_thistle_spitesheet_96x122_4
+  - first:
+      213: -6259971354519826989
+    second: cutscene_thistle_spitesheet_96x122_5
+  - first:
+      213: 4854076948876038287
+    second: cutscene_thistle_spitesheet_96x122_6
+  - first:
+      213: -7520674429016671075
+    second: cutscene_thistle_spitesheet_96x122_7
+  - first:
+      213: -4859556361722573474
+    second: cutscene_thistle_spitesheet_96x122_8
+  - first:
+      213: -4587787448239798080
+    second: cutscene_thistle_spitesheet_96x122_9
+  - first:
+      213: 5715691796902802607
+    second: cutscene_thistle_spitesheet_96x122_10
+  - first:
+      213: 7316243955050277814
+    second: cutscene_thistle_spitesheet_96x122_11
+  - first:
+      213: -6986240371188057416
+    second: cutscene_thistle_spitesheet_96x122_12
+  - first:
+      213: 6265316558098725251
+    second: cutscene_thistle_spitesheet_96x122_13
+  - first:
+      213: -7139170415461600014
+    second: cutscene_thistle_spitesheet_96x122_14
+  - first:
+      213: -2666524729675839094
+    second: cutscene_thistle_spitesheet_96x122_15
+  - first:
+      213: 2886860688214367476
+    second: cutscene_thistle_spitesheet_96x122_16
+  - first:
+      213: 5728583985416489136
+    second: cutscene_thistle_spitesheet_96x122_17
+  - first:
+      213: -9141578076214406014
+    second: cutscene_thistle_spitesheet_96x122_18
+  - first:
+      213: 4282059599723815783
+    second: cutscene_thistle_spitesheet_96x122_19
+  - first:
+      213: 4905672771043106429
+    second: cutscene_thistle_spitesheet_96x122_20
+  - first:
+      213: -5585882784298270396
+    second: cutscene_thistle_spitesheet_96x122_21
+  - first:
+      213: -7306822927439930983
+    second: cutscene_thistle_spitesheet_96x122_22
+  - first:
+      213: -7210444160168267293
+    second: cutscene_thistle_spitesheet_96x122_23
+  - first:
+      213: -3278442314918796445
+    second: cutscene_thistle_spitesheet_96x122_24
+  - first:
+      213: 768718910431056245
+    second: cutscene_thistle_spitesheet_96x122_25
+  - first:
+      213: 6793778563269957028
+    second: cutscene_thistle_spitesheet_96x122_26
+  - first:
+      213: -7288406309014524871
+    second: cutscene_thistle_spitesheet_96x122_27
+  - first:
+      213: -1541665262596990756
+    second: cutscene_thistle_spitesheet_96x122_28
+  - first:
+      213: -7886352281765512495
+    second: cutscene_thistle_spitesheet_96x122_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cutscene_thistle_spitesheet_96x122_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb23cafba44aa0c0800000000000000
+      internalID: -4563759766949385287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_thistle_spitesheet_96x122_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48f3dc2f2b2a6f80800000000000000
+      internalID: -8112624297138980790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_thistle_spitesheet_96x122_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b324bf1aa7a70ccd0800000000000000
+      internalID: -2539895522714762693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_thistle_spitesheet_96x122_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa8f272a1cae5310800000000000000
+      internalID: 1395742162857986724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_thistle_spitesheet_96x122_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f801b2a54452d5340800000000000000
+      internalID: 4854076948876038287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_thistle_spitesheet_96x122_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cf81bf37231a790800000000000000
+      internalID: -7520674429016671075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 703966303d42e224eaffc3a33ad618c3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cutscene_thistle_spitesheet_96x122_0: -4563759766949385287
+      cutscene_thistle_spitesheet_96x122_1: -8112624297138980790
+      cutscene_thistle_spitesheet_96x122_10: 5715691796902802607
+      cutscene_thistle_spitesheet_96x122_2: -245224658147584583
+      cutscene_thistle_spitesheet_96x122_3: -2539895522714762693
+      cutscene_thistle_spitesheet_96x122_4: 1395742162857986724
+      cutscene_thistle_spitesheet_96x122_5: -6259971354519826989
+      cutscene_thistle_spitesheet_96x122_6: 4854076948876038287
+      cutscene_thistle_spitesheet_96x122_7: -7520674429016671075
+      cutscene_thistle_spitesheet_96x122_8: -4859556361722573474
+      cutscene_thistle_spitesheet_96x122_9: -4587787448239798080
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

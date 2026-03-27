@@ -26,7 +26,7 @@ Gwen: Just one more thing - if anyone tries to book a meeting in the coming week
 title: it_day_one
 position: 18,-190
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Thisle", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<trigger_talk>>
 Thistle: Good morning attendant! As it is your first day here, Arthur wanted me to tell you about the “Report Phishing” stamp on your desk. 
@@ -63,7 +63,7 @@ Arthur: That would be all. Carry on.
 title: it_day_three
 position: 15,106
 ---
-<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<if change_person("Thisle", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<trigger_talk>>
 Thistle: Psst!

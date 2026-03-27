@@ -74,13 +74,11 @@ public class PersonManager : MonoBehaviour
             //move current person out of frame  
             TriggerExitAnim();
         }
-        else
-        {
-            _currentPersonIndex = personIndex;
 
-            //making sure is enabled (if someone turned them off)
-            personAnimArray[_currentPersonIndex].animator.gameObject.SetActive(true);
-        }
+        _currentPersonIndex = personIndex;
+
+        //making sure is enabled (if someone turned them off)
+        personAnimArray[_currentPersonIndex].animator.gameObject.SetActive(true);
 
         //set mood
         SetMood(mood);
