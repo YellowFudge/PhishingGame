@@ -22,6 +22,10 @@ public class YarnspinnerManager : MonoBehaviour
         EndOfDialougeEvent -= TriggerWait;
     }
 
+    /// <summary>
+    /// triggers coroutine that waits 0.1 seconds. Used so that yarnspinner can escape the current node before any others have the possibility to be called
+    /// </summary>
+    /// <param name="isEndOfResponse">true if is end of response/evaluation cutscene. false if end of IT cutscene</param>
     void TriggerWait(bool isEndOfResponse)
     {
         StartCoroutine(WaitForNodeEscape(isEndOfResponse));
@@ -39,11 +43,15 @@ public class YarnspinnerManager : MonoBehaviour
         }
         else
         {
-            //send to cutSceneManager
+            //event used by cutSceneManager
             CutsceneEventManager.EndOfITDialougeEvent?.Invoke();
         }  
     }
-    public void StartDialouge(string dialougeID)//for triggering dialouge cutscenes
+    /// <summary>
+    /// For triggering dialouge cutscenes of a given ID. Currently doesn't check if a node is already running
+    /// </summary>
+    /// <param name="dialougeID">the title of the node which's cutscene to start</param>
+    public void StartDialouge(string dialougeID)
     {
         //check if ID exsist 
         if (!dialougeRunner.Dialogue.NodeExists(dialougeID))
@@ -95,6 +103,13 @@ public class YarnspinnerManager : MonoBehaviour
 //YARNSPINNER FUNCTIONS/COMMANDS BELOW
 //---------------------------------
 
+
+    /// <summary>
+    /// Selects a new person to show on screen and sets their mood. Moves out the previous one if one was in the frustum.
+    /// </summary>
+    /// <param name="person">The person's name, matching one in the PersonsEnum</param>
+    /// <param name="mood">The person's mood, matching one in the MoodEnum</param>
+    /// <returns>true if both mood and person were found,  false if not</returns>
     [YarnFunction("change_person")]
     public static bool ChangePerson(string person, string mood)//used both for new character in same cutscene and starting new nodes
     {
@@ -110,6 +125,10 @@ public class YarnspinnerManager : MonoBehaviour
         return true;
     }
 
+    /// <summary>
+    /// Sets the mood of the currently selected person
+    /// </summary>
+    /// <param name="mood">The person's mood, matching one in the MoodEnum</param>
     [YarnCommand("set_mood")]
     public static void SetMood(string mood) 
     {
@@ -118,6 +137,9 @@ public class YarnspinnerManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Triggers the currently selected person's talk animation to run once
+    /// </summary>
     [YarnCommand("trigger_talk")]
     public static void TriggerTalk()
     {
@@ -126,7 +148,7 @@ public class YarnspinnerManager : MonoBehaviour
     }
 
     /// <summary>
-    /// for when you want the person to exit without swapping them for someone else
+    /// Causes the currently selected person to exit without swapping them for someone else
     /// </summary>
     [YarnCommand("trigger_exit")]
     public static void TriggerExit()
@@ -135,7 +157,7 @@ public class YarnspinnerManager : MonoBehaviour
     }
 
     /// <summary>
-    /// for when you want the person to enter without swapping them for someone else
+    /// Causes the currently selected person to enter without swapping them for someone else
     /// </summary>
     [YarnCommand("trigger_enter")]
     public static void TriggerEnter()
@@ -143,18 +165,28 @@ public class YarnspinnerManager : MonoBehaviour
         CutsceneEventManager.TriggerEnteringEvent?.Invoke();
     }
 
+    /// <summary>
+    /// MUST be placed as last line if used in a yarnspinner node. Sends event alerting that the end of an IT cutscene has been reached
+    /// </summary>
     [YarnCommand("end_of_it")]
     public static void EndOfIT()
     {
         EndOfDialougeEvent?.Invoke(false);
     }
 
+    /// <summary>
+    /// MUST be placed as last line if used in a yarnspinner node. Sends an event alerting that the end of an evaluation/response cutscene has been reached
+    /// </summary>
     [YarnCommand("end_of_response")]
     public static void EndOfResponse()
     {
         EndOfDialougeEvent?.Invoke(true);
     }
 
+    /// <summary>
+    /// Makes yarnspinner script wait for the amount of time it takes for a person's enter animation to play before continuing to the next line
+    /// </summary>
+    /// <returns></returns>
     [YarnCommand("wait_until_entered")]
     public static IEnumerator WaitUntilEntered()
     {
@@ -163,7 +195,7 @@ public class YarnspinnerManager : MonoBehaviour
     }
 
     /// <summary>
-    /// DO NOT PUT AFTER END OF RESPONE OR END OF IT!!! THAT WILL CAUSE BUGS. Adds coroutine that makes yarn wait 0.5 seconds. 
+    /// Makes yarnspinner script wait for the amount of time it takes for a person's exit animation to play before continuing to the next line 
     /// </summary>
     /// <returns></returns>
     [YarnCommand("wait_until_exited")]

@@ -9,6 +9,12 @@ public static class CutsceneEventManager
     public static UnityAction TriggerTalkingEvent;
     public static UnityAction TriggerExitingEvent;
     public static UnityAction TriggerEnteringEvent;
+    /// <summary>
+    /// Will be called when the end of an IT cutscene has been reached
+    /// </summary>
     public static UnityAction EndOfITDialougeEvent;
+    /// <summary>
+    /// Will be called when the end of an evaluation/response cutscene has been reached
+    /// </summary>
     public static UnityAction EndOfResponseDialougeEvent;
 }

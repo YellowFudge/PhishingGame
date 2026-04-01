@@ -48,6 +48,10 @@ public class CutsceneManager : MonoBehaviour
         CutsceneEventManager.EndOfITDialougeEvent -= OnEndOfITDialouge;
     }
 
+    /// <summary>
+    /// For triggering dialouge cutscenes of a given ID. Currently doesn't check if a node is already running
+    /// </summary>
+    /// <param name="dialougeID">the title of the node which's cutscene to start</param>
     public void StartDialouge(string dialougeID)
     {
         _yarnspinnerManager.StartDialouge(dialougeID); //Should already be in cutscene when this is called??
