@@ -62,17 +62,20 @@ public class EvaluationSystem : MonoBehaviour
         return null;
     }
 
-    public string CheckCorrectTotal(int dayNum) { //change to int?
-        // Fetch ScriptObj from ScoreScriptableObjectScript -> PlayerScore -> mailName + isCorrect
-        // Loop through all the mails to choose which one to use
+    // Fetch ScriptObj from ScoreScriptableObjectScript -> PlayerScore -> mailName + isCorrect
+    // Loop through all the mails to choose which one to use
+    public string CheckCorrectTotal(int dayNum) {
         int mailVariable; // Will be assigned by rand
         int[] returnMailNr = { 1, 1, 1 }; // Temp solution, fix later
+        int correctTotalTypes = 0;
+        int wrongTotalTypes = 0;
+        string mailToReturn;
 
         // Main function for determining return mail value
         // For each itteration
         for (int i = 0; i < 3; i++)
         {
-            // Since statemount counts backwards, retun variables requires to count down rahter than up
+            // Statement counts backwards - to prevent reading the wrong mail with current solution
             // Otherwise the wrong mail will get the wrong return variable
             if (scoreScriptableObjectScript.playerScore[^(i + 1)].playerSelectedPhising == true)
             {
@@ -80,31 +83,43 @@ public class EvaluationSystem : MonoBehaviour
             } else {
                 returnMailNr[i] = 3 - i;
             }
+
+            // For counting if all is wrong or if all is right for that day
+            if (scoreScriptableObjectScript.playerScore[^(i + 1)].isCorrect == true) {
+                correctTotalTypes++;
+            } else {
+                wrongTotalTypes++;
+            }
         }
 
-        var randomBytes = new byte[4];
+        // Check if all is right/wrong so we know if general message or random message is sent
+        if (wrongTotalTypes == 3 || correctTotalTypes == 3) { // All right/wrong
+            int goodOrBad = 0;
 
-        // Random function for generating a respons
-        // Swap for value based system later, so each response carry a higher or lower value to be choosen
-        using (var rng = RandomNumberGenerator.Create())
-        {
-            rng.GetBytes(randomBytes);
-            uint trueRandom = BitConverter.ToUInt32(randomBytes, 0);
+            if (wrongTotalTypes == 3) {
+                goodOrBad = 5;
+            }
 
-            int randNr = (int)(trueRandom % 3); // 0, 1, or 2
+            mailToReturn = "RG." + ((dayNum - 1) + goodOrBad);
+        } else { // Dispersion, choose random
+            var randomBytes = new byte[4];
 
-            mailVariable = returnMailNr[randNr];
+            // Random function for generating a respons
+            // Swap for value based system later, so each response carry a higher or lower value to be choosen
+            using (var rng = RandomNumberGenerator.Create()) {
+                rng.GetBytes(randomBytes);
+                uint trueRandom = BitConverter.ToUInt32(randomBytes, 0);
+
+                int randNr = (int)(trueRandom % 3); // 0, 1, or 2
+
+                mailVariable = returnMailNr[randNr];
+            }
+
+            // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
+            // Will return "R1.3" for example
+            mailToReturn = "R" + (dayNum - 1) + "." + mailVariable;
         }
-
-        //Add if statement
-        //So general can be choosen, not clue with what logic, that's you issue when you read this mr programmer man
-
-        // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
-        // Will return "R1.3" for example
-        string mailToReturn = "R" + (dayNum - 1) + "." + mailVariable;
-
-        //Debug.Log("mailToReturn rand" + mailToReturn);
-
+        Debug.Log("mailToReturn: " + mailToReturn);
         return mailToReturn;
     }
 }
