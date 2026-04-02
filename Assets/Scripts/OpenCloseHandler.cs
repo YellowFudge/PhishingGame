@@ -90,7 +90,7 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
                         return;
                     }
 
-                    Debug.Log(rectB);
+                    //Debug.Log(rectB);
                     
                 }
                 else
