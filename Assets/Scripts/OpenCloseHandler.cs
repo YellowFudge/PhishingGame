@@ -78,7 +78,7 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
 
                     for( int j = 0; j < _rectTrans.parent.GetChild(i).childCount; j++)
                     {
-                        Debug.Log(_rectTrans.parent.GetChild(i).GetChild(j).gameObject.name);
+                        //Debug.Log(_rectTrans.parent.GetChild(i).GetChild(j).gameObject.name);
                         if (_rectTrans.parent.GetChild(i).GetChild(j).gameObject.activeSelf)
                         {
                             rectB = _rectTrans.parent.GetChild(i).GetChild(j).GetComponent<RectTransform>();
