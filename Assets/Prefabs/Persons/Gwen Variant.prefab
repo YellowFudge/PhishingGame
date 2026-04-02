@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 3362414733280245168, guid: 8efd1866ec49126458838b9b7ac13fe7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1309290770091683091, guid: 10e25993f6f41b14fa04caa22d2504ab, type: 3}
+      objectReference: {fileID: 4886388690908600792, guid: 7722cae2b04a2754594f0a6fefbc4f70, type: 3}
     - target: {fileID: 4238878533071615872, guid: 8efd1866ec49126458838b9b7ac13fe7, type: 3}
       propertyPath: m_Name
       value: Gwen Variant

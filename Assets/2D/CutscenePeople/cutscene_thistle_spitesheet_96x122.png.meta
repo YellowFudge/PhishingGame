@@ -187,7 +187,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cutscene_thistle_spitesheet_96x122_0
+      name: cutscene_thistle_neutral
       rect:
         serializedVersion: 2
         x: 0
@@ -195,7 +195,7 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,7 +209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutscene_thistle_spitesheet_96x122_1
+      name: cutscene_thistle_neutral_talk
       rect:
         serializedVersion: 2
         x: 96
@@ -217,7 +217,7 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,7 +231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutscene_thistle_spitesheet_96x122_3
+      name: cutscene_thistle_happy
       rect:
         serializedVersion: 2
         x: 0
@@ -239,7 +239,7 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,7 +253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutscene_thistle_spitesheet_96x122_4
+      name: cutscene_thistle_happy_talk
       rect:
         serializedVersion: 2
         x: 96
@@ -261,7 +261,7 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,7 +275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutscene_thistle_spitesheet_96x122_6
+      name: cutscene_thistle_angry
       rect:
         serializedVersion: 2
         x: 0
@@ -283,7 +283,7 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutscene_thistle_spitesheet_96x122_7
+      name: cutscene_thistle_angry_talk
       rect:
         serializedVersion: 2
         x: 96
@@ -305,7 +305,7 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -332,15 +332,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cutscene_thistle_spitesheet_96x122_0: -4563759766949385287
-      cutscene_thistle_spitesheet_96x122_1: -8112624297138980790
+      cutscene_thistle_angry: 4854076948876038287
+      cutscene_thistle_angry_talk: -7520674429016671075
+      cutscene_thistle_happy: -2539895522714762693
+      cutscene_thistle_happy_talk: 1395742162857986724
+      cutscene_thistle_neutral: -4563759766949385287
+      cutscene_thistle_neutral_talk: -8112624297138980790
       cutscene_thistle_spitesheet_96x122_10: 5715691796902802607
       cutscene_thistle_spitesheet_96x122_2: -245224658147584583
-      cutscene_thistle_spitesheet_96x122_3: -2539895522714762693
-      cutscene_thistle_spitesheet_96x122_4: 1395742162857986724
       cutscene_thistle_spitesheet_96x122_5: -6259971354519826989
-      cutscene_thistle_spitesheet_96x122_6: 4854076948876038287
-      cutscene_thistle_spitesheet_96x122_7: -7520674429016671075
       cutscene_thistle_spitesheet_96x122_8: -4859556361722573474
       cutscene_thistle_spitesheet_96x122_9: -4587787448239798080
   mipmapLimitGroupName: 

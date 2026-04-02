@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 8e86fb685ec24454eb059964a81344ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4123362876971107323
+    second: cutscene_arthur_spitesheet_96x122_0
+  - first:
+      213: -235503518402126509
+    second: cutscene_arthur_spitesheet_96x122_1
+  - first:
+      213: 255586487553858763
+    second: cutscene_arthur_spitesheet_96x122_2
+  - first:
+      213: 4004500919451522623
+    second: cutscene_arthur_spitesheet_96x122_3
+  - first:
+      213: 7037607016876590013
+    second: cutscene_arthur_spitesheet_96x122_4
+  - first:
+      213: -6200175114473450245
+    second: cutscene_arthur_spitesheet_96x122_5
+  - first:
+      213: 3366444387946028230
+    second: cutscene_arthur_spitesheet_96x122_6
+  - first:
+      213: -6938503868725550978
+    second: cutscene_arthur_spitesheet_96x122_7
+  - first:
+      213: -4808795535710018575
+    second: cutscene_arthur_spitesheet_96x122_8
+  - first:
+      213: 3751524112223387126
+    second: cutscene_arthur_spitesheet_96x122_9
+  - first:
+      213: 369657448059051171
+    second: cutscene_arthur_spitesheet_96x122_10
+  - first:
+      213: 8503571634442502839
+    second: cutscene_arthur_spitesheet_96x122_11
+  - first:
+      213: -3493266274437300292
+    second: cutscene_arthur_spitesheet_96x122_12
+  - first:
+      213: -4392768763186706239
+    second: cutscene_arthur_spitesheet_96x122_13
+  - first:
+      213: 5596581383680755099
+    second: cutscene_arthur_spitesheet_96x122_14
+  - first:
+      213: -1691625094130034578
+    second: cutscene_arthur_spitesheet_96x122_15
+  - first:
+      213: 7028505096703034939
+    second: cutscene_arthur_spitesheet_96x122_16
+  - first:
+      213: 4693321534746226339
+    second: cutscene_arthur_spitesheet_96x122_17
+  - first:
+      213: -8368637885366844455
+    second: cutscene_arthur_spitesheet_96x122_18
+  - first:
+      213: -8001463189562021742
+    second: cutscene_arthur_spitesheet_96x122_19
+  - first:
+      213: 6221656487355011057
+    second: cutscene_arthur_spitesheet_96x122_20
+  - first:
+      213: -5421581308078505966
+    second: cutscene_arthur_spitesheet_96x122_21
+  - first:
+      213: 7598149435169850081
+    second: cutscene_arthur_spitesheet_96x122_22
+  - first:
+      213: 1558499527656913876
+    second: cutscene_arthur_spitesheet_96x122_23
+  - first:
+      213: -6533291728897673011
+    second: cutscene_arthur_spitesheet_96x122_24
+  - first:
+      213: 1276734013085680796
+    second: cutscene_arthur_spitesheet_96x122_25
+  - first:
+      213: -5451961122401025595
+    second: cutscene_arthur_spitesheet_96x122_26
+  - first:
+      213: -5114685906619165226
+    second: cutscene_arthur_spitesheet_96x122_27
+  - first:
+      213: 6316590441120557603
+    second: cutscene_arthur_spitesheet_96x122_28
+  - first:
+      213: 3441258947310851780
+    second: cutscene_arthur_spitesheet_96x122_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cutscene_arthur_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf345e9a0b0293930800000000000000
+      internalID: 4123362876971107323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_arthur_neutral_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d594a3cc25bbcf0800000000000000
+      internalID: -235503518402126509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_arthur_happy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3612a69e58d29730800000000000000
+      internalID: 4004500919451522623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_arthur_happy_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3c9b58b4a9aa160800000000000000
+      internalID: 7037607016876590013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_arthur_angry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc51aba55308be20800000000000000
+      internalID: 3366444387946028230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_arthur_angry_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70a0ff3e7b75bf90800000000000000
+      internalID: -6938503868725550978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 95067e9b86dca9840bdb4069a42b3338
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cutscene_arthur_angry: 3366444387946028230
+      cutscene_arthur_angry_talk: -6938503868725550978
+      cutscene_arthur_happy: 4004500919451522623
+      cutscene_arthur_happy_talk: 7037607016876590013
+      cutscene_arthur_neutral: 4123362876971107323
+      cutscene_arthur_neutral_talk: -235503518402126509
+      cutscene_arthur_spitesheet_96x122_10: 369657448059051171
+      cutscene_arthur_spitesheet_96x122_2: 255586487553858763
+      cutscene_arthur_spitesheet_96x122_5: -6200175114473450245
+      cutscene_arthur_spitesheet_96x122_8: -4808795535710018575
+      cutscene_arthur_spitesheet_96x122_9: 3751524112223387126
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,85 +1,97 @@
 fileFormatVersion: 2
-guid: 10e25993f6f41b14fa04caa22d2504ab
+guid: 23f493181aa8dc34a80e339d3184b052
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7452931299830732449
-    second: cutscene_gwen_spitesheet_96x122_0
+      213: 5217806361828756510
+    second: cutscene_bearmun_spitesheet_96x122_0
   - first:
-      213: 1091054812321812242
-    second: cutscene_gwen_spitesheet_96x122_1
+      213: 5686764572210292535
+    second: cutscene_bearmun_spitesheet_96x122_1
   - first:
-      213: -19154196690901395
-    second: cutscene_gwen_spitesheet_96x122_2
+      213: 243867043551639051
+    second: cutscene_bearmun_spitesheet_96x122_2
   - first:
-      213: -4135553534531604133
-    second: cutscene_gwen_spitesheet_96x122_3
+      213: 2488969064536792012
+    second: cutscene_bearmun_spitesheet_96x122_3
   - first:
-      213: 1309290770091683091
-    second: cutscene_gwen_spitesheet_96x122_4
+      213: 8689076199994477640
+    second: cutscene_bearmun_spitesheet_96x122_4
   - first:
-      213: 7882798567046993376
-    second: cutscene_gwen_spitesheet_96x122_5
+      213: 3044050410305727836
+    second: cutscene_bearmun_spitesheet_96x122_5
   - first:
-      213: -3960726277390611431
-    second: cutscene_gwen_spitesheet_96x122_6
+      213: -7653896872521020458
+    second: cutscene_bearmun_spitesheet_96x122_6
   - first:
-      213: -5047771162122324642
-    second: cutscene_gwen_spitesheet_96x122_7
+      213: -5274904663372318784
+    second: cutscene_bearmun_spitesheet_96x122_7
   - first:
-      213: 1373622447997876720
-    second: cutscene_gwen_spitesheet_96x122_8
+      213: 5044215004051764805
+    second: cutscene_bearmun_spitesheet_96x122_8
   - first:
-      213: 9172575194363390155
-    second: cutscene_gwen_spitesheet_96x122_9
+      213: -4927611992309945968
+    second: cutscene_bearmun_spitesheet_96x122_9
   - first:
-      213: -7899876712378774299
-    second: cutscene_gwen_spitesheet_96x122_10
+      213: -8503766251998158439
+    second: cutscene_bearmun_spitesheet_96x122_10
   - first:
-      213: -81187582410323028
-    second: cutscene_gwen_spitesheet_96x122_11
+      213: 7490917402147791193
+    second: cutscene_bearmun_spitesheet_96x122_11
   - first:
-      213: 840890200088789184
-    second: cutscene_gwen_spitesheet_96x122_12
+      213: 5161810523659434281
+    second: cutscene_bearmun_spitesheet_96x122_12
   - first:
-      213: 3624671383559440336
-    second: cutscene_gwen_spitesheet_96x122_13
+      213: -4018385396067914053
+    second: cutscene_bearmun_spitesheet_96x122_13
   - first:
-      213: 7661577291935025587
-    second: cutscene_gwen_spitesheet_96x122_14
+      213: 6759934184786056540
+    second: cutscene_bearmun_spitesheet_96x122_14
   - first:
-      213: 2255868232048985264
-    second: cutscene_gwen_spitesheet_96x122_15
+      213: -2638063070437620773
+    second: cutscene_bearmun_spitesheet_96x122_15
   - first:
-      213: -8448613587327083785
-    second: cutscene_gwen_spitesheet_96x122_16
+      213: 6077850239998925378
+    second: cutscene_bearmun_spitesheet_96x122_16
   - first:
-      213: 4490989237525785964
-    second: cutscene_gwen_spitesheet_96x122_17
+      213: -6856878670126892575
+    second: cutscene_bearmun_spitesheet_96x122_17
   - first:
-      213: 4012443623943560952
-    second: cutscene_gwen_spitesheet_96x122_18
+      213: -2133425891686659041
+    second: cutscene_bearmun_spitesheet_96x122_18
   - first:
-      213: -780138862813882969
-    second: cutscene_gwen_spitesheet_96x122_19
+      213: 7275095245003348640
+    second: cutscene_bearmun_spitesheet_96x122_19
   - first:
-      213: -3905073169052541014
-    second: cutscene_gwen_spitesheet_96x122_20
+      213: 6875428313153546685
+    second: cutscene_bearmun_spitesheet_96x122_20
   - first:
-      213: 7829675221927924292
-    second: cutscene_gwen_spitesheet_96x122_21
+      213: -7737914195636582053
+    second: cutscene_bearmun_spitesheet_96x122_21
   - first:
-      213: 7534346429773956339
-    second: cutscene_gwen_spitesheet_96x122_22
+      213: -1922714244476765310
+    second: cutscene_bearmun_spitesheet_96x122_22
   - first:
-      213: -4018871783699863808
-    second: cutscene_gwen_spitesheet_96x122_23
+      213: 2752942980575660250
+    second: cutscene_bearmun_spitesheet_96x122_23
   - first:
-      213: -639429467622009239
-    second: cutscene_gwen_spitesheet_96x122_24
+      213: -2771318958885304603
+    second: cutscene_bearmun_spitesheet_96x122_24
   - first:
-      213: -671728800786012448
-    second: cutscene_gwen_spitesheet_96x122_25
+      213: 8315609490341190326
+    second: cutscene_bearmun_spitesheet_96x122_25
+  - first:
+      213: 8374422404335070180
+    second: cutscene_bearmun_spitesheet_96x122_26
+  - first:
+      213: 3372987823222852355
+    second: cutscene_bearmun_spitesheet_96x122_27
+  - first:
+      213: -5418460911817123985
+    second: cutscene_bearmun_spitesheet_96x122_28
+  - first:
+      213: 7054195261428696034
+    second: cutscene_bearmun_spitesheet_96x122_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -175,7 +187,73 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cutscene_gwen_spitesheet_96x122_3
+      name: cutscene_bearmun_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c839fad3f596840800000000000000
+      internalID: 5217806361828756510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_bearmun_neutral_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737eed7af327bee40800000000000000
+      internalID: 5686764572210292535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_bearmun_happy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbd6a45d289a8220800000000000000
+      internalID: 2488969064536792012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_bearmun_happy_talk
       rect:
         serializedVersion: 2
         x: 96
@@ -183,43 +261,43 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 61a46bcac1e2c1a42be9ba077e60afce
-      internalID: -4135553534531604133
+      spriteID: 84cc8f664ccc59870800000000000000
+      internalID: 8689076199994477640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutscene_gwen_spitesheet_96x122_4
+      name: cutscene_bearmun_angry
       rect:
         serializedVersion: 2
-        x: 192
-        y: 244
+        x: 0
+        y: 122
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f06aa80b6c3ab434985d130a38156a6a
-      internalID: 1309290770091683091
+      spriteID: 6db49e5b855e7c590800000000000000
+      internalID: -7653896872521020458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutscene_gwen_spitesheet_96x122_6
+      name: cutscene_bearmun_angry_talk
       rect:
         serializedVersion: 2
         x: 96
@@ -227,81 +305,15 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f3c4d9ce257ff1f4a919ac517771e5cf
-      internalID: -3960726277390611431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutscene_gwen_spitesheet_96x122_7
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 122
-        width: 96
-        height: 122
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4655e899a8b4ca9458dd396ac1150d57
-      internalID: -5047771162122324642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutscene_gwen_spitesheet_96x122_9
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 122
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbd0b065a9c3d104691b25e4232140c3
-      internalID: 9172575194363390155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutscene_gwen_spitesheet_96x122_10
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 96
-        height: 122
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b9ac6638cd0c804f98af3137bf3a4f7
-      internalID: -7899876712378774299
+      spriteID: 0c734a30826cbc6b0800000000000000
+      internalID: -5274904663372318784
       vertices: []
       indices: 
       edges: []
@@ -310,7 +322,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a6e71aa7fe36b244181229113871eea1
+    spriteID: 8544cf0b13573fb49a8700c8b28b83da
     internalID: 0
     vertices: []
     indices: 
@@ -320,17 +332,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cutscene_gwen_spitesheet_96x122_0: -7452931299830732449
-      cutscene_gwen_spitesheet_96x122_1: 1091054812321812242
-      cutscene_gwen_spitesheet_96x122_10: -7899876712378774299
-      cutscene_gwen_spitesheet_96x122_2: -19154196690901395
-      cutscene_gwen_spitesheet_96x122_3: -4135553534531604133
-      cutscene_gwen_spitesheet_96x122_4: 1309290770091683091
-      cutscene_gwen_spitesheet_96x122_5: 7882798567046993376
-      cutscene_gwen_spitesheet_96x122_6: -3960726277390611431
-      cutscene_gwen_spitesheet_96x122_7: -5047771162122324642
-      cutscene_gwen_spitesheet_96x122_8: 1373622447997876720
-      cutscene_gwen_spitesheet_96x122_9: 9172575194363390155
+      cutscene_bearmun_angry: -7653896872521020458
+      cutscene_bearmun_angry_talk: -5274904663372318784
+      cutscene_bearmun_happy: 2488969064536792012
+      cutscene_bearmun_happy_talk: 8689076199994477640
+      cutscene_bearmun_neutral: 5217806361828756510
+      cutscene_bearmun_neutral_talk: 5686764572210292535
+      cutscene_bearmun_spitesheet_96x122_10: -8503766251998158439
+      cutscene_bearmun_spitesheet_96x122_2: 243867043551639051
+      cutscene_bearmun_spitesheet_96x122_5: 3044050410305727836
+      cutscene_bearmun_spitesheet_96x122_8: 5044215004051764805
+      cutscene_bearmun_spitesheet_96x122_9: -4927611992309945968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

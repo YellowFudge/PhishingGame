@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: fa18b396eaa4a0e4581173b0dcf1b369
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2760878577164950353
+    second: cutscene_cressida_spitesheet_96x122_0
+  - first:
+      213: 7421772957345614481
+    second: cutscene_cressida_spitesheet_96x122_1
+  - first:
+      213: -815209881060384389
+    second: cutscene_cressida_spitesheet_96x122_2
+  - first:
+      213: 255220575879015655
+    second: cutscene_cressida_spitesheet_96x122_3
+  - first:
+      213: -3157686537889647063
+    second: cutscene_cressida_spitesheet_96x122_4
+  - first:
+      213: -4674271620428087862
+    second: cutscene_cressida_spitesheet_96x122_5
+  - first:
+      213: 6530412363587415914
+    second: cutscene_cressida_spitesheet_96x122_6
+  - first:
+      213: 7957622954745697103
+    second: cutscene_cressida_spitesheet_96x122_7
+  - first:
+      213: -3767444681382451114
+    second: cutscene_cressida_spitesheet_96x122_8
+  - first:
+      213: -730461500997153507
+    second: cutscene_cressida_spitesheet_96x122_9
+  - first:
+      213: 8849717578712361323
+    second: cutscene_cressida_spitesheet_96x122_10
+  - first:
+      213: -485104591215274014
+    second: cutscene_cressida_spitesheet_96x122_11
+  - first:
+      213: -6742211916726268261
+    second: cutscene_cressida_spitesheet_96x122_12
+  - first:
+      213: -7989142907140528197
+    second: cutscene_cressida_spitesheet_96x122_13
+  - first:
+      213: -7135547136336973095
+    second: cutscene_cressida_spitesheet_96x122_14
+  - first:
+      213: -8434836289762608659
+    second: cutscene_cressida_spitesheet_96x122_15
+  - first:
+      213: 2584842640531137931
+    second: cutscene_cressida_spitesheet_96x122_16
+  - first:
+      213: -118458982548079559
+    second: cutscene_cressida_spitesheet_96x122_17
+  - first:
+      213: 3573884797584015182
+    second: cutscene_cressida_spitesheet_96x122_18
+  - first:
+      213: -752925899669831394
+    second: cutscene_cressida_spitesheet_96x122_19
+  - first:
+      213: 783567684164869683
+    second: cutscene_cressida_spitesheet_96x122_20
+  - first:
+      213: 625498456747070303
+    second: cutscene_cressida_spitesheet_96x122_21
+  - first:
+      213: 5604397663346558165
+    second: cutscene_cressida_spitesheet_96x122_22
+  - first:
+      213: -3751794649374154899
+    second: cutscene_cressida_spitesheet_96x122_23
+  - first:
+      213: -5866866874432204651
+    second: cutscene_cressida_spitesheet_96x122_24
+  - first:
+      213: -423242777445443076
+    second: cutscene_cressida_spitesheet_96x122_25
+  - first:
+      213: -5036322111959103628
+    second: cutscene_cressida_spitesheet_96x122_26
+  - first:
+      213: 7677839518838762604
+    second: cutscene_cressida_spitesheet_96x122_27
+  - first:
+      213: -3564158884446514991
+    second: cutscene_cressida_spitesheet_96x122_28
+  - first:
+      213: -9124688255527597022
+    second: cutscene_cressida_spitesheet_96x122_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cutscene_cressida_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4e814df836fa9d0800000000000000
+      internalID: -2760878577164950353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_cressida_neutral_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a8f26be2f6ff660800000000000000
+      internalID: 7421772957345614481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_cressida_happy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eca3a4f2c9ba8300800000000000000
+      internalID: 255220575879015655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_cressida_happy_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926fd0de2d4ad24d0800000000000000
+      internalID: -3157686537889647063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_cressida_angry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f6270f17fa0aa50800000000000000
+      internalID: 6530412363587415914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_cressida_angry_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f439c128ae72f6e60800000000000000
+      internalID: 7957622954745697103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8c528de07bcbcb34b8f090c3380fd69e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cutscene_berg_neutral: -2760878577164950353
+      cutscene_cressida_angry: 6530412363587415914
+      cutscene_cressida_angry_talk: 7957622954745697103
+      cutscene_cressida_happy: 255220575879015655
+      cutscene_cressida_happy_talk: -3157686537889647063
+      cutscene_cressida_neutral: -2760878577164950353
+      cutscene_cressida_neutral_talk: 7421772957345614481
+      cutscene_cressida_spitesheet_96x122_10: 8849717578712361323
+      cutscene_cressida_spitesheet_96x122_2: -815209881060384389
+      cutscene_cressida_spitesheet_96x122_5: -4674271620428087862
+      cutscene_cressida_spitesheet_96x122_8: -3767444681382451114
+      cutscene_cressida_spitesheet_96x122_9: -730461500997153507
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

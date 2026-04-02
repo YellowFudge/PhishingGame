@@ -28,6 +28,7 @@ position: 18,-190
 ---
 <<if change_person("Thisle", "Happy")>>//you need if for it to work :(
 <<endif>>
+<<wait_until_entered>>
 <<trigger_talk>>
 Thistle: Good morning attendant! As it is your first day here, Arthur wanted me to tell you about the “Report Phishing” stamp on your desk. 
 <<set_mood "Neutral">>
@@ -47,8 +48,9 @@ Thistle: Ah, yes! And remember to check addresses, links and THINK. That’s wha
 title: it_day_two
 position: 14,-37
 ---
-<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<if change_person("Arthur", "Neutral")>>//you need if for it to work :(
 <<endif>>
+<<wait_until_entered>>
 <<trigger_talk>>
 Arthur: Do you have a minute?
 <<trigger_talk>>
@@ -65,6 +67,7 @@ position: 15,106
 ---
 <<if change_person("Thisle", "Neutral")>>//you need if for it to work :(
 <<endif>>
+<<wait_until_entered>>
 <<trigger_talk>>
 Thistle: Psst!
 <<set_mood "Happy">>

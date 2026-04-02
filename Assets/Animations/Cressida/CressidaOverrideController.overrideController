@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CressidaOverrideController
+  m_Controller: {fileID: 9100000, guid: 100cd622d153a314e844f0e922efd974, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 5595001e99201fd4f860d11c48212115, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d6b4a2ee228fb534d82246f485337a1b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9f14d9631d25cb548ac6d88379d5fe73, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fa6c46c5c1aad054d8c9cbe2679385e6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1ca9ae5f2ae9e3742bb2bf22ea5a45a4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 96b7390f03cd39a48a198269ce57cead, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 86d18dc0594c54242ba31b9533c4cf3a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3027f289685570b4589550ae86210828, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b8a0f86712a3fb444a21a9a81825c48f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f2872a5e4c08b9049a7318b832fd56e2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 025fea2f62ee1a144b5805b91d33ee96, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4638ff2a40187c641a7b428144e672c4, type: 2}

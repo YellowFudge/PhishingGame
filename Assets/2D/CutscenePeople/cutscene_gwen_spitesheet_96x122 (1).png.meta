@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 7722cae2b04a2754594f0a6fefbc4f70
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4886388690908600792
+    second: cutscene_gwen_spitesheet_96x122 (1)_0
+  - first:
+      213: -3461634594808824807
+    second: cutscene_gwen_spitesheet_96x122 (1)_1
+  - first:
+      213: 365995233065718653
+    second: cutscene_gwen_spitesheet_96x122 (1)_2
+  - first:
+      213: -8091540811362027076
+    second: cutscene_gwen_spitesheet_96x122 (1)_3
+  - first:
+      213: -2022146872745885751
+    second: cutscene_gwen_spitesheet_96x122 (1)_4
+  - first:
+      213: 9208455162411999851
+    second: cutscene_gwen_spitesheet_96x122 (1)_5
+  - first:
+      213: -1923478160494512302
+    second: cutscene_gwen_spitesheet_96x122 (1)_6
+  - first:
+      213: 7836351670619294870
+    second: cutscene_gwen_spitesheet_96x122 (1)_7
+  - first:
+      213: 2179036499447820202
+    second: cutscene_gwen_spitesheet_96x122 (1)_8
+  - first:
+      213: -4216944016561788154
+    second: cutscene_gwen_spitesheet_96x122 (1)_9
+  - first:
+      213: 2659773096511370412
+    second: cutscene_gwen_spitesheet_96x122 (1)_10
+  - first:
+      213: -7905102396986696641
+    second: cutscene_gwen_spitesheet_96x122 (1)_11
+  - first:
+      213: -5712590748741692980
+    second: cutscene_gwen_spitesheet_96x122 (1)_12
+  - first:
+      213: -89965989075009211
+    second: cutscene_gwen_spitesheet_96x122 (1)_13
+  - first:
+      213: 1352204147878304885
+    second: cutscene_gwen_spitesheet_96x122 (1)_14
+  - first:
+      213: -7091397745156533655
+    second: cutscene_gwen_spitesheet_96x122 (1)_15
+  - first:
+      213: -6395471644187967174
+    second: cutscene_gwen_spitesheet_96x122 (1)_16
+  - first:
+      213: 4642021254226845449
+    second: cutscene_gwen_spitesheet_96x122 (1)_17
+  - first:
+      213: -6077383150968221241
+    second: cutscene_gwen_spitesheet_96x122 (1)_18
+  - first:
+      213: 7516717461325101095
+    second: cutscene_gwen_spitesheet_96x122 (1)_19
+  - first:
+      213: -5913931981323312546
+    second: cutscene_gwen_spitesheet_96x122 (1)_20
+  - first:
+      213: 3923212352842238601
+    second: cutscene_gwen_spitesheet_96x122 (1)_21
+  - first:
+      213: 3380394324512051299
+    second: cutscene_gwen_spitesheet_96x122 (1)_22
+  - first:
+      213: 6474970293722378043
+    second: cutscene_gwen_spitesheet_96x122 (1)_23
+  - first:
+      213: 3122236851083445614
+    second: cutscene_gwen_spitesheet_96x122 (1)_24
+  - first:
+      213: -5980223195725421761
+    second: cutscene_gwen_spitesheet_96x122 (1)_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cutscene_gwen_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9d71c00a0ffc340800000000000000
+      internalID: 4886388690908600792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_gwen_neutral_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c77323dadc5ffc0800000000000000
+      internalID: -3461634594808824807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_gwen_happy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9b03db08215bf80800000000000000
+      internalID: -8091540811362027076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_gwen_happy_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf705e0224efe3e0800000000000000
+      internalID: -2022146872745885751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_gwen_angry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257b086ddce6e45e0800000000000000
+      internalID: -1923478160494512302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_gwen_angry_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c4d4e535050cc60800000000000000
+      internalID: 7836351670619294870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 187128782dc67244a8413ef1fdf6396f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cutscene_gwen_angry: -1923478160494512302
+      cutscene_gwen_angry_talk: 7836351670619294870
+      cutscene_gwen_happy: -8091540811362027076
+      cutscene_gwen_happy_talk: -2022146872745885751
+      cutscene_gwen_neutral: 4886388690908600792
+      cutscene_gwen_neutral_talk: -3461634594808824807
+      cutscene_gwen_spitesheet_96x122 (1)_10: 2659773096511370412
+      cutscene_gwen_spitesheet_96x122 (1)_2: 365995233065718653
+      cutscene_gwen_spitesheet_96x122 (1)_5: 9208455162411999851
+      cutscene_gwen_spitesheet_96x122 (1)_8: 2179036499447820202
+      cutscene_gwen_spitesheet_96x122 (1)_9: -4216944016561788154
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

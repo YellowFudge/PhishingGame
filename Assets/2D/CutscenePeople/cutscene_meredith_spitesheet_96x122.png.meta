@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 50c13e3a8acd9784b8e9e9fee7d18a7e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6866436590147902059
+    second: cutscene_meredith_spitesheet_96x122_0
+  - first:
+      213: -7892782593603781931
+    second: cutscene_meredith_spitesheet_96x122_1
+  - first:
+      213: 1217626242660383089
+    second: cutscene_meredith_spitesheet_96x122_2
+  - first:
+      213: 1367612530801921432
+    second: cutscene_meredith_spitesheet_96x122_3
+  - first:
+      213: 3967886217439466773
+    second: cutscene_meredith_spitesheet_96x122_4
+  - first:
+      213: 4969628014740098037
+    second: cutscene_meredith_spitesheet_96x122_5
+  - first:
+      213: 4737505572557428700
+    second: cutscene_meredith_spitesheet_96x122_6
+  - first:
+      213: -8074962149871384291
+    second: cutscene_meredith_spitesheet_96x122_7
+  - first:
+      213: 8432558355476220521
+    second: cutscene_meredith_spitesheet_96x122_8
+  - first:
+      213: 6913314112321287127
+    second: cutscene_meredith_spitesheet_96x122_9
+  - first:
+      213: -8763966632358485215
+    second: cutscene_meredith_spitesheet_96x122_10
+  - first:
+      213: 1082140279880810222
+    second: cutscene_meredith_spitesheet_96x122_11
+  - first:
+      213: -466991181431764419
+    second: cutscene_meredith_spitesheet_96x122_12
+  - first:
+      213: 3324050446070233169
+    second: cutscene_meredith_spitesheet_96x122_13
+  - first:
+      213: 8898032060749688987
+    second: cutscene_meredith_spitesheet_96x122_14
+  - first:
+      213: -834056562549924358
+    second: cutscene_meredith_spitesheet_96x122_15
+  - first:
+      213: -2615207443669246944
+    second: cutscene_meredith_spitesheet_96x122_16
+  - first:
+      213: 1250265537631555989
+    second: cutscene_meredith_spitesheet_96x122_17
+  - first:
+      213: -1401504953474531815
+    second: cutscene_meredith_spitesheet_96x122_18
+  - first:
+      213: -603906584951497398
+    second: cutscene_meredith_spitesheet_96x122_19
+  - first:
+      213: -3249674724194520676
+    second: cutscene_meredith_spitesheet_96x122_20
+  - first:
+      213: -6969240686248597798
+    second: cutscene_meredith_spitesheet_96x122_21
+  - first:
+      213: -3149764806061885674
+    second: cutscene_meredith_spitesheet_96x122_22
+  - first:
+      213: 1339471419692444994
+    second: cutscene_meredith_spitesheet_96x122_23
+  - first:
+      213: 3519979940562968795
+    second: cutscene_meredith_spitesheet_96x122_24
+  - first:
+      213: 8687841164740248983
+    second: cutscene_meredith_spitesheet_96x122_25
+  - first:
+      213: -6135407763443405692
+    second: cutscene_meredith_spitesheet_96x122_26
+  - first:
+      213: 4189321945060736210
+    second: cutscene_meredith_spitesheet_96x122_27
+  - first:
+      213: 30475632009955777
+    second: cutscene_meredith_spitesheet_96x122_28
+  - first:
+      213: -6341929377747426281
+    second: cutscene_meredith_spitesheet_96x122_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cutscene_meredith_neutral_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da3cd28c04377290800000000000000
+      internalID: -7892782593603781931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_meredith_happy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d42d0d95cbaf210800000000000000
+      internalID: 1367612530801921432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_meredith_happy_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515d5a3fd73c01730800000000000000
+      internalID: 3967886217439466773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_meredith_angry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd718b5c7300fb140800000000000000
+      internalID: 4737505572557428700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_meredith_angry_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19013a25b8ffef80800000000000000
+      internalID: -8074962149871384291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_meredith_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fc6c37c3def0440a2ff0da5b55bef0
+      internalID: 1191687888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3d3a63763c010364ba0038183e722be2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cutscene_meredith_angry: 4737505572557428700
+      cutscene_meredith_angry_talk: -8074962149871384291
+      cutscene_meredith_happy: 1367612530801921432
+      cutscene_meredith_happy_talk: 3967886217439466773
+      cutscene_meredith_neutral: 1191687888
+      cutscene_meredith_neutral_talk: -7892782593603781931
+      cutscene_meredith_spitesheet_96x122_10: -8763966632358485215
+      cutscene_meredith_spitesheet_96x122_2: 1217626242660383089
+      cutscene_meredith_spitesheet_96x122_5: 4969628014740098037
+      cutscene_meredith_spitesheet_96x122_8: 8432558355476220521
+      cutscene_meredith_spitesheet_96x122_9: 6913314112321287127
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

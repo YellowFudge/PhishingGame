@@ -214,7 +214,8 @@ public enum PersonsEnum
     Cressida,
     Berg,
     Thisle,
-    Meredith
+    Meredith,
+    Arthur
 }
 
 public enum MoodEnum

@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 12ff9eed3bd52644c9884a2076267ff8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3516980078783123319
+    second: cutscene_berg_spritesheet_96x122_0
+  - first:
+      213: -9071776307119195545
+    second: cutscene_berg_spritesheet_96x122_1
+  - first:
+      213: 7274091782221909737
+    second: cutscene_berg_spritesheet_96x122_2
+  - first:
+      213: -5775095295424959818
+    second: cutscene_berg_spritesheet_96x122_3
+  - first:
+      213: 248235430179483051
+    second: cutscene_berg_spritesheet_96x122_4
+  - first:
+      213: 129461334966852462
+    second: cutscene_berg_spritesheet_96x122_5
+  - first:
+      213: -5561700206348472821
+    second: cutscene_berg_spritesheet_96x122_6
+  - first:
+      213: 7200761295157109604
+    second: cutscene_berg_spritesheet_96x122_7
+  - first:
+      213: 1646122286966263970
+    second: cutscene_berg_spritesheet_96x122_8
+  - first:
+      213: 6906718890575918255
+    second: cutscene_berg_spritesheet_96x122_9
+  - first:
+      213: -3649585991198771573
+    second: cutscene_berg_spritesheet_96x122_10
+  - first:
+      213: 1936461066891890567
+    second: cutscene_berg_spritesheet_96x122_11
+  - first:
+      213: -1035040256241524096
+    second: cutscene_berg_spritesheet_96x122_12
+  - first:
+      213: 5872938358265012482
+    second: cutscene_berg_spritesheet_96x122_13
+  - first:
+      213: -741033310824648391
+    second: cutscene_berg_spritesheet_96x122_14
+  - first:
+      213: -9220874592487545081
+    second: cutscene_berg_spritesheet_96x122_15
+  - first:
+      213: 3295313850096536046
+    second: cutscene_berg_spritesheet_96x122_16
+  - first:
+      213: -2220311007350149185
+    second: cutscene_berg_spritesheet_96x122_17
+  - first:
+      213: -3884573886002892039
+    second: cutscene_berg_spritesheet_96x122_18
+  - first:
+      213: 1536311949911121129
+    second: cutscene_berg_spritesheet_96x122_19
+  - first:
+      213: 6187336781187161952
+    second: cutscene_berg_spritesheet_96x122_20
+  - first:
+      213: 5976854767919175963
+    second: cutscene_berg_spritesheet_96x122_21
+  - first:
+      213: 2542217892313944317
+    second: cutscene_berg_spritesheet_96x122_22
+  - first:
+      213: -851577948350780027
+    second: cutscene_berg_spritesheet_96x122_23
+  - first:
+      213: 549385880587137206
+    second: cutscene_berg_spritesheet_96x122_24
+  - first:
+      213: 2951651154620420668
+    second: cutscene_berg_spritesheet_96x122_25
+  - first:
+      213: -4340667006484515090
+    second: cutscene_berg_spritesheet_96x122_26
+  - first:
+      213: -967831194563152929
+    second: cutscene_berg_spritesheet_96x122_27
+  - first:
+      213: -7483931014692567212
+    second: cutscene_berg_spritesheet_96x122_28
+  - first:
+      213: -7523862584952279196
+    second: cutscene_berg_spritesheet_96x122_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cutscene_berg_neutral
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980b10a804d213fc0800000000000000
+      internalID: -3516980078783123319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_berg_neutral_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 366
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76afa5453839a1280800000000000000
+      internalID: -9071776307119195545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_berg_happy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba6a243d6dbadfa0800000000000000
+      internalID: -5775095295424959818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_berg_happy_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bada38cfec8e17300800000000000000
+      internalID: 248235430179483051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_berg_angry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ee165212fd0d2b0800000000000000
+      internalID: -5561700206348472821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene_berg_angry_talk
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 122
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463a8362f3e3ee360800000000000000
+      internalID: 7200761295157109604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab8f5db9eb978534694f77d815bd96f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cutscene_bearmun_neutral: -3516980078783123319
+      cutscene_berg_angry: -5561700206348472821
+      cutscene_berg_angry_talk: 7200761295157109604
+      cutscene_berg_happy: -5775095295424959818
+      cutscene_berg_happy_talk: 248235430179483051
+      cutscene_berg_neutral: -3516980078783123319
+      cutscene_berg_neutral_talk: -9071776307119195545
+      cutscene_berg_spritesheet_96x122_10: -3649585991198771573
+      cutscene_berg_spritesheet_96x122_2: 7274091782221909737
+      cutscene_berg_spritesheet_96x122_5: 129461334966852462
+      cutscene_berg_spritesheet_96x122_8: 1646122286966263970
+      cutscene_berg_spritesheet_96x122_9: 6906718890575918255
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
