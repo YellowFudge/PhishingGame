@@ -60,7 +60,7 @@ public class DynamicButtons : MonoBehaviour
             qb.cueType = item.Key;
             
             buttons.Add(newButton);
-            Debug.Log(newButton.name);
+            //Debug.Log(newButton.name);
         }
     }
 
