@@ -30,12 +30,12 @@ public class HamSpamButton : MonoBehaviour
     {
         if (_buttonPressed) //prevent doubleklicks
         {
-            Debug.Log("No");
+            //Debug.Log("No");
             return;
         }
         _buttonPressed = true;
 
-        Debug.Log("YEs");
+        //Debug.Log("YEs");
         MailCueTypes mailCue = levelManager.GetCurrentMailinfo();
 
         //Debug.Log("mailcue is: "+ mailCue);
