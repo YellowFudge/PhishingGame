@@ -13993,6 +13993,7 @@ MonoBehaviour:
   MailSpawnPoint: {fileID: 622600843}
   responseArrayScriptObj: {fileID: 11400000, guid: 1b3c07ab7fef28b40a8913cbedad4d44, type: 2}
   scoreScriptableObjectScript: {fileID: 11400000, guid: 65167cf3ca5cc464d91b261a161af964, type: 2}
+  cutsceneManager: {fileID: 925017688}
   levelManager: {fileID: 193130625}
 --- !u!1 &1984272633
 GameObject:
@@ -14628,6 +14629,10 @@ PrefabInstance:
     - target: {fileID: 1875174362859184722, guid: eeb95dd6d8fc24045b578f35916ad9b8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208302430200662308, guid: eeb95dd6d8fc24045b578f35916ad9b8, type: 3}
+      propertyPath: verboseLogging
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2456899855136845089, guid: eeb95dd6d8fc24045b578f35916ad9b8, type: 3}
       propertyPath: m_SizeDelta.y

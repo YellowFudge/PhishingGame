@@ -1,0 +1,29 @@
+﻿title: R1_1
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R1_1
+<<end_of_response>>
+===
+
+title: R1_2
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R1_2
+<<end_of_response>>
+===
+
+title: R1_3
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R1_3
+<<end_of_response>>
+===

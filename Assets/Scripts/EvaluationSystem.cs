@@ -7,8 +7,8 @@ public class EvaluationSystem : MonoBehaviour
     [SerializeField] Transform MailSpawnPoint;
     [SerializeField] DailyMailArrayScriptObj responseArrayScriptObj;
     public ScoreScriptableObjectScript scoreScriptableObjectScript;
+    public CutsceneManager cutsceneManager;
     public LevelManager levelManager;
-    GameObject _currentMailObject;
 
 
     private void OnEnable()
@@ -22,44 +22,7 @@ public class EvaluationSystem : MonoBehaviour
     }
 
     void OnEndDayTriggered() {
-        InstantiateMail(levelManager.CurrentDay);
-    }
-
-    public void InstantiateMail(int dayNum)
-    {
-        string mailIDNum = CheckCorrectTotal(dayNum);
-        GameObject findPrefab = FindMailPrefab(mailIDNum);
-
-        //destroy old
-        Destroy(_currentMailObject);
-        _currentMailObject = Instantiate(findPrefab, MailSpawnPoint);
-    }
-
-    public void RemoveCurrentMailObject()
-    {
-        Destroy(_currentMailObject);
-    }
-
-    public GameObject FindMailPrefab(string mailIDNum)
-    {
-        //only one itmail per day so only pick first in day's array
-        if (!responseArrayScriptObj.GetTodaysMails(1, out DailyMails mailArray))
-        {
-            Debug.LogError("There is no IT mail array for this day");
-            return null;
-        }
-
-        foreach (GameObject mailPrefab in mailArray.mailPrefabs)
-        {
-            string idNum = mailPrefab.GetComponent<MailId>().IdName;
-
-            if (idNum == mailIDNum)
-            {
-                return mailPrefab;
-            }
-        }
-
-        return null;
+        cutsceneManager.StartDialouge(CheckCorrectTotal(levelManager.CurrentDay));
     }
 
     // Fetch ScriptObj from ScoreScriptableObjectScript -> PlayerScore -> mailName + isCorrect
@@ -100,7 +63,7 @@ public class EvaluationSystem : MonoBehaviour
                 goodOrBad = 5;
             }
 
-            mailToReturn = "RG." + ((dayNum - 1) + goodOrBad);
+            mailToReturn = "RG_" + ((dayNum - 1) + goodOrBad);
         } else { // Dispersion, choose random
             var randomBytes = new byte[4];
 
@@ -117,7 +80,7 @@ public class EvaluationSystem : MonoBehaviour
 
             // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
             // Will return "R1.3" for example
-            mailToReturn = "R" + (dayNum - 1) + "." + mailVariable;
+            mailToReturn = "R" + (dayNum - 1) + "_" + mailVariable; //Change to _ rather than .
         }
         Debug.Log("mailToReturn: " + mailToReturn);
         return mailToReturn;
