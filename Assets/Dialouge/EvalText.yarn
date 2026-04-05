@@ -1,5 +1,11 @@
-﻿// DAY 1
+﻿// --MOODS--
+// Happy
+// Neutral
+// Angry
 
+//---------------------------//
+//          DAY 1            //
+//---------------------------//
 title: R1_1
 ---
 <<if change_person("Gwen", "Happy")>>//you need if for it to work :(
@@ -30,7 +36,39 @@ Gwen: R1_3
 <<end_of_response>>
 ===
 
-// DAY 2
+title: R1_4
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R1_4
+<<end_of_response>>
+===
+
+title: R1_5
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R1_5
+<<end_of_response>>
+===
+
+title: R1_6
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R1_6
+<<end_of_response>>
+===
+
+//---------------------------//
+//          DAY 2            //
+//---------------------------//
 title: R2_1
 ---
 <<if change_person("Gwen", "Happy")>>//you need if for it to work :(
@@ -61,7 +99,39 @@ Gwen: R2_3
 <<end_of_response>>
 ===
 
-// DAY 3
+title: R2_4
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R2_4
+<<end_of_response>>
+===
+
+title: R2_5
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R2_5
+<<end_of_response>>
+===
+
+title: R2_6
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R2_6
+<<end_of_response>>
+===
+
+//---------------------------//
+//          DAY 3            //
+//---------------------------//
 title: R3_1
 ---
 <<if change_person("Gwen", "Happy")>>//you need if for it to work :(
@@ -92,7 +162,39 @@ Gwen: R3_3
 <<end_of_response>>
 ===
 
-// DAY 4
+title: R3_4
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R3_4
+<<end_of_response>>
+===
+
+title: R3_5
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R3_5
+<<end_of_response>>
+===
+
+title: R3_6
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R3_6
+<<end_of_response>>
+===
+
+//---------------------------//
+//          DAY 4            //
+//---------------------------//
 title: R4_1
 ---
 <<if change_person("Gwen", "Happy")>>//you need if for it to work :(
@@ -120,5 +222,35 @@ title: R4_3
 <<wait_until_entered>>
 <<trigger_talk>>
 Gwen: R4_3
+<<end_of_response>>
+===
+
+title: R4_4
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R4_4
+<<end_of_response>>
+===
+
+title: R4_5
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R4_5
+<<end_of_response>>
+===
+
+title: R4_6
+---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwen: R4_6
 <<end_of_response>>
 ===
