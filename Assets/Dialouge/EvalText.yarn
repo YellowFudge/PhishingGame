@@ -3,26 +3,43 @@
 // Neutral
 // Angry
 
+// --FIXED DIALOGUE--
+// R1_[1,2,3,4,5,6]
+
+// TODO
+// Add position: x, y?
+// R2_1-6
+// R3_1-6
+// R4_1-6?
+
 //---------------------------//
 //          DAY 1            //
 //---------------------------//
 title: R1_1
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Hilaire", "Neutral")>>
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R1_1
+Hilaire: Hello assistant. Do you happen to know why we are missing 300 gold from our vault?
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Hilaire: Gwendolen was supposed to receive 300 gold as an award. Do you know anything about this?
 <<end_of_response>>
 ===
 
 title: R1_2
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R1_2
+Gwen: Assistant! I need your help, someone knows a dark secret of mine and I am required to send them gold
+<<trigger_talk>>
+Gwen: Can you help me set up this arrangement ASAP? I will send over their pidegeon number so you can work out the details.
+<<set_mood "Happy">>
+<<trigger_talk>>
+Gwen: Thanks for letting me know this info, you’re a lifesaver!!!
 <<end_of_response>>
 ===
 
@@ -32,37 +49,59 @@ title: R1_3
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R1_3
+Gwen: Hello assistant. Thank the magical wonders that you brought me Meredith’s scroll!
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwen: If I would have ignored her scrolls three times in a row, the skies would have turned purple and the thunder would be the least of our worries.
 <<end_of_response>>
 ===
 
 title: R1_4
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Cressida", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R1_4
+Cressida: Dear assistant, Yesterday there was an incident involving a pidgeon.
+<<trigger_talk>>
+Cressida: It had, luckily, been lost on the way to something called “Treasury Lodge” and had found its way into our treasury instead.
+<<set_mood "Happy">>
+<<trigger_talk>>
+Cressida: Reviewing yesterday’s communications, I am pleased to see that you instead caught the scam and reported it! As I care deeply for security, you have my thanks.
 <<end_of_response>>
 ===
 
 title: R1_5
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R1_5
+Gwen: Goodmorning assistant! Thank you for your hard work.
+<<trigger_talk>>
+Gwen: My friend over at Oberon Reanimation got a concerning scroll the other day, blackmailing her about her dark secrets.
+<<set_mood "Happy">>
+<<trigger_talk>>
+Gwen: Luckily, all her dark secrets are already out in the open, so it must be a scam, haha!
+<<set_mood "Neutral">>
+<<trigger_talk>> 
+Gwen: If I had gotten such a scroll I would have sent them all my gold… Keep your eyes peeled!
 <<end_of_response>>
 ===
 
 title: R1_6
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R1_6
+Gwen: Hello assistant. Meredith from Mystical Harmonisation bursted into my office yesterday during lunch.
+<<set_mood "Angry">>
+<<trigger_talk>>
+Gwen: She claimed that I’ve been ignoring her for three days now. The thing is that I only remember ignoring her for two of those days.
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwen: Please be more thorough when sorting through my scrolls in the future.
 <<end_of_response>>
 ===
 
