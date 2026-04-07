@@ -6,20 +6,20 @@ position: -205,-174
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: Hello new attendant and welcome to Pendragon & Kin!
+Gwendolen: Hello new attendant and welcome to Pendragon & Kin!
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwen: I’m swamped with research, So I’ll keep this short.  
+Gwendolen: I’m swamped with research, So I’ll keep this short.  
 <<trigger_talk>>
-Gwen: Given the vampires' new pastime of sending us dangerous scrolls, I trust that you vet ALL my mail before leaving it on my desk. I do not have time to do so myself. 
+Gwendolen: Given the vampires' new pastime of sending us dangerous scrolls, I trust that you vet ALL my mail before leaving it on my desk. I do not have time to do so myself. 
 <<trigger_talk>>
-Gwen: Trent, my old, trusted assistant, has left you with enough information to do so. 
+Gwendolen: Trent, my old, trusted assistant, has left you with enough information to do so. 
 <<trigger_exit>>
 <<wait_until_exited>>
 <<trigger_enter>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: Just one more thing - if anyone tries to book a meeting in the coming week, tell them I’m unavailable, would you?
+Gwendolen: Just one more thing - if anyone tries to book a meeting in the coming week, tell them I’m unavailable, would you?
 <<end_of_response>>
 ===
 
