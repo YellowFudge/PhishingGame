@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9fe3056b107b1f142a315d27a75c916b
+guid: 0af29cab02c2564458f2701b9c9079f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3113953228600943633
-    second: background_432x240_0
+      213: -4649211985684496793
+    second: deskmat_672x390_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_432x240_0
+      name: deskmat_672x390_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 432
-        height: 240
+        width: 672
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: feb5f0a790409c4d0800000000000000
-      internalID: -3113953228600943633
+      spriteID: 76e79c3e45eaa7fb0800000000000000
+      internalID: -4649211985684496793
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_432x240_0: -3113953228600943633
+      deskmat_672x390_0: -4649211985684496793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

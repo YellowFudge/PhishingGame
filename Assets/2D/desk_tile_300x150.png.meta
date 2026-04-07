@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30d23e5dd89d04344b5864872925591b
+guid: 23dc8f11a4ba7f74caa2e7bec02e9691
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1854080430724310991
-    second: background_v2_550x380_0
+      213: 7474319818893884905
+    second: desk_tile_300x150_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,13 +40,13 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 2
-    wrapV: 2
-    wrapW: 2
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_v2_550x380_0
+      name: desk_tile_300x150_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 550
-        height: 380
+        width: 300
+        height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc7635214540bb910800000000000000
-      internalID: 1854080430724310991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: background_v2_550x380_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 62
-        height: 380
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8275d839a759e054c8a6a5f6c73a5770
-      internalID: 656435698
+      spriteID: 9edf4de464e1ab760800000000000000
+      internalID: 7474319818893884905
       vertices: []
       indices: 
       edges: []
@@ -157,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_v2_550x380_0: 1854080430724310991
-      background_v2_550x380_1: 656435698
-      background_v2_550x380_2: 1449813769
+      desk_tile_300x150_0: 7474319818893884905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
