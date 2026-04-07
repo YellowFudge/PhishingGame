@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 3362414733280245168, guid: 8efd1866ec49126458838b9b7ac13fe7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3527043773596772916, guid: 69427f0ed5ae64f449868029f55f16c2, type: 3}
+      objectReference: {fileID: -663517277, guid: 8a4148d80a8e75445a172c06f280b627, type: 3}
     - target: {fileID: 4238878533071615872, guid: 8efd1866ec49126458838b9b7ac13fe7, type: 3}
       propertyPath: m_Name
       value: Hilaire Variant

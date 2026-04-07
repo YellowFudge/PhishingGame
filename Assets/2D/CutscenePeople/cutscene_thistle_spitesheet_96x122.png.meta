@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 083f04d5ec42ed14c83aec52a9622824
+guid: 8dbbec489856f174c9215a5919326fb9
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -195,15 +195,15 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9bb23cafba44aa0c0800000000000000
-      internalID: -4563759766949385287
+      spriteID: ab05d188864a91949ada3ba077cd2ff2
+      internalID: -151990712
       vertices: []
       indices: 
       edges: []
@@ -217,15 +217,15 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a48f3dc2f2b2a6f80800000000000000
-      internalID: -8112624297138980790
+      spriteID: ee88e5d9c34a3724b9d3434fc3877759
+      internalID: -869375527
       vertices: []
       indices: 
       edges: []
@@ -239,15 +239,15 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b324bf1aa7a70ccd0800000000000000
-      internalID: -2539895522714762693
+      spriteID: 60b4cacf0f155c84e9cd3d2aa28dd9e9
+      internalID: 267790834
       vertices: []
       indices: 
       edges: []
@@ -261,15 +261,15 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4aa8f272a1cae5310800000000000000
-      internalID: 1395742162857986724
+      spriteID: 14dd815c4a5a06041b5af995a680cf53
+      internalID: -1424300418
       vertices: []
       indices: 
       edges: []
@@ -283,15 +283,15 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f801b2a54452d5340800000000000000
-      internalID: 4854076948876038287
+      spriteID: 6ae4f6017a82b534ca4a71b552b4e7de
+      internalID: 428128224
       vertices: []
       indices: 
       edges: []
@@ -305,15 +305,15 @@ TextureImporter:
         width: 96
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d9cf81bf37231a790800000000000000
-      internalID: -7520674429016671075
+      spriteID: 9a19a4d7b4388f54d8decf3c968f9669
+      internalID: -1410099162
       vertices: []
       indices: 
       edges: []
@@ -322,7 +322,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 703966303d42e224eaffc3a33ad618c3
+    spriteID: a60ab249af3ba2e449f09ba2e341313f
     internalID: 0
     vertices: []
     indices: 
@@ -332,17 +332,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cutscene_thistle_angry: 4854076948876038287
-      cutscene_thistle_angry_talk: -7520674429016671075
-      cutscene_thistle_happy: -2539895522714762693
-      cutscene_thistle_happy_talk: 1395742162857986724
-      cutscene_thistle_neutral: -4563759766949385287
-      cutscene_thistle_neutral_talk: -8112624297138980790
-      cutscene_thistle_spitesheet_96x122_10: 5715691796902802607
-      cutscene_thistle_spitesheet_96x122_2: -245224658147584583
-      cutscene_thistle_spitesheet_96x122_5: -6259971354519826989
-      cutscene_thistle_spitesheet_96x122_8: -4859556361722573474
-      cutscene_thistle_spitesheet_96x122_9: -4587787448239798080
+      cutscene_thistle_angry: 428128224
+      cutscene_thistle_angry_talk: -1410099162
+      cutscene_thistle_happy: 267790834
+      cutscene_thistle_happy_talk: -1424300418
+      cutscene_thistle_neutral: -151990712
+      cutscene_thistle_neutral_talk: -869375527
+      cutscene_thistle_spitesheet_96x122 1_10: -1298759869
+      cutscene_thistle_spitesheet_96x122 1_2: 1560739885
+      cutscene_thistle_spitesheet_96x122 1_5: -724929030
+      cutscene_thistle_spitesheet_96x122 1_8: 403025564
+      cutscene_thistle_spitesheet_96x122 1_9: 1811909539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

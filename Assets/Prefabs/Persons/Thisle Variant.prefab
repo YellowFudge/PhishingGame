@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 3362414733280245168, guid: 8efd1866ec49126458838b9b7ac13fe7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2539895522714762693, guid: 083f04d5ec42ed14c83aec52a9622824, type: 3}
+      objectReference: {fileID: -151990712, guid: 8dbbec489856f174c9215a5919326fb9, type: 3}
     - target: {fileID: 4238878533071615872, guid: 8efd1866ec49126458838b9b7ac13fe7, type: 3}
       propertyPath: m_Name
       value: Thisle Variant

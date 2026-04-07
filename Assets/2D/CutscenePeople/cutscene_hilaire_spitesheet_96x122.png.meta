@@ -1,97 +1,97 @@
 fileFormatVersion: 2
-guid: 69427f0ed5ae64f449868029f55f16c2
+guid: 8a4148d80a8e75445a172c06f280b627
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3527043773596772916
-    second: cutscene_hilaire_spitesheet_96x122_0
+      213: 3762275182324316330
+    second: cutscene_hilaire_spitesheet_96x122 (1)_0
   - first:
-      213: -7457735803324576245
-    second: cutscene_hilaire_spitesheet_96x122_1
+      213: -118055333318383732
+    second: cutscene_hilaire_spitesheet_96x122 (1)_1
   - first:
-      213: 1280406019233340288
-    second: cutscene_hilaire_spitesheet_96x122_2
+      213: 5651140646621178875
+    second: cutscene_hilaire_spitesheet_96x122 (1)_2
   - first:
-      213: -2798201715955002788
-    second: cutscene_hilaire_spitesheet_96x122_3
+      213: -1729009602399347992
+    second: cutscene_hilaire_spitesheet_96x122 (1)_3
   - first:
-      213: -5203128512275653806
-    second: cutscene_hilaire_spitesheet_96x122_4
+      213: -8859238216569016709
+    second: cutscene_hilaire_spitesheet_96x122 (1)_4
   - first:
-      213: -1390575737155987845
-    second: cutscene_hilaire_spitesheet_96x122_5
+      213: 3292651686631483024
+    second: cutscene_hilaire_spitesheet_96x122 (1)_5
   - first:
-      213: -5253600573289271070
-    second: cutscene_hilaire_spitesheet_96x122_6
+      213: -1622748631491084495
+    second: cutscene_hilaire_spitesheet_96x122 (1)_6
   - first:
-      213: -4144601472963524997
-    second: cutscene_hilaire_spitesheet_96x122_7
+      213: 2837764035154384172
+    second: cutscene_hilaire_spitesheet_96x122 (1)_7
   - first:
-      213: -6667574853453994653
-    second: cutscene_hilaire_spitesheet_96x122_8
+      213: 5869199414567391482
+    second: cutscene_hilaire_spitesheet_96x122 (1)_8
   - first:
-      213: -1754249202123189033
-    second: cutscene_hilaire_spitesheet_96x122_9
+      213: -6232515345575301794
+    second: cutscene_hilaire_spitesheet_96x122 (1)_9
   - first:
-      213: 22386284592008019
-    second: cutscene_hilaire_spitesheet_96x122_10
+      213: -7088177923266171460
+    second: cutscene_hilaire_spitesheet_96x122 (1)_10
   - first:
-      213: 6033143354261557315
-    second: cutscene_hilaire_spitesheet_96x122_11
+      213: -1605708550597051106
+    second: cutscene_hilaire_spitesheet_96x122 (1)_11
   - first:
-      213: -7362729630035809208
-    second: cutscene_hilaire_spitesheet_96x122_12
+      213: -1780602021949354008
+    second: cutscene_hilaire_spitesheet_96x122 (1)_12
   - first:
-      213: 8852098038523965500
-    second: cutscene_hilaire_spitesheet_96x122_13
+      213: 9000445653948263815
+    second: cutscene_hilaire_spitesheet_96x122 (1)_13
   - first:
-      213: 5180472752812202126
-    second: cutscene_hilaire_spitesheet_96x122_14
+      213: 9024237482466911528
+    second: cutscene_hilaire_spitesheet_96x122 (1)_14
   - first:
-      213: -7944488030158738806
-    second: cutscene_hilaire_spitesheet_96x122_15
+      213: 4997704991711857939
+    second: cutscene_hilaire_spitesheet_96x122 (1)_15
   - first:
-      213: 1861471637942180269
-    second: cutscene_hilaire_spitesheet_96x122_16
+      213: 5022545520314690092
+    second: cutscene_hilaire_spitesheet_96x122 (1)_16
   - first:
-      213: 5948017663203083895
-    second: cutscene_hilaire_spitesheet_96x122_17
+      213: -2887089252582924016
+    second: cutscene_hilaire_spitesheet_96x122 (1)_17
   - first:
-      213: 3963994104420365759
-    second: cutscene_hilaire_spitesheet_96x122_18
+      213: 1589664685753633090
+    second: cutscene_hilaire_spitesheet_96x122 (1)_18
   - first:
-      213: -3067280122703334135
-    second: cutscene_hilaire_spitesheet_96x122_19
+      213: 5566706165121515874
+    second: cutscene_hilaire_spitesheet_96x122 (1)_19
   - first:
-      213: -2414489825159612897
-    second: cutscene_hilaire_spitesheet_96x122_20
+      213: -5997895939568043874
+    second: cutscene_hilaire_spitesheet_96x122 (1)_20
   - first:
-      213: -3939533232359450427
-    second: cutscene_hilaire_spitesheet_96x122_21
+      213: -8745132117542357572
+    second: cutscene_hilaire_spitesheet_96x122 (1)_21
   - first:
-      213: -111879079688366506
-    second: cutscene_hilaire_spitesheet_96x122_22
+      213: -4597932473550966969
+    second: cutscene_hilaire_spitesheet_96x122 (1)_22
   - first:
-      213: 8598392230260931549
-    second: cutscene_hilaire_spitesheet_96x122_23
+      213: 3209187755068372072
+    second: cutscene_hilaire_spitesheet_96x122 (1)_23
   - first:
-      213: -72417780665292671
-    second: cutscene_hilaire_spitesheet_96x122_24
+      213: -2744694639908772700
+    second: cutscene_hilaire_spitesheet_96x122 (1)_24
   - first:
-      213: -247761445394210248
-    second: cutscene_hilaire_spitesheet_96x122_25
+      213: -7557018105472812888
+    second: cutscene_hilaire_spitesheet_96x122 (1)_25
   - first:
-      213: -4762799364390557614
-    second: cutscene_hilaire_spitesheet_96x122_26
+      213: -1314985622585168018
+    second: cutscene_hilaire_spitesheet_96x122 (1)_26
   - first:
-      213: 3139261693491035574
-    second: cutscene_hilaire_spitesheet_96x122_27
+      213: -5866564513006528309
+    second: cutscene_hilaire_spitesheet_96x122 (1)_27
   - first:
-      213: 4988883218752251510
-    second: cutscene_hilaire_spitesheet_96x122_28
+      213: -5087185198995711969
+    second: cutscene_hilaire_spitesheet_96x122 (1)_28
   - first:
-      213: 2921309736680557541
-    second: cutscene_hilaire_spitesheet_96x122_29
+      213: 8967100552129391789
+    second: cutscene_hilaire_spitesheet_96x122 (1)_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -200,10 +200,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43a2d7000a392f030800000000000000
-      internalID: 3527043773596772916
+      spriteID: 5d18d2cb1eaabdb4fa458c260fbae20d
+      internalID: -663517277
       vertices: []
       indices: 
       edges: []
@@ -222,10 +222,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0e4026bcccc08890800000000000000
-      internalID: -7457735803324576245
+      spriteID: 8649a82832f8832498099e147944b022
+      internalID: -293581383
       vertices: []
       indices: 
       edges: []
@@ -244,10 +244,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c521d966d5aca29d0800000000000000
-      internalID: -2798201715955002788
+      spriteID: 39fb617c3f20de9479ed910cbb818f49
+      internalID: 1857673340
       vertices: []
       indices: 
       edges: []
@@ -266,10 +266,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 25b5a197f26cac7b0800000000000000
-      internalID: -5203128512275653806
+      spriteID: 1f2e7381e3c921a409458aefa56fb597
+      internalID: -2145063023
       vertices: []
       indices: 
       edges: []
@@ -288,10 +288,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2e0fd450d167717b0800000000000000
-      internalID: -5253600573289271070
+      spriteID: e142e8b5c6f75c14d815491e3ed9fbac
+      internalID: -1158345792
       vertices: []
       indices: 
       edges: []
@@ -310,10 +310,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b76c27c5bea6b76c0800000000000000
-      internalID: -4144601472963524997
+      spriteID: 213c9f67539440a418f5cc3f7dfebfe2
+      internalID: -271325699
       vertices: []
       indices: 
       edges: []
@@ -322,7 +322,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 60e0bba4a3c05db48aa5edb7b03f9043
+    spriteID: baee9bc2bfab0fa418be12f1143eb072
     internalID: 0
     vertices: []
     indices: 
@@ -332,17 +332,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cutscene_hilaire_angry: -5253600573289271070
-      cutscene_hilaire_angry_talk: -4144601472963524997
-      cutscene_hilaire_happy: -2798201715955002788
-      cutscene_hilaire_happy_talk: -5203128512275653806
-      cutscene_hilaire_neutral: 3527043773596772916
-      cutscene_hilaire_neutral_talk: -7457735803324576245
-      cutscene_hilaire_spitesheet_96x122_10: 22386284592008019
-      cutscene_hilaire_spitesheet_96x122_2: 1280406019233340288
-      cutscene_hilaire_spitesheet_96x122_5: -1390575737155987845
-      cutscene_hilaire_spitesheet_96x122_8: -6667574853453994653
-      cutscene_hilaire_spitesheet_96x122_9: -1754249202123189033
+      cutscene_hilaire_angry: -1158345792
+      cutscene_hilaire_angry_talk: -271325699
+      cutscene_hilaire_happy: 1857673340
+      cutscene_hilaire_happy_talk: -2145063023
+      cutscene_hilaire_neutral: -663517277
+      cutscene_hilaire_neutral_talk: -293581383
+      cutscene_hilaire_spitesheet_96x122_10: 619009690
+      cutscene_hilaire_spitesheet_96x122_2: -1882576924
+      cutscene_hilaire_spitesheet_96x122_5: -2068633870
+      cutscene_hilaire_spitesheet_96x122_8: 1696414673
+      cutscene_hilaire_spitesheet_96x122_9: -394200878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
