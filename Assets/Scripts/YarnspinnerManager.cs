@@ -210,7 +210,7 @@ public enum PersonsEnum
 {
     Gwen,
     Bearmun,
-    Hilare,
+    Hilaire,
     Cressida,
     Berg,
     Thisle,
