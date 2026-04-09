@@ -53,6 +53,7 @@ public class LevelManager : MonoBehaviour
     {
         _amountOfDays = dailyMailsScriptObj.GetNumOfDays();
         
+        cutsceneManager.gameObject.SetActive(true); //to avoid the errormessages if it isn't active
         cutsceneManager.StartFirstDayCutScene();
     }
 

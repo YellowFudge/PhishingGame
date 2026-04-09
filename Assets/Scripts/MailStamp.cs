@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MailStamp : MonoBehaviour, IDropHandler, IBeginDragHandler, IPointerUpHandler, IPointerDownHandler
 {
     [SerializeField] Transform startPosition;
+    [SerializeField] Transform stampingPosition;
     [SerializeField] GameObject stampObject;
     [SerializeField] GraphicRaycaster graphicRaycaster;//on canvas
     Image _stampImage;
@@ -27,7 +28,7 @@ public class MailStamp : MonoBehaviour, IDropHandler, IBeginDragHandler, IPointe
         //raycasting to object beneath and seeing it it is a mail
         
 
-        Debug.Log("stamping");
+        //Debug.Log("stamping");
         _stampImage.raycastTarget = true;//needs to be last to ensure that this isn't hit by raycast
     }
 
@@ -35,7 +36,7 @@ public class MailStamp : MonoBehaviour, IDropHandler, IBeginDragHandler, IPointe
     {
         //raycasting to object beneath and seeing it it is a mail
         List<RaycastResult> results = new List<RaycastResult>();//LATER move to memberVs to same memory!!
-
+        eventData.position = stampingPosition.position;
         graphicRaycaster.Raycast(eventData, results);
 
         if (results.Count > 0)

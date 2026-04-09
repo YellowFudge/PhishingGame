@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class HamSpamButton : MonoBehaviour
+public class HamSpamButton : MonoBehaviour //remake into StampsManager. Keeps track of their cover but not stamps in themselves?
 {
     [SerializeField] DynamicButtons dynamicButtons;
     [SerializeField] LevelManager levelManager;
     [SerializeField] ScoreCalculate scoreCalculate;
     [SerializeField] DailyCues dailyCues;
     bool _buttonPressed;
+
+    //get current mail object in levelmanager and check when has been opened at least once (make into event this listenes for instead?)
+    //open case for stamps when has opened once? but can only stamp on closed? or do you have to deal with your consequenses?
+    //
 
     private void OnEnable()
     {

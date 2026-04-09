@@ -11,6 +11,16 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
     bool _opened;
     bool _dragging;
     RectTransform _rectTrans;
+    bool _playerHasOpened;
+
+    /// <summary>
+    /// true if the object is currently open. false if not.
+    /// </summary>
+    public bool IsOpen { get { return _opened; } }
+    /// <summary>
+    /// true player has ever opened this object. false if not.
+    /// </summary>
+    public bool PlayerHasOpened { get { return _playerHasOpened; } }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +38,7 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
             _opened = false;
         }
 
+        _playerHasOpened = false;
         _dragging = false;
         _rectTrans = GetComponent<RectTransform>();
     }
@@ -118,6 +129,7 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
             _opened = false;
             return;
         }
+        _playerHasOpened = true;
         openedObject.SetActive(true);
         closedObject.SetActive(false);
         _opened = true;
