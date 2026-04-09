@@ -34,12 +34,12 @@ title: R1_2
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: Assistant! I need your help, someone knows a dark secret of mine and I am required to send them gold
+Gwendolen: Assistant! I need your help, someone knows a dark secret of mine and I am required to send them gold
 <<trigger_talk>>
-Gwen: Can you help me set up this arrangement ASAP? I will send over their pidegeon number so you can work out the details.
+Gwendolen: Can you help me set up this arrangement ASAP? I will send over their pidegeon number so you can work out the details.
 <<set_mood "Happy">>
 <<trigger_talk>>
-Gwen: Thanks for letting me know this info, you’re a lifesaver!!!
+Gwendolen: Thanks for letting me know this info, you’re a lifesaver!!!
 <<end_of_response>>
 ===
 
@@ -49,10 +49,10 @@ title: R1_3
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: Hello assistant. Thank the magical wonders that you brought me Meredith’s scroll!
+Gwendolen: Hello assistant. Thank the magical wonders that you brought me Meredith’s scroll!
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwen: If I would have ignored her scrolls three times in a row, the skies would have turned purple and the thunder would be the least of our worries.
+Gwendolen: If I would have ignored her scrolls three times in a row, the skies would have turned purple and the thunder would be the least of our worries.
 <<end_of_response>>
 ===
 
@@ -77,15 +77,15 @@ title: R1_5
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: Goodmorning assistant! Thank you for your hard work.
+Gwendolen: Goodmorning assistant! Thank you for your hard work.
 <<trigger_talk>>
-Gwen: My friend over at Oberon Reanimation got a concerning scroll the other day, blackmailing her about her dark secrets.
+Gwendolen: My friend over at Oberon Reanimation got a concerning scroll the other day, blackmailing her about her dark secrets.
 <<set_mood "Happy">>
 <<trigger_talk>>
-Gwen: Luckily, all her dark secrets are already out in the open, so it must be a scam, haha!
+Gwendolen: Luckily, all her dark secrets are already out in the open, so it must be a scam, haha!
 <<set_mood "Neutral">>
 <<trigger_talk>> 
-Gwen: If I had gotten such a scroll I would have sent them all my gold… Keep your eyes peeled!
+Gwendolen: If I had gotten such a scroll I would have sent them all my gold… Keep your eyes peeled!
 <<end_of_response>>
 ===
 
@@ -95,13 +95,13 @@ title: R1_6
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: Hello assistant. Meredith from Mystical Harmonisation bursted into my office yesterday during lunch.
+Gwendolen: Hello assistant. Meredith from Mystical Harmonisation bursted into my office yesterday during lunch.
 <<set_mood "Angry">>
 <<trigger_talk>>
-Gwen: She claimed that I’ve been ignoring her for three days now. The thing is that I only remember ignoring her for two of those days.
+Gwendolen: She claimed that I’ve been ignoring her for three days now. The thing is that I only remember ignoring her for two of those days.
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwen: Please be more thorough when sorting through my scrolls in the future.
+Gwendolen: Please be more thorough when sorting through my scrolls in the future.
 <<end_of_response>>
 ===
 
@@ -110,61 +110,66 @@ Gwen: Please be more thorough when sorting through my scrolls in the future.
 //---------------------------//
 title: R2_1
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Angry")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R2_1
+Gwendolen: Assistant! Please help me, nothing is working anymore!
+<<trigger_talk>>
+Gwendolen: I must have missed some words in the attunement spell or something, I think my tome is now corrupt!
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwendolen: Please go ask Tilly to come to me as soon as she has time!
 <<end_of_response>>
 ===
 
 title: R2_2
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R2_2
+Gwendolen: R2_2
 <<end_of_response>>
 ===
 
 title: R2_3
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R2_3
+Gwendolen: R2_3
 <<end_of_response>>
 ===
 
 title: R2_4
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R2_4
+Gwendolen: R2_4
 <<end_of_response>>
 ===
 
 title: R2_5
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R2_5
+Gwendolen: R2_5
 <<end_of_response>>
 ===
 
 title: R2_6
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R2_6
+Gwendolen: R2_6
 <<end_of_response>>
 ===
 
@@ -173,61 +178,61 @@ Gwen: R2_6
 //---------------------------//
 title: R3_1
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R3_1
+Gwendolen: R3_1
 <<end_of_response>>
 ===
 
 title: R3_2
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R3_2
+Gwendolen: R3_2
 <<end_of_response>>
 ===
 
 title: R3_3
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R3_3
+Gwendolen: R3_3
 <<end_of_response>>
 ===
 
 title: R3_4
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R3_4
+Gwendolen: R3_4
 <<end_of_response>>
 ===
 
 title: R3_5
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R3_5
+Gwendolen: R3_5
 <<end_of_response>>
 ===
 
 title: R3_6
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R3_6
+Gwendolen: R3_6
 <<end_of_response>>
 ===
 
@@ -236,60 +241,60 @@ Gwen: R3_6
 //---------------------------//
 title: R4_1
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R4_1
+Gwendolen: R4_1
 <<end_of_response>>
 ===
 
 title: R4_2
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R4_2
+Gwendolen: R4_2
 <<end_of_response>>
 ===
 
 title: R4_3
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R4_3
+Gwendolen: R4_3
 <<end_of_response>>
 ===
 
 title: R4_4
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R4_4
+Gwendolen: R4_4
 <<end_of_response>>
 ===
 
 title: R4_5
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R4_5
+Gwendolen: R4_5
 <<end_of_response>>
 ===
 
 title: R4_6
 ---
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwen: R4_6
+Gwendolen: R4_6
 <<end_of_response>>
 ===
