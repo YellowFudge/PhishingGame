@@ -24,6 +24,13 @@ public class PersonManager : MonoBehaviour
 
     public void TriggerTalkAnim()
     {
+        if (_currentPersonIndex == -1) {
+            Debug.LogError("Talk animation is attempted while no person has been selected. " +
+                "Ensure that a person with a correctly spelled name matching one in the enum PersonsEnum is slected before triggering this. " +
+                "Select a person by calling <<change_person(name, mood)>>");
+            return;
+        }
+
         personAnimArray[_currentPersonIndex].animator.SetTrigger("Talk");
     }
 
