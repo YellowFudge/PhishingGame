@@ -21,25 +21,32 @@ title: R1_1
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Hilaire: Hello assistant. Do you happen to know why we are missing 300 gold from our vault?
-<<set_mood "Neutral">>
+Hilaire: Hello assistant.
+<<trigger_talk>>
+Hilaire: Do you happen to know why we are missing 300 gold from our vault?
+<<set_mood "Angry">>
 <<trigger_talk>>
 Hilaire: Gwendolen was supposed to receive 300 gold as an award. Do you know anything about this?
+<<trigger_talk>>
+Hilaire: Let me know if you recall anything.
 <<end_of_response>>
 ===
 
 title: R1_2
 ---
-<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<if change_person("Gwen", "Angry")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: Assistant! I need your help, someone knows a dark secret of mine and I am required to send them gold
+Gwendolen: Attendant!
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwendolen: I need your help, someone knows a dark secret of mine and I am required to send them gold.
 <<trigger_talk>>
 Gwendolen: Can you help me set up this arrangement ASAP? I will send over their pidegeon number so you can work out the details.
 <<set_mood "Happy">>
 <<trigger_talk>>
-Gwendolen: Thanks for letting me know this info, you’re a lifesaver!!!
+Gwendolen: Thanks for letting me know this info, you’re a lifesaver!
 <<end_of_response>>
 ===
 
@@ -62,46 +69,62 @@ title: R1_4
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Cressida: Dear assistant, Yesterday there was an incident involving a pidgeon.
+Cressida: Good morning, Attendant.
+<<set_mood "Angry">>
 <<trigger_talk>>
-Cressida: It had, luckily, been lost on the way to something called “Treasury Lodge” and had found its way into our treasury instead.
+Cressida: Yesterday there was an incident involving a pigeon. 
+<<trigger_talk>>
+Cressida: It had - luckily - been lost on the way to something called “Treasury Lodge” and had found its way into our treasury instead. 
 <<set_mood "Happy">>
 <<trigger_talk>>
-Cressida: Reviewing yesterday’s communications, I am pleased to see that you instead caught the scam and reported it! As I care deeply for security, you have my thanks.
+Cressida: Of course, I reviewed yesterday’s communications, and I am pleased to see that you caught the scam and reported it! 
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Cressida: As I care deeply for security, you have my thanks. 
+<<set_mood "Angry">>
+<<trigger_talk>>
+Cressida: If you’ll excuse me, I’ll go have a word with Tilly now…
 <<end_of_response>>
 ===
 
 title: R1_5
 ---
-<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: Goodmorning assistant! Thank you for your hard work.
+Gwendolen: Hi attendant. Thank you for your hard work. 
+<<set_mood "Angry">>
 <<trigger_talk>>
-Gwendolen: My friend over at Oberon Reanimation got a concerning scroll the other day, blackmailing her about her dark secrets.
+Gwendolen: My friend over on Oberon Reanimation got a concerning scroll the other day, blackmailing her about her dark secrets.
 <<set_mood "Happy">>
 <<trigger_talk>>
 Gwendolen: Luckily, all her dark secrets are already out in the open, so it must be a scam, haha!
+<<trigger_talk>> 
+Gwendolen: If I had gotten such a scroll I would have sent them all my gold…
 <<set_mood "Neutral">>
 <<trigger_talk>> 
-Gwendolen: If I had gotten such a scroll I would have sent them all my gold… Keep your eyes peeled!
+Gwendolen: Keep your eyes peeled!
 <<end_of_response>>
 ===
 
 title: R1_6
 ---
-<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<if change_person("Meredith", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: Hello assistant. Meredith from Mystical Harmonisation bursted into my office yesterday during lunch.
+Meredith: Greetings, attendant.
 <<set_mood "Angry">>
 <<trigger_talk>>
-Gwendolen: She claimed that I’ve been ignoring her for three days now. The thing is that I only remember ignoring her for two of those days.
+Meredith: Gwendolen has been ignoring me for three days now. 
+<<trigger_talk>>
+Meredith: When I confronted her, she said she only remembers ignoring me for two of those days!
+<<trigger_talk>>
+Meredith: Can you believe her!?
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwendolen: Please be more thorough when sorting through my scrolls in the future.
+Meredith: Would you PLEASE, make sure she gets my scrolls?
 <<end_of_response>>
 ===
 
@@ -114,10 +137,13 @@ title: R2_1
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: Assistant! Please help me, nothing is working anymore!
+Gwendolen: Attendant! 
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwendolen: Please help me, nothing is working anymore!
+<<set_mood "Angry">>
 <<trigger_talk>>
 Gwendolen: I must have missed some words in the attunement spell or something, I think my tome is now corrupt!
-<<set_mood "Neutral">>
 <<trigger_talk>>
 Gwendolen: Please go ask Tilly to come to me as soon as she has time!
 <<end_of_response>>
@@ -125,51 +151,96 @@ Gwendolen: Please go ask Tilly to come to me as soon as she has time!
 
 title: R2_2
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: R2_2
+Gwendolen: Thanks for letting me know about the delayed delivery yesterday!
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwendolen: I didn’t know Refractors & Prisms doesn’t use Brooms Express anymore… 
+<<trigger_talk>>
+Gwendolen: But of course I claimed the compensation as Hilaire has been nagging me about keeping costs down. 
+<<set_mood "Happy">>
+<<trigger_talk>>
+Gwendolen: She’ll be thrilled, AND as I gave them High Wizard’s seal he’s automatically getting a really good deal on future orders!
+<<trigger_talk>>
+Gwendolen: You know he loves prisms!
 <<end_of_response>>
 ===
 
 title: R2_3
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: R2_3
+Gwendolen: Hello attendant.
+<<trigger_talk>>
+Gwendolen: I must have completely missed that the Pendragon arcane and communications conference was moved to next week!
+<<set_mood "Angry">>
+<<trigger_talk>>
+Gwendolen: On a separate note, do you know why the “Magical Seal Deal and Protection Service” warned me about attuning my magical seal to shady organisations this morning?
 <<end_of_response>>
 ===
 
 title: R2_4
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: R2_4
+Gwendolen: Hello assistant.
+<<trigger_talk>>
+Gwendolen: I heard that Cambion’s tome got corrupted yesterday after getting a request to cast an attunement spell.
+<<set_mood "Happy">>
+<<trigger_talk>>
+Gwendolen: Luckily I wasn’t requested to do my own attunement, I always mess up the order of the words in those as well.
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwendolen: If you see such a request, let Tilly know immediately so that she can help me with it.
 <<end_of_response>>
 ===
 
 title: R2_5
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Berg", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: R2_5
+Berg: Hello attendant, is everything in order?
+<<trigger_talk>>
+Berg: Harlis Dorn at Refractors and Prisms spoke to me yesterday.
+<<set_mood "Angry">>
+<<trigger_talk>>
+Berg: They had an incantation incident last week, and lost their tome of customers in the void. 
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Berg: He said that multiple customers have been receiving scrolls from “Cat’s delivery” or something.
+<<trigger_talk>>
+Berg: He told me that they keep using Broom’s Express for now, despite the constant delivery issues.
+<<trigger_talk>>
+Berg: Be careful, will you?
 <<end_of_response>>
 ===
 
 title: R2_6
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: R2_6
+Gwendolen: Hello attendant!
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwen: The Pendragon arcane and communications conference committee issued a warning about impersonators asking for employees' magical seals through scrolls.
+<<set_mood "Happy">>
+<<trigger_talk>>
+Gwen: Since I never received such a scroll, it must mean that your second day at work went great!
+<<trigger_talk>>
+Gwen: Keep up the good work.
+<<trigger_talk>>
+Gwen: Now, maybe we should assign you to read all the scrolls at this place.
 <<end_of_response>>
 ===
 
@@ -178,7 +249,7 @@ Gwendolen: R2_6
 //---------------------------//
 title: R3_1
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -188,7 +259,7 @@ Gwendolen: R3_1
 
 title: R3_2
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -198,7 +269,7 @@ Gwendolen: R3_2
 
 title: R3_3
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -208,7 +279,7 @@ Gwendolen: R3_3
 
 title: R3_4
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -218,7 +289,7 @@ Gwendolen: R3_4
 
 title: R3_5
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -228,7 +299,7 @@ Gwendolen: R3_5
 
 title: R3_6
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -241,7 +312,7 @@ Gwendolen: R3_6
 //---------------------------//
 title: R4_1
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -251,7 +322,7 @@ Gwendolen: R4_1
 
 title: R4_2
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -261,7 +332,7 @@ Gwendolen: R4_2
 
 title: R4_3
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -271,7 +342,7 @@ Gwendolen: R4_3
 
 title: R4_4
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -281,7 +352,7 @@ Gwendolen: R4_4
 
 title: R4_5
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
@@ -291,7 +362,7 @@ Gwendolen: R4_5
 
 title: R4_6
 ---
-<<if change_person("Gwendolen", "Happy")>>//you need if for it to work :(
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
