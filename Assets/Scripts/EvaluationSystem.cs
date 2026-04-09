@@ -13,12 +13,12 @@ public class EvaluationSystem : MonoBehaviour
 
     private void OnEnable()
     {
-        CutsceneManager.EndOfEndDayTriggeredEvent += OnEndDayTriggered;
+        CutsceneManager.EndOfStartDayTriggeredEvent += OnEndDayTriggered;
     }
 
     private void OnDisable()
     {
-        CutsceneManager.EndOfEndDayTriggeredEvent -= OnEndDayTriggered;
+        CutsceneManager.EndOfStartDayTriggeredEvent -= OnEndDayTriggered;
     }
 
     void OnEndDayTriggered() {
@@ -55,6 +55,10 @@ public class EvaluationSystem : MonoBehaviour
             }
         }
 
+        //----------------------------------//
+        //          With General           //
+        //--------------------------------//
+        /*
         // Check if all is right/wrong so we know if general message or random message is sent
         if (wrongTotalTypes == 3 || correctTotalTypes == 3) { // All right/wrong
             int goodOrBad = 0;
@@ -81,8 +85,34 @@ public class EvaluationSystem : MonoBehaviour
             // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
             // Will return "R1.3" for example
             mailToReturn = "R" + (dayNum - 1) + "_" + mailVariable; //Change to _ rather than .
+        } */
+
+        //--------------------------------------//
+        //          Without General            //
+        //------------------------------------//
+        
+        var randomBytes = new byte[4];
+
+        // Random function for generating a respons
+        // Swap for value based system later, so each response carry a higher or lower value to be choosen
+        using (var rng = RandomNumberGenerator.Create())
+        {
+            rng.GetBytes(randomBytes);
+            uint trueRandom = BitConverter.ToUInt32(randomBytes, 0);
+
+            int randNr = (int)(trueRandom % 3); // 0, 1, or 2
+
+            mailVariable = returnMailNr[randNr];
         }
-        Debug.Log("mailToReturn: " + mailToReturn);
+
+        // Art is made by god,and I am the artist - Richard 23:13 15-Mar-26
+        // Will return "R1.3" for example
+        mailToReturn = "R" + (dayNum - 1) + "_" + mailVariable; //Change to _ rather than .
+        
+
+        //mailToReturn = "R2_1";
+        //Debug.Log("mailToReturn: " + mailToReturn);
+
         return mailToReturn;
     }
 }
