@@ -22,6 +22,10 @@ public class EvaluationSystem : MonoBehaviour
     }
 
     void OnEndDayTriggered() {
+        if (levelManager.CurrentDay.Equals(1)) //levelmanager handles first day cutscenes(nothing to evaluate)
+        {
+            return;
+        }
         cutsceneManager.StartDialouge(CheckCorrectTotal(levelManager.CurrentDay));
     }
 
