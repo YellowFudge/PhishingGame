@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
 
     public MailCueTypes GetCurrentMailinfo()//if hamspambuttons are pressed before mail has been instanciated mail will be 0
     {
-        if(_currentMail.Equals(0) && dailyMailsScriptObj.GetCurrentMailinfo(_currentDay, _currentMail, out MailCueTypes mailCues))
+        if(!_currentMail.Equals(0) && dailyMailsScriptObj.GetCurrentMailinfo(_currentDay, _currentMail, out MailCueTypes mailCues))
         {
             return mailCues;
         }

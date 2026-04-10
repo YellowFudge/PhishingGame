@@ -39,8 +39,13 @@ public class HamSpamButton : MonoBehaviour //remake into StampsManager. Keeps tr
         }
         _buttonPressed = true;
 
-        //Debug.Log("YEs");
         MailCueTypes mailCue = levelManager.GetCurrentMailinfo();
+
+        if (mailCue == null)
+        {
+            _buttonPressed = false;
+            return;
+        }//Debug.Log("YEs");
 
         //Debug.Log("mailcue is: "+ mailCue);
 
