@@ -39,9 +39,9 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public int CurrentDay { get { return _currentDay; } }
 
-    public MailCueTypes GetCurrentMailinfo()
+    public MailCueTypes GetCurrentMailinfo()//if hamspambuttons are pressed before mail has been instanciated mail will be 0
     {
-        if(dailyMailsScriptObj.GetCurrentMailinfo(_currentDay, _currentMail, out MailCueTypes mailCues))
+        if(_currentMail.Equals(0) && dailyMailsScriptObj.GetCurrentMailinfo(_currentDay, _currentMail, out MailCueTypes mailCues))
         {
             return mailCues;
         }
