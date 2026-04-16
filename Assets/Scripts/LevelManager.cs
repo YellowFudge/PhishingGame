@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] StringDayArrayScriptObj iTCutsceneIDArray;
     [SerializeField] string wizStartDialougeID;
     [SerializeField] Transform mailSpawnPoint;
+    [SerializeField] Transform desktopTransform;
 
     [SerializeField] CutsceneManager cutsceneManager;
     int _currentDay = 1;
@@ -115,7 +116,7 @@ public class LevelManager : MonoBehaviour
             return;
         }
         
-        _currentMailObject = Instantiate(mailObj, mailSpawnPoint);
+        _currentMailObject = Instantiate(mailObj, mailSpawnPoint.position, Quaternion.identity, desktopTransform);
         NextMailEvent?.Invoke();
     }
 
