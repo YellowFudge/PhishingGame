@@ -146,7 +146,7 @@ public class CutsceneManager : MonoBehaviour
     {
         if (!_goToCredits)
         {
-            _animator.SetTrigger("StartDay");
+            _animator.SetTrigger("NightToDay");
             EndOfEndDayTriggeredEvent?.Invoke();
             return;
         }
@@ -160,15 +160,21 @@ public class CutsceneManager : MonoBehaviour
         EndOfStartDayTriggeredEvent?.Invoke();
     }
 
-    public void EndOfThrowScrollsCutScene()//triggered by animation
+    public void EndOfNightToDayCutScene()//triggered by animation
     {
-        CutsceneEventManager.inCutscene = false;
-        EndOfScrollThrowTriggeredEvent?.Invoke();
+        //not exiting cutscene so not setting inCutscene to false
+        _animator.SetTrigger("StartDay");
     }
 
     public void EndOfFadeAwayBlackCutScene()//triggered by animation
     {
         EndOfFadeAwayBlackTriggeredEvent?.Invoke();
         StartThrowScrollsCutScene();
+    }
+
+    public void EndOfThrowScrollsCutScene()//triggered by animation
+    {
+        CutsceneEventManager.inCutscene = false;
+        EndOfScrollThrowTriggeredEvent?.Invoke();
     }
 }
