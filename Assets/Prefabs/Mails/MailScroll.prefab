@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7397421104985081161}
   m_Layer: 5
   m_Name: LogoTopImage
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 388555438487450571}
   m_Layer: 5
   m_Name: ScrollImage
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 7196246712033716381}
   m_Layer: 5
   m_Name: SignatureText
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 3002232560603806860}
   m_Layer: 5
   m_Name: Handle
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 3438422924422605099}
   m_Layer: 5
   m_Name: Sliding Area
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 2764353630039016617}
   m_Layer: 5
   m_Name: TextAreaMask
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 4729778020370848797}
   - component: {fileID: 4449113451734473175}
   - component: {fileID: 8406126021274540280}
-  - component: {fileID: 4872886277537289091}
+  - component: {fileID: 3118398962591420349}
   m_Layer: 5
   m_Name: MailScroll
   m_TagString: Mail
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9509df0354e173f47a7fa21c1c00c7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4872886277537289091
+--- !u!114 &3118398962591420349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3237521408551472954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc4a1da796ddb64c8f88b3e62051e1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 10bb6a7e2763567469e2c4ac54ad7e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   openedObject: {fileID: 1083931186195284415}
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 4903118287106457032}
   m_Layer: 5
   m_Name: LogoBottomParent
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 1707125885935996091}
   m_Layer: 5
   m_Name: LogoTopParent
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 2398543086475009157}
   m_Layer: 5
   m_Name: BodyText2
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 6112072312913202114}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -986,7 +986,7 @@ GameObject:
   - component: {fileID: 6266436292214648376}
   m_Layer: 5
   m_Name: LogoSignatureParent
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1026,7 +1026,7 @@ GameObject:
   - component: {fileID: 8932841268544810353}
   m_Layer: 5
   m_Name: Scrollbar Vertical
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 1675962321474784320}
   m_Layer: 5
   m_Name: BodyText1
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 92165158558339784}
   m_Layer: 5
   m_Name: LogoSignatureImage
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1374,7 +1374,7 @@ GameObject:
   - component: {fileID: 3727884097072658493}
   m_Layer: 5
   m_Name: LinkText
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 3445058508267652180}
   m_Layer: 5
   m_Name: DateText
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1648,7 +1648,7 @@ GameObject:
   - component: {fileID: 8646165932735437985}
   m_Layer: 5
   m_Name: RecieverAdressText
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1786,7 +1786,7 @@ GameObject:
   - component: {fileID: 5594355075723210127}
   m_Layer: 5
   m_Name: TextAreaContent
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1874,7 +1874,7 @@ GameObject:
   - component: {fileID: 1388041628468510839}
   m_Layer: 5
   m_Name: SenderAdressText
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2010,7 +2010,7 @@ GameObject:
   - component: {fileID: 4379104082046962946}
   m_Layer: 5
   m_Name: SubjectText
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2148,7 +2148,7 @@ GameObject:
   - component: {fileID: 7974465335920721050}
   m_Layer: 5
   m_Name: SenderNameText
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2284,7 +2284,7 @@ GameObject:
   - component: {fileID: 6428476032215998412}
   m_Layer: 5
   m_Name: SenderInfo
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2322,7 +2322,7 @@ GameObject:
   - component: {fileID: 7352752229156601038}
   m_Layer: 5
   m_Name: LogoBottomImage
-  m_TagString: Mail
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

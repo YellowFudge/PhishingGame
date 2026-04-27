@@ -4,12 +4,14 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
-public class MailStamp : MonoBehaviour, IDropHandler, IBeginDragHandler, IPointerUpHandler, IPointerDownHandler
+public class MailStamp : MonoBehaviour, /*IDropHandler,*/ IBeginDragHandler, IPointerUpHandler, IPointerDownHandler
 {
+    [SerializeField] bool isPhishingStamp;
     [SerializeField] Transform startPosition;
     [SerializeField] Transform stampingPosition;
     [SerializeField] GameObject stampObject;
     [SerializeField] GraphicRaycaster graphicRaycaster;//on canvas
+    [SerializeField] MailStampManager mailStampManager;
     Image _stampImage;
 
     private void Awake()
@@ -20,17 +22,15 @@ public class MailStamp : MonoBehaviour, IDropHandler, IBeginDragHandler, IPointe
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        MailEventManager.StampPickedUpEvent?.Invoke();
         _stampImage.raycastTarget = false;
     }
 
-    public void OnDrop(PointerEventData eventData) //on pointer up as well? now it will always drag though so this might be enough
+    /*public void OnDrop(PointerEventData eventData) //on pointer up as well? now it will always drag though so this might be enough
     {
         //raycasting to object beneath and seeing it it is a mail
-        
-
-        //Debug.Log("stamping");
         _stampImage.raycastTarget = true;//needs to be last to ensure that this isn't hit by raycast
-    }
+    }*/
 
     public void OnPointerUp(PointerEventData eventData)
     {
@@ -49,19 +49,16 @@ public class MailStamp : MonoBehaviour, IDropHandler, IBeginDragHandler, IPointe
             {
                 //put stamp where mouse was
                 Instantiate(stampObject, eventData.position, Quaternion.identity, results[0].gameObject.transform);
-                Debug.Log("YES");
+                mailStampManager.StampUsed(isPhishingStamp);
             }
-            Debug.Log("Hit " + results[0].gameObject.name);
         }
-        else Debug.Log("Miss");
-
-            Debug.Log("stamping2");
         transform.position = startPosition.position;
+        
         _stampImage.raycastTarget = true;//needs to be last to ensure that this isn't hit by raycast
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("down");
+        //Debug.Log("down");
     }
 }

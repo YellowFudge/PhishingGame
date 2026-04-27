@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(RectTransform))]
-public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler
+public class DraggableObject : MonoBehaviour, IDragHandler, IPointerDownHandler
 {
     Vector3 _pointerOffsetToMiddle;
     RectTransform _rectTrans;
@@ -14,7 +14,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler
         _rectTrans = GetComponent<RectTransform>();
     }
 
-    public void OnBeginDrag(PointerEventData eventData) //TODO: MAKE IT AT FRONT OF OTHER THINGS WHEN SELECTED/DRAGGED
+    public void OnPointerDown(PointerEventData eventData)
     {
         //calculate offset between mousepos and middle of object
         _pointerOffsetToMiddle = transform.position - InputEventManager.PointPos;

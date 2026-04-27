@@ -3,6 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /// <summary>
 /// All levels is in one scene which means that this keeps track of: 
@@ -28,6 +29,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] string wizStartDialougeID;
     [SerializeField] Transform mailSpawnPoint;
     [SerializeField] Transform desktopTransform;
+    [SerializeField] GraphicRaycaster graphicRaycaster;//on canvas
 
     [SerializeField] CutsceneManager cutsceneManager;
     int _currentDay = 1;
@@ -39,6 +41,8 @@ public class LevelManager : MonoBehaviour
     /// 1-based number for which day it is (first day == 1)
     /// </summary>
     public int CurrentDay { get { return _currentDay; } }
+    public Transform MailSpawnPointTransform { get { return mailSpawnPoint; } }
+    public Transform DesktopTransform { get { return desktopTransform; } }
 
     public MailCueTypes GetCurrentMailinfo()//if hamspambuttons are pressed before mail has been instanciated mail will be 0
     {
@@ -116,7 +120,9 @@ public class LevelManager : MonoBehaviour
             return;
         }
         
-        _currentMailObject = Instantiate(mailObj, mailSpawnPoint.position, Quaternion.identity, desktopTransform);
+        _currentMailObject = Instantiate(mailObj, mailSpawnPoint.position, Quaternion.identity, mailSpawnPoint);
+        MailOpenCloseHandler mailOC = _currentMailObject.GetComponent<MailOpenCloseHandler>();
+        mailOC.graphicRaycaster = graphicRaycaster;
         NextMailEvent?.Invoke();
     }
 

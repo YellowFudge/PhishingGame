@@ -169,7 +169,8 @@ public class CutsceneManager : MonoBehaviour
     public void EndOfFadeAwayBlackCutScene()//triggered by animation
     {
         EndOfFadeAwayBlackTriggeredEvent?.Invoke();
-        StartThrowScrollsCutScene();
+        EndOfThrowScrollsCutScene();//FOR NOW REMOVE LATER
+        //StartThrowScrollsCutScene();
     }
 
     public void EndOfThrowScrollsCutScene()//triggered by animation

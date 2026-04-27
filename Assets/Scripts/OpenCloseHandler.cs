@@ -5,13 +5,13 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(RectTransform))]
 public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHandler,*/ IBeginDragHandler, IEndDragHandler
 {
-    [SerializeField] GameObject openedObject;
-    [SerializeField] GameObject closedObject;
-    [SerializeField] bool startOpen;
-    bool _opened;
-    bool _dragging;
-    RectTransform _rectTrans;
-    bool _playerHasOpened;
+    [SerializeField] protected GameObject openedObject;
+    [SerializeField] protected GameObject closedObject;
+    [SerializeField] protected bool startOpen;
+    protected bool _opened;
+    protected bool _dragging;
+    protected RectTransform _rectTrans;
+    protected bool _playerHasOpened;
 
     /// <summary>
     /// true if the object is currently open. false if not.
@@ -21,11 +21,31 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
     /// true player has ever opened this object. false if not.
     /// </summary>
     public bool PlayerHasOpened { get { return _playerHasOpened; } }
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    protected void Start()
     {
         if (startOpen)
+        {
+            ChangeObjectState(true);
+        }
+        else
+        {
+            ChangeObjectState(false);
+        }
+
+        _playerHasOpened = false;
+        _dragging = false;
+        _rectTrans = GetComponent<RectTransform>();
+    }
+
+    public void CloseObject()
+    {
+        ChangeObjectState(false);
+    }
+
+    protected virtual void ChangeObjectState(bool doOpenObject)
+    {
+        if (doOpenObject)
         {
             openedObject.SetActive(true);
             closedObject.SetActive(false);
@@ -37,10 +57,6 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
             closedObject.SetActive(true);
             _opened = false;
         }
-
-        _playerHasOpened = false;
-        _dragging = false;
-        _rectTrans = GetComponent<RectTransform>();
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -124,15 +140,11 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
 
         if (_opened)
         {
-            openedObject.SetActive(false);
-            closedObject.SetActive(true);
-            _opened = false;
+            ChangeObjectState(false);
             return;
         }
         _playerHasOpened = true;
-        openedObject.SetActive(true);
-        closedObject.SetActive(false);
-        _opened = true;
+        ChangeObjectState(true);
     }
 
     /*public void OnSubmit(BaseEventData eventData) //only for when using gamepad-/button navigation(therefore ignored for now) 
@@ -165,7 +177,7 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
     {
         _dragging = false;
     }
-    bool CheckOverlap(Vector3[] ownCorners, RectTransform ownRect, RectTransform otherRect)
+    protected bool CheckOverlap(Vector3[] ownCorners, RectTransform ownRect, RectTransform otherRect)
     {
         //check if is overlapped by other UI object
         Vector3[] cornersB = new Vector3[4];
