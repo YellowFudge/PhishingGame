@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c2c85dfdb91ff9649b5e1d7303a17e69
+guid: 8a34653e51367464faf22160868ecba6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8601272339148567943
-    second: stamp_ham_81x94_0
+      213: -7810937097068734692
+    second: scroll_drawer_568x100_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stamp_ham_81x94_0
+      name: scroll_drawer_568x100_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 69
-        height: 76
+        width: 568
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97a08a8016422a880800000000000000
-      internalID: -8601272339148567943
+      spriteID: c171c46281af99390800000000000000
+      internalID: -7810937097068734692
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stamp_ham_81x94_0: -8601272339148567943
+      scroll_drawer_568x100_0: -7810937097068734692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
