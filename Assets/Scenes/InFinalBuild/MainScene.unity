@@ -255,7 +255,7 @@ PrefabInstance:
     - target: {fileID: 1173888645101033948, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
       propertyPath: dynamicButtons
       value: 
-      objectReference: {fileID: 1989151474}
+      objectReference: {fileID: 1326935236}
     - target: {fileID: 1173888645101033948, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
       propertyPath: scoreCalculate
       value: 
@@ -2539,6 +2539,7 @@ GameObject:
   - component: {fileID: 1326935233}
   - component: {fileID: 1326935235}
   - component: {fileID: 1326935234}
+  - component: {fileID: 1326935236}
   m_Layer: 5
   m_Name: ChecklistPanel
   m_TagString: Untagged
@@ -2594,6 +2595,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9509df0354e173f47a7fa21c1c00c7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1326935236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326935232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5c3c6a7098635f181c499dea373cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPrefab: {fileID: 5535958553593769579, guid: 92630aaca257167ebafe5b3cada4ad8f, type: 3}
+  buttonField: {fileID: 868990224}
+  dailyCues: {fileID: 11400000, guid: 777ade8a36e556141a2d3f2d07c32e7e, type: 2}
+  levelManager: {fileID: 193130625}
 --- !u!1 &1420921409
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,7 +2659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c776d599e877f64f91c023ed461381e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dynamicButtons: {fileID: 1989151474}
+  dynamicButtons: {fileID: 1326935236}
   levelManager: {fileID: 193130625}
   scoreCalculate: {fileID: 1980686744}
   dailyCues: {fileID: 11400000, guid: 777ade8a36e556141a2d3f2d07c32e7e, type: 2}
@@ -3758,7 +3775,6 @@ GameObject:
   - component: {fileID: 1989151473}
   - component: {fileID: 1989151476}
   - component: {fileID: 1989151475}
-  - component: {fileID: 1989151474}
   m_Layer: 5
   m_Name: ChecklistOpen
   m_TagString: Untagged
@@ -3788,22 +3804,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000061035156, y: -0.0000038146973}
   m_SizeDelta: {x: 177, y: 259.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1989151474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989151472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb5c3c6a7098635f181c499dea373cc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 5535958553593769579, guid: 92630aaca257167ebafe5b3cada4ad8f, type: 3}
-  buttonField: {fileID: 868990224}
-  dailyCues: {fileID: 11400000, guid: 777ade8a36e556141a2d3f2d07c32e7e, type: 2}
-  levelManager: {fileID: 193130625}
 --- !u!114 &1989151475
 MonoBehaviour:
   m_ObjectHideFlags: 0
