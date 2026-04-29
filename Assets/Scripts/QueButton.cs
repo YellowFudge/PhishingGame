@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -23,8 +24,13 @@ public class QueButton : MonoBehaviour
         dynamicButtons.ToggleCounter(cueType, toggled);
     }
 
-    public void ResetValue()
+    public void ResetState()
     {
-        toggle.isOn = false;
+        toggled = 0;
+
+        if (toggle == null)
+            toggle = GetComponent<Toggle>();
+
+        toggle.SetIsOnWithoutNotify(toggled == 1);
     }
 }

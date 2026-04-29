@@ -59,6 +59,7 @@ public class DynamicButtons : MonoBehaviour
             qb.toggled = item.Value;
             qb.cueType = item.Key;
             
+            
             buttons.Add(newButton);
             //Debug.Log(newButton.name);
         }
@@ -142,6 +143,15 @@ public class DynamicButtons : MonoBehaviour
             "(?<=[a-z])([A-Z])|(?<=[A-Z])([A-Z])(?=[a-z])",
             " $0"
         );
+    }
+
+    public void ResetToggles()
+    {
+        foreach (GameObject button in buttons)
+        {
+            button.GetComponent<QueButton>().ResetState();
+            Debug.Log("+++ RESETTING BUTTON +++");
+        }
     }
     private void OnEnable()
     {

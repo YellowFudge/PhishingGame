@@ -28,6 +28,7 @@ public class HamSpamButton : MonoBehaviour //remake into StampsManager. Keeps tr
     void ResetButtons()
     {
         _buttonPressed = false;
+        dynamicButtons.ResetToggles();
     }
 
     public void SendToScore(bool isSpam)
