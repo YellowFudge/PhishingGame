@@ -9,6 +9,7 @@ public class MailStampManager : MonoBehaviour
     Animator _animator;
     bool _hasStamped;
     bool _stampedAsPhishing;
+    bool _interactedWithStamps;
 
     public bool HasStamped { get { return _hasStamped; }}
     public bool StampedAsPhishing { get { return _stampedAsPhishing; }}
@@ -16,28 +17,33 @@ public class MailStampManager : MonoBehaviour
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _interactedWithStamps = false;
     }
 
     private void OnEnable()
     {
         MailEventManager.ScrollOpenedEvent += OnScrollOpened;
-        MailEventManager.ScrollSentEvent += ResetStamps;//make subscribe to when begins closing (sending)
+        MailEventManager.SendingScrollEvent += ResetStamps;//make subscribe to when begins closing (sending)
                                                         //so cannot extract stamps while it is closing to stamp next
     }
 
     private void OnDisable()
     {
         MailEventManager.ScrollOpenedEvent -= OnScrollOpened;
-        MailEventManager.ScrollSentEvent -= ResetStamps;
+        MailEventManager.SendingScrollEvent -= ResetStamps;
     }
 
     void OnScrollOpened()
     {
-        //Remove cover (if not already opened)
-        if (stampCover.activeSelf)
+        //Remove cover (will always be closed when called)
+        _animator.SetTrigger("Open");
+    }
+
+    public void StampPickedUp()
+    {
+        if (!_interactedWithStamps)
         {
-            _animator.SetTrigger("Open");
-            //stampCover.SetActive(false);
+            MailEventManager.StampPickedUpEvent?.Invoke();
         }
     }
 
@@ -51,9 +57,10 @@ public class MailStampManager : MonoBehaviour
     public void ResetStamps()
     {
         //cover with lid again
-        //stampCover.SetActive(true);
         _animator.SetTrigger("Close");
+
         _hasStamped = false;
+        _interactedWithStamps = false;
     }
 
     

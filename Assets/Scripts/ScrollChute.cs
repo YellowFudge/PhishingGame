@@ -116,7 +116,7 @@ public class ScrollChute : MonoBehaviour, IPointerClickHandler
 
     void StartOpenAnim()
     {
-        if (_isOpen)
+        if (_isOpen || _sendingScroll) //if sending scroll you cannot interact with it until done (no regretting mid send)
         {
             return;
         }
@@ -130,6 +130,11 @@ public class ScrollChute : MonoBehaviour, IPointerClickHandler
         {
             return;
         }
+        if (_sendingScroll)
+        {
+            MailEventManager.SendingScrollEvent?.Invoke();
+        }
+
         _isOpen = false;
         _animator.SetTrigger("Close");
     }

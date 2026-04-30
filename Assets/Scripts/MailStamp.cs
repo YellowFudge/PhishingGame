@@ -22,7 +22,7 @@ public class MailStamp : MonoBehaviour, /*IDropHandler,*/ IBeginDragHandler, IPo
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        MailEventManager.StampPickedUpEvent?.Invoke();
+        mailStampManager.StampPickedUp();
         _stampImage.raycastTarget = false;
     }
 

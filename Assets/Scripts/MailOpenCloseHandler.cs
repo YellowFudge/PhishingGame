@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPointerUpHandler
 {
     bool _isOutOfChute;
+    bool _hasBeenOpened;
     [HideInInspector] public GraphicRaycaster graphicRaycaster;//on canvas
 
     //checks if it is over mailchute while no longer dragging, send ask to it if can be deposited there (yes if stamped) close if yes
@@ -27,6 +28,7 @@ public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPoin
     private void Awake()
     {
         _isOutOfChute = false;
+        _hasBeenOpened = false;
     }
 
     void OnScrollNotPlaced(bool hasBeenOpened)
@@ -93,8 +95,9 @@ public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPoin
     {
         base.ChangeObjectState(doOpenObject);
 
-        if (doOpenObject)
+        if (doOpenObject && !_hasBeenOpened)
         {
+            _hasBeenOpened = true;
             MailEventManager.ScrollOpenedEvent?.Invoke();
         }
     }
