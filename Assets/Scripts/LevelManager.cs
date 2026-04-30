@@ -89,7 +89,9 @@ public class LevelManager : MonoBehaviour
         //only one it cutscene per day so only pick first in day's array
         if (!iTCutsceneIDArray.GetCurrentString(_currentDay - 1, 0, out string cutsceneID))
         {
-            Debug.LogError($"{iTCutsceneIDArray} has no IT ID in the requested location: {_currentDay - 1},0");
+            //Debug.LogError($"{iTCutsceneIDArray} has no IT ID in the requested location: {_currentDay - 1},0");
+            //run out of days -> go to credits instead
+            cutsceneManager.StartCreditsCutScene();
             return;
         }
 
@@ -134,7 +136,7 @@ public class LevelManager : MonoBehaviour
         //if last day -> go to endscene
         if (_currentDay.Equals(_amountOfDays+1))
         {
-            cutsceneManager.StartCreditsCutScene();
+            cutsceneManager.StartEndWeekCutScene();
             return;
         }
 

@@ -116,6 +116,7 @@ public class ScrollChute : MonoBehaviour, IPointerClickHandler
 
     void StartOpenAnim()
     {
+        Debug.Log(_sendingScroll);
         if (_isOpen || _sendingScroll) //if sending scroll you cannot interact with it until done (no regretting mid send)
         {
             return;
@@ -151,12 +152,13 @@ public class ScrollChute : MonoBehaviour, IPointerClickHandler
 
         if (_sendingScroll)
         {
+            _sendingScroll = false;
             //send to Levelmanager to trigger next mail (hamspambutton replacement here)
             //      get from stamps or mail if player marked it as ham or spam
             SendToScore(mailStampManager.StampedAsPhishing);
             //reset all values to prepare for next mail
             _hasclosedFirstTime = false;
-            _sendingScroll = false;
+            
             MailEventManager.ScrollSentEvent?.Invoke();
             return;
         }

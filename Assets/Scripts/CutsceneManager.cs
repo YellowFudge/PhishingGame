@@ -135,11 +135,16 @@ public class CutsceneManager : MonoBehaviour
         _animator.SetTrigger("EndDay");
     }
 
-    public void StartCreditsCutScene()
+    public void StartEndWeekCutScene()
     {
         CutsceneEventManager.inCutscene = true;
+        _animator.SetTrigger("EndWeek");
+    }
+    public void StartCreditsCutScene() //already in cutscene
+    {
+        personManager.EndOfDialouge();
         _goToCredits = true;
-        _animator.SetTrigger("EndDay");
+        _animator.SetTrigger("Credits");
     }
 
     public void EndOfEndDayCutScene()//triggered by animation
@@ -169,7 +174,7 @@ public class CutsceneManager : MonoBehaviour
     public void EndOfFadeAwayBlackCutScene()//triggered by animation
     {
         EndOfFadeAwayBlackTriggeredEvent?.Invoke();
-        EndOfThrowScrollsCutScene();//FOR NOW REMOVE LATER
+        EndOfThrowScrollsCutScene();//FOR NOW REMOVE LATER (NO MORE trwow scrolls, remove entirely an just say outof cutscene?)
         //StartThrowScrollsCutScene();
     }
 

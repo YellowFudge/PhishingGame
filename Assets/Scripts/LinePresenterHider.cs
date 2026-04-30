@@ -7,13 +7,13 @@ public class LinePresenterHider : MonoBehaviour
     private void OnEnable()
     {
         CutsceneManager.EndOfFadeAwayBlackTriggeredEvent += HideLinePresenter;
-        CutsceneManager.EndOfEndDayTriggeredEvent += ShowLinePresenter;
+        CutsceneManager.EndOfStartDayTriggeredEvent += ShowLinePresenter;
     }
 
     private void OnDisable()
     {
         CutsceneManager.EndOfFadeAwayBlackTriggeredEvent -= HideLinePresenter;
-        CutsceneManager.EndOfEndDayTriggeredEvent -= ShowLinePresenter;
+        CutsceneManager.EndOfStartDayTriggeredEvent -= ShowLinePresenter;
     }
 
     void HideLinePresenter()
