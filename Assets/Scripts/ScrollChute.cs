@@ -177,5 +177,6 @@ public class ScrollChute : MonoBehaviour, IPointerClickHandler
         //UNCOMMENT BELOW AND IT SHOULD WORK !!!! :)
         //scoreCalculate.StartCalculation(isSpam, mailCue.IsSpamMail, mailCue.CueTypeArray, dynamicButtons.ConvertEnumToList().ToArray(), levelManager.CurrentDay);
         levelManager.NextMail(); //calling for next mail
+        dynamicButtons.ResetToggles(); // calling for toggle reset
     }
 }

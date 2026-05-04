@@ -150,7 +150,7 @@ public class DynamicButtons : MonoBehaviour
         foreach (GameObject button in buttons)
         {
             button.GetComponent<QueButton>().ResetState();
-            Debug.Log("+++ RESETTING BUTTON +++");
+            //Debug.Log("+++ RESETTING BUTTON +++");
         }
     }
     private void OnEnable()
