@@ -8,7 +8,7 @@ using UnityEngine;
 public class ScoreCalculate : MonoBehaviour
 {
     
-    public ScoreScriptableObjectScript playerResultSO; //SO for storing player results
+    public ScoreScriptableObjectScript scoreScriptableObjectScript; //SO for storing player results
 
     //Initiate
     public void StartCalculation(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue) { //Send mailtype + que Enums + Day
@@ -26,6 +26,7 @@ public class ScoreCalculate : MonoBehaviour
         // If player chose phising mail, playerSelectedPhising as "true" so eval can calculate start of day message from boss
         if (playerMailType == true)
         {
+            Debug.Log("Phising true");
             newScore.playerSelectedPhising = true;
         }
 
@@ -35,16 +36,18 @@ public class ScoreCalculate : MonoBehaviour
             // Assign value true - important for EvaluationSystem to propely evaluate
             newScore.isCorrect = true;
             scoreScriptableObjectScript.playerScore.Add(newScore);
+            Debug.Log("entered playerMailType == realMailType");
 
             if (realMailType == true)
             { // If the mail is phising: Runs que calculation and itterate totalCorrectPhis
-                playerResultSO.totalCorrectPhis = playerResultSO.totalCorrectPhis + 1;
+                scoreScriptableObjectScript.totalCorrectPhis = scoreScriptableObjectScript.totalCorrectPhis + 1;
                 CheckPlayerCorrectQueTypes(emailCue, playerCue);
+                Debug.Log("entered If the mail is phising");
             } 
 
             else
             { // Else if the mail is Ham itterate totalCorrectHam
-                playerResultSO.totalCorrectHam = playerResultSO.totalCorrectHam + 1;
+                scoreScriptableObjectScript.totalCorrectHam = scoreScriptableObjectScript.totalCorrectHam + 1;
             }
 
         } 
@@ -56,16 +59,18 @@ public class ScoreCalculate : MonoBehaviour
 
             if (realMailType == true) // If the mail is phising: itterate totalWrongPhis
             {
-                playerResultSO.totalWrongPhis = playerResultSO.totalWrongPhis + 1;
+                scoreScriptableObjectScript.totalWrongPhis = scoreScriptableObjectScript.totalWrongPhis + 1;
             } 
 
             else
             { // Else if the mail is Ham itterate totalWrongHam
-                playerResultSO.totalWrongHam = playerResultSO.totalWrongHam + 1;
+                scoreScriptableObjectScript.totalWrongHam = scoreScriptableObjectScript.totalWrongHam + 1;
             }
         }
-        Debug.Log(scoreScriptableObjectScript.playerChoseCorrectQue_Error);
-        Debug.Log(scoreScriptableObjectScript.playerChoseWrongQue_Error);
+        //Debug.Log("playerChoseCorrectQue_Error: " + scoreScriptableObjectScript.playerChoseCorrectQue_Error);
+        //Debug.Log($"playerChoseCorrectQue_Error {scoreScriptableObjectScript.playerChoseWrongQue_Error}");
+        //Debug.Log($"scoreScriptableObjectScript.totalCorrectHam {scoreScriptableObjectScript.totalCorrectHam}");
+        //Debug.Log($"scoreScriptableObjectScript.totalCorrectHam {scoreScriptableObjectScript.totalCorrectPhis}");
     }
 
     /// <summary>
@@ -76,6 +81,7 @@ public class ScoreCalculate : MonoBehaviour
     {
         // Catch values that are equal in A and B
         // Also catch values that exist in A but not B
+        Debug.Log("entered que check");
         foreach (CueTypes compareType in emailCue)
         {
             if (playerCue.Contains(compareType))
@@ -103,61 +109,61 @@ public class ScoreCalculate : MonoBehaviour
         switch (compareType)
         {
             case CueTypes.Error:
-                playerResultSO.playerChoseCorrectQue_Error++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_Error++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.SenderDomain:
-                playerResultSO.playerChoseCorrectQue_SenderDomain++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_SenderDomain++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.TooGoodToBeTrue:
-                playerResultSO.playerChoseCorrectQue_TooGoodToBeTrue++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_TooGoodToBeTrue++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.GenericGreeting:
-                playerResultSO.playerChoseCorrectQue_GenericGreeting++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_GenericGreeting++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.LogoImitiation:
-                playerResultSO.playerChoseCorrectQue_LogoImitiation++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_LogoImitiation++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.NoBranding:
-                playerResultSO.playerChoseCorrectQue_NoBranding++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_NoBranding++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.URLOrAttachment:
-                playerResultSO.playerChoseCorrectQue_URLOrAttachment++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_URLOrAttachment++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.RequestInfo:
-                playerResultSO.playerChoseCorrectQue_RequestInfo++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_RequestInfo++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.Urgency:
-                playerResultSO.playerChoseCorrectQue_Urgency++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_Urgency++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.PosesAs:
-                playerResultSO.playerChoseCorrectQue_PosesAs++;
+                scoreScriptableObjectScript.playerChoseCorrectQue_PosesAs++;
                 break;
         }
     }
@@ -167,66 +173,66 @@ public class ScoreCalculate : MonoBehaviour
         switch (compareType)
         {
             case CueTypes.Error:
-                playerResultSO.playerChoseWrongQue_Error++;
+                scoreScriptableObjectScript.playerChoseWrongQue_Error++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.SenderDomain:
-                playerResultSO.playerChoseWrongQue_SenderDomain++;
+                scoreScriptableObjectScript.playerChoseWrongQue_SenderDomain++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.TooGoodToBeTrue:
-                playerResultSO.playerChoseWrongQue_TooGoodToBeTrue++;
+                scoreScriptableObjectScript.playerChoseWrongQue_TooGoodToBeTrue++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.GenericGreeting:
-                playerResultSO.playerChoseWrongQue_GenericGreeting++;
+                scoreScriptableObjectScript.playerChoseWrongQue_GenericGreeting++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.LogoImitiation:
-                playerResultSO.playerChoseWrongQue_LogoImitiation++;
+                scoreScriptableObjectScript.playerChoseWrongQue_LogoImitiation++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.NoBranding:
-                playerResultSO.playerChoseWrongQue_NoBranding++;
+                scoreScriptableObjectScript.playerChoseWrongQue_NoBranding++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.URLOrAttachment:
-                playerResultSO.playerChoseWrongQue_URLOrAttachment++;
+                scoreScriptableObjectScript.playerChoseWrongQue_URLOrAttachment++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.RequestInfo:
-                playerResultSO.playerChoseWrongQue_RequestInfo++;
+                scoreScriptableObjectScript.playerChoseWrongQue_RequestInfo++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.Urgency:
-                playerResultSO.playerChoseWrongQue_Urgency++;
+                scoreScriptableObjectScript.playerChoseWrongQue_Urgency++;
                 break;
         }
         switch (compareType)
         {
             case CueTypes.PosesAs:
-                playerResultSO.playerChoseWrongQue_PosesAs++;
+                scoreScriptableObjectScript.playerChoseWrongQue_PosesAs++;
                 break;
         }
     }
 
-
+    /*
     /// <summary>
     /// LEGACY CODE
     /// </summary>
@@ -305,5 +311,5 @@ public class ScoreCalculate : MonoBehaviour
         // Temp fix, should be playerScore, and player highscore should be calculated in CompareAnswer
         // need to send value back
         return scoreQue; 
-    }
+    }*/
 }
