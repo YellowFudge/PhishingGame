@@ -240,7 +240,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPhishingStamp: 0
   pickedUpRotation: {x: 0, y: 0, z: -0.08715574, w: 0.9961947}
-  stampedHoverTime: 0.1
   startPosition: {fileID: 4081552796084991913}
   stampingPosition: {fileID: 5806581745860662824}
   stampObject: {fileID: 256252586214593851, guid: 1cdaa0cc7e2b28544b95816d008d6a24, type: 3}
@@ -492,9 +491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18883a7820c1294429199815d2ef0336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPhishingStamp: 0
+  isPhishingStamp: 1
   pickedUpRotation: {x: 0, y: 0, z: -0.08715574, w: 0.9961947}
-  stampedHoverTime: 0.1
   startPosition: {fileID: 6754039621370057032}
   stampingPosition: {fileID: 1201463112635410494}
   stampObject: {fileID: 434570447574436013, guid: acffdbea537360a478551df2470e19c8, type: 3}
