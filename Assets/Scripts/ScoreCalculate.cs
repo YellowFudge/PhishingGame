@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.Search;
 using UnityEngine;
@@ -10,14 +11,14 @@ public class ScoreCalculate : MonoBehaviour
     public ScoreScriptableObjectScript playerResultSO; //SO for storing player results
 
     //Initiate
-    public void StartCalculation(bool playerMailType, bool realMailType /*Enum Variables we need*/) { //Send mailtype + que Enums + Day
-        EvaluatePlayerScore(playerMailType, realMailType /*Enum Variables we need*/);
+    public void StartCalculation(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue) { //Send mailtype + que Enums + Day
+        EvaluatePlayerScore(playerMailType, realMailType, emailCue, playerCue);
     }
 
     /// <summary>
     /// Compares the mail type against players selected type - Itterates ScoreScriptableObjectScripts accordingly
     /// </summary>
-    private void EvaluatePlayerScore(bool playerMailType, bool realMailType /*Enum Variables we need*/)
+    private void EvaluatePlayerScore(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue)
     {
         //ScripatbleObj Variables
         PlayerScore newScore = new PlayerScore(); //Instanciate new collection of data for current
@@ -38,7 +39,7 @@ public class ScoreCalculate : MonoBehaviour
             if (realMailType == true)
             { // If the mail is phising: Runs que calculation and itterate totalCorrectPhis
                 playerResultSO.totalCorrectPhis = playerResultSO.totalCorrectPhis + 1;
-                CheckPlayerCorrectQueTypes(/*Enum Variables we need*/);
+                CheckPlayerCorrectQueTypes(emailCue, playerCue);
             } 
 
             else
@@ -63,22 +64,21 @@ public class ScoreCalculate : MonoBehaviour
                 playerResultSO.totalWrongHam = playerResultSO.totalWrongHam + 1;
             }
         }
+        Debug.Log(scoreScriptableObjectScript.playerChoseCorrectQue_Error);
+        Debug.Log(scoreScriptableObjectScript.playerChoseWrongQue_Error);
     }
 
     /// <summary>
     /// Compares the mailQueType against player selected queTypes
     /// itterates playerChoseCorrectQue_ or playerChoseWrongQue_ accordingly
     /// </summary>
-    private void CheckPlayerCorrectQueTypes(/*Enum Variables we need*/)
+    private void CheckPlayerCorrectQueTypes(CueTypes[] emailCue, CueTypes[] playerCue)
     {
-        var mailQueTypes = new List<CueTypes> { };
-        var playerQueTypes = new List<CueTypes> { };
-
         // Catch values that are equal in A and B
         // Also catch values that exist in A but not B
-        foreach (CueTypes compareType in mailQueTypes)
+        foreach (CueTypes compareType in emailCue)
         {
-            if (playerQueTypes.Contains(compareType))
+            if (playerCue.Contains(compareType))
             {
                 HandleCorrectCueTypes(compareType);
             }
@@ -89,9 +89,9 @@ public class ScoreCalculate : MonoBehaviour
         }
 
         // Catch values that exist in B but not A
-        foreach (CueTypes compareType in playerQueTypes)
+        foreach (CueTypes compareType in playerCue)
         {
-            if (!mailQueTypes.Contains(compareType))
+            if (!emailCue.Contains(compareType))
             {
                 HandleWrongCueTypes(compareType);
             }
@@ -239,7 +239,7 @@ public class ScoreCalculate : MonoBehaviour
 
 
     // Initiate calculation
-    public void StartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue, int dayNum)
+    public void LegacyStartCalculation(bool playerMailType, bool realMailType, List<int> emailQue, List<int> playerQue, int dayNum)
     {
         CompareAnswer(playerMailType, realMailType, emailQue, playerQue, dayNum);
     }

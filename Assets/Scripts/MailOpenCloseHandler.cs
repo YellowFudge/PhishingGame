@@ -76,10 +76,10 @@ public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPoin
 
         if (results.Count > 0)
         {
-            foreach (RaycastResult go in results)
+            /*foreach (RaycastResult go in results)
             {
                 Debug.Log(go.gameObject.name);
-            }
+            }*/
             if (results[0].gameObject.tag.Equals("MailChute"))
             {
                 //if hasn't just released the mail from chute -> try to place it in chute
