@@ -26,7 +26,6 @@ public class ScoreCalculate : MonoBehaviour
         // If player chose phising mail, playerSelectedPhising as "true" so eval can calculate start of day message from boss
         if (playerMailType == true)
         {
-            Debug.Log("Phising true");
             newScore.playerSelectedPhising = true;
         }
 
@@ -36,13 +35,11 @@ public class ScoreCalculate : MonoBehaviour
             // Assign value true - important for EvaluationSystem to propely evaluate
             newScore.isCorrect = true;
             scoreScriptableObjectScript.playerScore.Add(newScore);
-            Debug.Log("entered playerMailType == realMailType");
 
             if (realMailType == true)
             { // If the mail is phising: Runs que calculation and itterate totalCorrectPhis
                 scoreScriptableObjectScript.totalCorrectPhis = scoreScriptableObjectScript.totalCorrectPhis + 1;
                 CheckPlayerCorrectQueTypes(emailCue, playerCue);
-                Debug.Log("entered If the mail is phising");
             } 
 
             else
@@ -67,10 +64,6 @@ public class ScoreCalculate : MonoBehaviour
                 scoreScriptableObjectScript.totalWrongHam = scoreScriptableObjectScript.totalWrongHam + 1;
             }
         }
-        //Debug.Log("playerChoseCorrectQue_Error: " + scoreScriptableObjectScript.playerChoseCorrectQue_Error);
-        //Debug.Log($"playerChoseCorrectQue_Error {scoreScriptableObjectScript.playerChoseWrongQue_Error}");
-        //Debug.Log($"scoreScriptableObjectScript.totalCorrectHam {scoreScriptableObjectScript.totalCorrectHam}");
-        //Debug.Log($"scoreScriptableObjectScript.totalCorrectHam {scoreScriptableObjectScript.totalCorrectPhis}");
     }
 
     /// <summary>
@@ -79,9 +72,8 @@ public class ScoreCalculate : MonoBehaviour
     /// </summary>
     private void CheckPlayerCorrectQueTypes(CueTypes[] emailCue, CueTypes[] playerCue)
     {
-        // Catch values that are equal in A and B
-        // Also catch values that exist in A but not B
-        Debug.Log("entered que check");
+        // Catch values that are equal in emailCue and playerCue
+        // Also catch values that exist in emailCue but not playerCue
         foreach (CueTypes compareType in emailCue)
         {
             if (playerCue.Contains(compareType))
@@ -94,7 +86,7 @@ public class ScoreCalculate : MonoBehaviour
             }
         }
 
-        // Catch values that exist in B but not A
+        // Catch values that exist in playerCue but not emailCue
         foreach (CueTypes compareType in playerCue)
         {
             if (!emailCue.Contains(compareType))
@@ -299,7 +291,7 @@ public class ScoreCalculate : MonoBehaviour
             }
         }
 
-        //Debug.Log("Correct: " + correctQue);
+
 
         // Change to % calculations
         // Divides the maximum score (100) by the total amount of ques each day
