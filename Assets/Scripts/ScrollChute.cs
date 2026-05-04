@@ -116,7 +116,6 @@ public class ScrollChute : MonoBehaviour, IPointerClickHandler
 
     void StartOpenAnim()
     {
-        Debug.Log(_sendingScroll);
         if (_isOpen || _sendingScroll) //if sending scroll you cannot interact with it until done (no regretting mid send)
         {
             return;
