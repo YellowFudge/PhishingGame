@@ -167,4 +167,18 @@ public class DynamicButtons : MonoBehaviour
     {
         UpdateCueList();
     }
+    
+    private List<CueTypes> convertEnumToList() 
+    {
+        List<CueTypes> playerCueArray = new List<CueTypes>();
+        foreach (KeyValuePair<CueTypes, int> item in GetEnumDict())
+        {
+            if (item.Value.Equals(1))
+            {
+                playerCueArray.Add(item.Key);
+            }
+        }
+
+        return playerCueArray; 
+    }
 }
