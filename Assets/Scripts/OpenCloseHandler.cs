@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(RectTransform))]
-public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHandler,*/ IBeginDragHandler, IEndDragHandler
+public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] protected GameObject openedObject;
     [SerializeField] protected GameObject closedObject;
@@ -146,27 +146,6 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, /*ISubmitHa
         _playerHasOpened = true;
         ChangeObjectState(true);
     }
-
-    /*public void OnSubmit(BaseEventData eventData) //only for when using gamepad-/button navigation(therefore ignored for now) 
-    {
-        if (_dragging) return;
-
-        if (eventData.selectedObject.TryGetComponent(out IIgnoreOpenClose ignorer))
-        {
-            return;
-        }
-
-        if (_opened)
-        {
-            openedObject.SetActive(false);
-            closedObject.SetActive(true);
-            _opened = false;
-            return;
-        }
-        openedObject.SetActive(true);
-        closedObject.SetActive(false);
-        _opened = true;
-    }*/
 
     public void OnBeginDrag(PointerEventData eventData)
     {

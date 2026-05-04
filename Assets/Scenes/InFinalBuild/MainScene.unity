@@ -2629,6 +2629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8529418aaa19e74581288d10c352373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerResultSO: {fileID: 11400000, guid: 65167cf3ca5cc464d91b261a161af964, type: 2}
   scoreScriptableObjectScript: {fileID: 11400000, guid: 65167cf3ca5cc464d91b261a161af964, type: 2}
 --- !u!4 &1980686745
 Transform:
