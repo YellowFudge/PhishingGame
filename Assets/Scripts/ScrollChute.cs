@@ -172,49 +172,10 @@ public class ScrollChute : MonoBehaviour, IPointerClickHandler
 
     public void SendToScore(bool isSpam)
     {
-        /*if (_buttonPressed) //prevent doubleklicks
-        {
-            //Debug.Log("No");
-            return;
-        }
-        _buttonPressed = true;
-
         MailCueTypes mailCue = levelManager.GetCurrentMailinfo();
-
-        if (mailCue == null)
-        {
-            _buttonPressed = false;
-            return;
-        }//Debug.Log("YEs");*/
-        MailCueTypes mailCue = levelManager.GetCurrentMailinfo();
-        //Debug.Log("mailcue is: "+ mailCue);
-
-        //creates list where 1 exists in mail and 0 does not
-        bool isChecked;
-        List<int> emailCueStates = new List<int>();
-        for (int i = 0; i < levelManager.CurrentDay; i++)
-        {
-            foreach (CueTypes type in (dailyCues.dailyCuesArray[i].cues))
-            {
-                isChecked = false;
-                for (int j = 0; j < mailCue.CueTypeArray.Length; j++)
-                {
-                    if (type.Equals(mailCue.CueTypeArray[i]))
-                    {
-                        emailCueStates.Add(1);
-                        isChecked = true;
-                        break;
-                    }
-                }
-                if (!isChecked)
-                {
-                    emailCueStates.Add(0);
-                }
-            }
-        }
-
-
-        scoreCalculate.StartCalculation(isSpam, mailCue.IsSpamMail, emailCueStates, dynamicButtons.GetResult(), levelManager.CurrentDay);
+        
+        //UNCOMMENT BELOW AND IT SHOULD WORK !!!! :)
+        //scoreCalculate.StartCalculation(isSpam, mailCue.IsSpamMail, dailyCues.dailyCuesArray, dynamicButtons.ConvertEnumToList().ToArray(), levelManager.CurrentDay);
         levelManager.NextMail(); //calling for next mail
     }
 }
