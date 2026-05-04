@@ -56,17 +56,3 @@ public class MailCueTypes : MailId
     }
 
 }
-
-public enum CueTypes
-{
-    Error,
-    SenderDomain,
-    TooGoodToBeTrue,
-    GenericGreeting,
-    LogoImitiation,
-    NoBranding,
-    URLOrAttachment,
-    RequestInfo,
-    Urgency,
-    PosesAs
-}

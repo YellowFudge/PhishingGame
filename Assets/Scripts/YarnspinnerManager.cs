@@ -205,22 +205,3 @@ public class YarnspinnerManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
 }
-
-public enum PersonsEnum
-{
-    Gwen,
-    Bearmun,
-    Hilaire,
-    Cressida,
-    Berg,
-    Thisle,
-    Meredith,
-    Arthur
-}
-
-public enum MoodEnum
-{
-    Neutral,
-    Happy,
-    Angry
-}
