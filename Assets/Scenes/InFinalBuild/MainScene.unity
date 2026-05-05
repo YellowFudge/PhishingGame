@@ -276,6 +276,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScrollChute
       objectReference: {fileID: 0}
+    - target: {fileID: 5984304375902780765, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 206.7321
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984304375902780765, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 259.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984304375902780765, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.02402069
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899327619466123404, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 192.7163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899327619466123404, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 141
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899327619466123404, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.3174353
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899327619466123404, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.317005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121838176955787533, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 218.3598
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121838176955787533, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 228.2628
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121838176955787533, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.9519
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121838176955787533, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11.9463
+      objectReference: {fileID: 0}
     - target: {fileID: 9057562248448179264, guid: 37a1394be4df56a4c996d9d4ba3eb843, type: 3}
       propertyPath: m_text
       value: "Report \nPhishing"
