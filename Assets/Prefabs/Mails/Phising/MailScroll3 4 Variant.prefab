@@ -32,6 +32,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 710623417, guid: c9823dc93247c4d438f6ba019b8f0a2a, type: 3}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1388041628468510839, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: <conference@event-services.win>
@@ -86,6 +102,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1707125885935996091, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751315264228037694, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_text
+      value: Register Here
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751315264228037694, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1831528766500276704, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
@@ -250,7 +274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2907487897843807610, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 45.5
       objectReference: {fileID: 0}
     - target: {fileID: 3237521408551472954, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Name
@@ -267,6 +291,10 @@ PrefabInstance:
     - target: {fileID: 3727884097072658493, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: https://conference-check.example
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727884097072658493, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_fontStyle
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4379104082046962946, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
@@ -388,11 +416,19 @@ PrefabInstance:
       propertyPath: m_Size
       value: 0.3947769
       objectReference: {fileID: 0}
+    - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_Value
+      value: 0.99999994
+      objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: 'Pendragon Conference Services
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155627645014403010, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9175498581130004520, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.x

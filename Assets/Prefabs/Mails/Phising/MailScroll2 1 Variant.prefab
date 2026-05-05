@@ -80,6 +80,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -116
       objectReference: {fileID: 0}
+    - target: {fileID: 1751315264228037694, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_text
+      value: Click here to atune!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751315264228037694, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2427330185761776052, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -226,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2907487897843807610, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 44.9
       objectReference: {fileID: 0}
     - target: {fileID: 3237521408551472954, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Name
@@ -247,6 +255,14 @@ PrefabInstance:
     - target: {fileID: 3727884097072658493, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: https://system-update-center.win/install
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727884097072658493, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_fontStyle
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063735874343539208, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4379104082046962946, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
@@ -370,17 +386,21 @@ PrefabInstance:
       objectReference: {fileID: -254068648, guid: c9823dc93247c4d438f6ba019b8f0a2a, type: 3}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Size
-      value: 0.51012367
+      value: 0.5101237
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Value
-      value: 0.99999994
+      value: 1.0000001
       objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: 'Attunement HQ
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155627645014403010, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9175498581130004520, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.x
