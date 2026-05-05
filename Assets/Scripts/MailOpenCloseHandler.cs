@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPointerUpHandler
 {
     bool _isOutOfChute;
+    bool _isOverChute; //ONLY USED FOR PARENTING
     bool _hasBeenOpened;
     [HideInInspector] public GraphicRaycaster graphicRaycaster;//on canvas
 
@@ -28,6 +30,7 @@ public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPoin
     private void Awake()
     {
         _isOutOfChute = false;
+        _isOverChute = true;
         _hasBeenOpened = false;
     }
 
@@ -48,6 +51,7 @@ public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPoin
 
     public void OnPointerDown(PointerEventData eventData)//When dragging/open closing first time/while in chute -> move out of chute (call chute that is happening)
     {
+        //check if it is still over chute so can parent correctly??
         if (!_isOutOfChute) //do so it is always? Need to always be above chute when over chute(same for when moving away from over chute)
         {
             _isOutOfChute = true;
@@ -102,6 +106,16 @@ public class MailOpenCloseHandler : OpenCloseHandler, IPointerDownHandler, IPoin
         }
     }
 
-
+    IEnumerator CheckIsOverScrollChute()
+    {
+        while (_dragging)
+        {
+            if (!_isOverChute)
+            {
+                //check for if is over chute -> make it parent
+            }
+                yield return null;
+        }
+    }
 
 }
