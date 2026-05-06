@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5549506535519046798}
   - component: {fileID: 9093765058057660128}
-  - component: {fileID: 7441102415232765282}
+  - component: {fileID: 2282035417823468436}
   m_Layer: 5
   m_Name: ChecklistOpen
   m_TagString: Untagged
@@ -173,8 +173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.0000038146973}
-  m_SizeDelta: {x: 177, y: 259.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 183, y: 234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9093765058057660128
 CanvasRenderer:
@@ -184,7 +184,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3719327104887687532}
   m_CullTransparentMesh: 1
---- !u!114 &7441102415232765282
+--- !u!114 &2282035417823468436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3719327104887687532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -204,13 +204,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: e63dfd9e6b4d2642f8b97431e71b10be, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 21300000, guid: 899849c7cca1dfd4b976fac715ef7648, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3983696078510640021
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,8 +281,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Report \nPhishing"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d35c7cc7b9988c0499898f8fb2ecef55, type: 2}
-  m_sharedMaterial: {fileID: -8117366656744962222, guid: d35c7cc7b9988c0499898f8fb2ecef55, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e1c735c9902f51140b032e5211743e07, type: 2}
+  m_sharedMaterial: {fileID: 5556726191190692660, guid: e1c735c9902f51140b032e5211743e07, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -303,8 +306,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.8
-  m_fontSizeBase: 10.8
+  m_fontSize: 17.86
+  m_fontSizeBase: 17.86
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -516,7 +519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.2046, y: -9.8681}
+  m_AnchoredPosition: {x: -5.19, y: -9.8681}
   m_SizeDelta: {x: 193.0477, y: 198.2046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7818399543770704969
@@ -631,7 +634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2856, y: -12.317005}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 165, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5714930522834525942
