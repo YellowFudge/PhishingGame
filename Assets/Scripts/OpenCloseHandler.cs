@@ -13,6 +13,9 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
     protected RectTransform _rectTrans;
     protected bool _playerHasOpened;
 
+    Rect rect1;//ENSURE THE RECTS ARE WHERE YOU THINK THEY ARE!!!
+    Rect rect2;
+
     /// <summary>
     /// true if the object is currently open. false if not.
     /// </summary>
@@ -69,16 +72,16 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
         if (!(_rectTrans.parent.childCount - 1).Equals(_rectTrans.GetSiblingIndex()))
         {
             //check if is overlapped by other UI object
-            Vector3[] cornersA = new Vector3[4];
+            //Vector3[] cornersA = new Vector3[4];
 
             RectTransform rectA = null;
 
             //find your own active child
             for (int i = 0; i < _rectTrans.childCount; i++)
             {
-                if (_rectTrans.parent.GetChild(i).gameObject.activeSelf)
+                if (_rectTrans.GetChild(i).gameObject.activeSelf)
                     {
-                        rectA = _rectTrans.parent.GetChild(i).GetComponent<RectTransform>();
+                        rectA = _rectTrans.GetChild(i).GetComponent<RectTransform>();
                         break;
                     }
                 
@@ -88,9 +91,9 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
                 rectA = _rectTrans; //return instead?
             }
 
-            for(int i = 0; i < _rectTrans.parent.childCount; i++)
+            for(int i = _rectTrans.GetSiblingIndex()+ 1; i < _rectTrans.parent.childCount; i++) //looking for every sibling above itself in hierarchy
             {
-                if (i.Equals(rectA.GetSiblingIndex()) || !_rectTrans.parent.GetChild(i).gameObject.activeSelf)
+                if ( !_rectTrans.parent.GetChild(i).gameObject.activeSelf)//if an inactive sibling
                 {
                     continue;
                 }
@@ -105,9 +108,9 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
 
                     for( int j = 0; j < _rectTrans.parent.GetChild(i).childCount; j++)
                     {
-                        //Debug.Log(_rectTrans.parent.GetChild(i).GetChild(j).gameObject.name);
                         if (_rectTrans.parent.GetChild(i).GetChild(j).gameObject.activeSelf)
                         {
+                            //Debug.Log("Found: " + _rectTrans.parent.GetChild(i).GetChild(j).gameObject);
                             rectB = _rectTrans.parent.GetChild(i).GetChild(j).GetComponent<RectTransform>();
                             break;
                         }
@@ -116,8 +119,6 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
                     {
                         return;
                     }
-
-                    //Debug.Log(rectB);
                     
                 }
                 else
@@ -127,8 +128,9 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
 
                      
 
-                if (CheckOverlap(cornersA, rectA, rectB))//needs to be moved to the front before you can interact with it
+                if (CheckOverlap(/*cornersA,*/ rectA, rectB))//needs to be moved to the front before you can interact with it
                 {
+                    //Debug.Log("CURRENTLY BEHIND: " + rectB.gameObject);
                     _rectTrans.SetAsLastSibling(); //making in front of everything under the same parent
                     return;
                 }
@@ -156,19 +158,20 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
     {
         _dragging = false;
     }
-    protected bool CheckOverlap(Vector3[] ownCorners, RectTransform ownRect, RectTransform otherRect)
+    protected bool CheckOverlap(/*Vector3[] ownCorners,*/ RectTransform ownRect, RectTransform otherRect) //FIIIIIIIXXXXXXX!!!!!!!
     {
         //check if is overlapped by other UI object
         Vector3[] cornersB = new Vector3[4];
+        Vector3[] ownCorners = new Vector3[4];
 
         ownRect.GetWorldCorners(ownCorners);
         otherRect.GetWorldCorners(cornersB);
 
-        Rect rect1 = new Rect(ownCorners[0], ownCorners[2] - ownCorners[0]);
-        Rect rect2 = new Rect(cornersB[0], cornersB[2] - cornersB[0]);
+        rect1 = new Rect(ownCorners[0], ownCorners[2] - ownCorners[0]);//ENSURE THE RECTS ARE WHERE YOU THINK THEY ARE!!!
+        rect2 = new Rect(cornersB[0], cornersB[2] - cornersB[0]);
 
         if (rect1.Overlaps(rect2))//needs to be moved to the front before you can interact with it
-        { 
+        {
             return true;
         }
         else
@@ -176,4 +179,5 @@ public class OpenCloseHandler : MonoBehaviour, IPointerClickHandler, IBeginDragH
             return false;
         }
     }
+
 }
