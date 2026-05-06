@@ -5,7 +5,7 @@ position: -205,-174
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: Hello new attendant and welcome to Pendragon & Kin!
+Gwendolen: Hello, new attendant and welcome to Pendragon & Kin!
 <<set_mood "Neutral">>
 <<trigger_talk>>
 Gwendolen: I’m very busy with research, so I will keep this short.  
@@ -26,17 +26,17 @@ position: 18,-190
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Thistle: Good morning attendant! 
+Thistle: Good morning, attendant! 
 <<trigger_talk>>
-Thistle: As it’s your first day here, the others in Arcane Communication wanted me to tell you about the stamps on your desk.
+Thistle: As it’s your first day here, I promised the others in Arcane Communication that I’d tell you about the stamps on your desk.
 <<set_mood "Neutral">>
 <<trigger_talk>>
 Thistle: You see, there have been a few incidents with seal thefts and dangerous spells originating from scrolls lately.
 <<trigger_talk>>
-Thistle: So if you see anything concerning, please fill out the report with what suspicious signs you found and seal the scroll using the stamp with the fish on it.
+Thistle: If you see anything concerning, please fill out the checklist with whatever suspicious signs you find, and seal the scroll with the stamp marked with a fish.
 <<set_mood "Happy">>
 <<trigger_talk>>
-Thistle: I’ll collect those scrolls at the end of the day, ok?
+Thistle: I’ll collect those scrolls for our department at the end of the day, ok?
 <<trigger_talk>>
 Thistle: See ya!
 <<end_of_it>>

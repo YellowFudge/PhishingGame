@@ -15,8 +15,8 @@ MonoBehaviour:
   dailyMails:
   - mailPrefabs:
     - {fileID: 7585764364478758862, guid: 03ef12ca5c721f643bfb5922e713d1ec, type: 3}
-    - {fileID: 7585764364478758862, guid: 5c3403762369784429be6b610da0e783, type: 3}
     - {fileID: 7585764364478758862, guid: cef08570f05d381449546fb7d1b4dffa, type: 3}
+    - {fileID: 7585764364478758862, guid: 5c3403762369784429be6b610da0e783, type: 3}
   - mailPrefabs:
     - {fileID: 7585764364478758862, guid: 22e67a3f78482cf409e9be960b65a389, type: 3}
     - {fileID: 7585764364478758862, guid: 22b955199b3cfb941bd75d9258f1e313, type: 3}
