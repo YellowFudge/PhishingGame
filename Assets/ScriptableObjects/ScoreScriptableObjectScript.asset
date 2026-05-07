@@ -14,3 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: []
   highScore: 0
+  totalCorrectHam: 0
+  totalCorrectPhis: 0
+  totalWrongHam: 0
+  totalWrongPhis: 0
+  totalCorrectMail: 0
+  totalMail: 0
+  playerChoseCorrectQue_Error: 0
+  playerChoseCorrectQue_SenderDomain: 0
+  playerChoseCorrectQue_TooGoodToBeTrue: 0
+  playerChoseCorrectQue_GenericGreeting: 0
+  playerChoseCorrectQue_LogoImitiation: 0
+  playerChoseCorrectQue_NoBranding: 0
+  playerChoseCorrectQue_URLOrAttachment: 0
+  playerChoseCorrectQue_RequestInfo: 0
+  playerChoseCorrectQue_Urgency: 0
+  playerChoseCorrectQue_PosesAs: 0
+  playerChoseWrongQue_Error: 0
+  playerChoseWrongQue_SenderDomain: 0
+  playerChoseWrongQue_TooGoodToBeTrue: 0
+  playerChoseWrongQue_GenericGreeting: 0
+  playerChoseWrongQue_LogoImitiation: 0
+  playerChoseWrongQue_NoBranding: 0
+  playerChoseWrongQue_URLOrAttachment: 0
+  playerChoseWrongQue_RequestInfo: 0
+  playerChoseWrongQue_Urgency: 0
+  playerChoseWrongQue_PosesAs: 0
+  playerPercentRightQue_Error: 0
+  playerPercentRightQue_SenderDomain: 0
+  playerPercentRightQue_TooGoodToBeTrue: 0
+  playerPercentRightQue_GenericGreeting: 0
+  playerPercentRightQue_LogoImitiation: 0
+  playerPercentRightQue_NoBranding: 0
+  playerPercentRightQue_URLOrAttachment: 0
+  playerPercentRightQue_RequestInfo: 0
+  playerPercentRightQue_Urgency: 0
+  playerPercentRightQue_PosesAs: 0

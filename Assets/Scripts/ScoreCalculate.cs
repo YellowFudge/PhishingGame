@@ -22,6 +22,7 @@ public class ScoreCalculate : MonoBehaviour
     {
         //ScripatbleObj Variables
         PlayerScore newScore = new PlayerScore(); //Instanciate new collection of data for current
+        scoreScriptableObjectScript.totalMail = scoreScriptableObjectScript.totalMail + 1;
 
         // If player chose phising mail, playerSelectedPhising as "true" so eval can calculate start of day message from boss
         if (playerMailType == true)
@@ -35,6 +36,7 @@ public class ScoreCalculate : MonoBehaviour
             // Assign value true - important for EvaluationSystem to propely evaluate
             newScore.isCorrect = true;
             scoreScriptableObjectScript.playerScore.Add(newScore);
+            scoreScriptableObjectScript.totalCorrectMail = scoreScriptableObjectScript.totalCorrectMail + 1;
 
             if (realMailType == true)
             { // If the mail is phising: Runs que calculation and itterate totalCorrectPhis

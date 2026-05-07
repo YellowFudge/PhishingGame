@@ -14,6 +14,9 @@ public class ScoreScriptableObjectScript : ScriptableObject
     public int totalWrongHam;
     public int totalWrongPhis;
 
+    public int totalCorrectMail;
+    public int totalMail;
+
 
     /*
     Error,
@@ -51,6 +54,18 @@ public class ScoreScriptableObjectScript : ScriptableObject
     public int playerChoseWrongQue_RequestInfo;
     public int playerChoseWrongQue_Urgency;
     public int playerChoseWrongQue_PosesAs;
+
+    //% correct ques
+    public float playerPercentRightQue_Error;
+    public float playerPercentRightQue_SenderDomain;
+    public float playerPercentRightQue_TooGoodToBeTrue;
+    public float playerPercentRightQue_GenericGreeting;
+    public float playerPercentRightQue_LogoImitiation;
+    public float playerPercentRightQue_NoBranding;
+    public float playerPercentRightQue_URLOrAttachment;
+    public float playerPercentRightQue_RequestInfo;
+    public float playerPercentRightQue_Urgency;
+    public float playerPercentRightQue_PosesAs;
 }
 
 
