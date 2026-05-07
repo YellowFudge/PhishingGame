@@ -36,7 +36,6 @@ public class ScoreText : MonoBehaviour
 
         _textAsset = GetComponent<TMP_Text>();
         _textAsset.text =
-            $"Total number of correct scrolls: {scoreScriptObj.totalCorrectMail}/{scoreScriptObj.totalMail}" +
             $"Error: {scoreScriptObj.playerPercentRightQue_Error}%\n" +
             $"Sender Domain: {scoreScriptObj.playerPercentRightQue_SenderDomain}%\n" +
             $"Too Good To Be True: {scoreScriptObj.playerPercentRightQue_TooGoodToBeTrue}%\n" +
