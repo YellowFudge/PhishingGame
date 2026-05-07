@@ -9,13 +9,13 @@ public class ScoreScriptableObjectScript : ScriptableObject
     public double highScore; //Remove once done with new system
 
     //Mail types chosen
-    public int totalCorrectHam;
-    public int totalCorrectPhis;
-    public int totalWrongHam;
-    public int totalWrongPhis;
+    public int totalCorrectHam = 0;
+    public int totalCorrectPhis = 0;
+    public int totalWrongHam = 0;
+    public int totalWrongPhis = 0;
 
-    public int totalCorrectMail;
-    public int totalMail;
+    public int totalCorrectMail = 0;
+    public int totalMail = 0;
 
 
     /*
@@ -32,40 +32,40 @@ public class ScoreScriptableObjectScript : ScriptableObject
     */
 
     //Correct ques - Yes this can be made less redundant, but I dont wanna - no time = getto code :)
-    public int playerChoseCorrectQue_Error;
-    public int playerChoseCorrectQue_SenderDomain;
-    public int playerChoseCorrectQue_TooGoodToBeTrue;
-    public int playerChoseCorrectQue_GenericGreeting;
-    public int playerChoseCorrectQue_LogoImitiation;
-    public int playerChoseCorrectQue_NoBranding;
-    public int playerChoseCorrectQue_URLOrAttachment;
-    public int playerChoseCorrectQue_RequestInfo;
-    public int playerChoseCorrectQue_Urgency;
-    public int playerChoseCorrectQue_PosesAs;
+    public int playerChoseCorrectQue_Error = 0;
+    public int playerChoseCorrectQue_SenderDomain = 0;
+    public int playerChoseCorrectQue_TooGoodToBeTrue = 0;
+    public int playerChoseCorrectQue_GenericGreeting = 0;
+    public int playerChoseCorrectQue_LogoImitiation = 0;
+    public int playerChoseCorrectQue_NoBranding = 0;
+    public int playerChoseCorrectQue_URLOrAttachment = 0;
+    public int playerChoseCorrectQue_RequestInfo = 0;
+    public int playerChoseCorrectQue_Urgency = 0;
+    public int playerChoseCorrectQue_PosesAs = 0;
 
     //Incorrect ques
-    public int playerChoseWrongQue_Error;
-    public int playerChoseWrongQue_SenderDomain;
-    public int playerChoseWrongQue_TooGoodToBeTrue;
-    public int playerChoseWrongQue_GenericGreeting;
-    public int playerChoseWrongQue_LogoImitiation;
-    public int playerChoseWrongQue_NoBranding;
-    public int playerChoseWrongQue_URLOrAttachment;
-    public int playerChoseWrongQue_RequestInfo;
-    public int playerChoseWrongQue_Urgency;
-    public int playerChoseWrongQue_PosesAs;
+    public int playerChoseWrongQue_Error = 0;
+    public int playerChoseWrongQue_SenderDomain = 0;
+    public int playerChoseWrongQue_TooGoodToBeTrue = 0;
+    public int playerChoseWrongQue_GenericGreeting = 0;
+    public int playerChoseWrongQue_LogoImitiation = 0;
+    public int playerChoseWrongQue_NoBranding = 0;
+    public int playerChoseWrongQue_URLOrAttachment = 0;
+    public int playerChoseWrongQue_RequestInfo = 0;
+    public int playerChoseWrongQue_Urgency = 0;
+    public int playerChoseWrongQue_PosesAs = 0;
 
     //% correct ques
-    public float playerPercentRightQue_Error;
-    public float playerPercentRightQue_SenderDomain;
-    public float playerPercentRightQue_TooGoodToBeTrue;
-    public float playerPercentRightQue_GenericGreeting;
-    public float playerPercentRightQue_LogoImitiation;
-    public float playerPercentRightQue_NoBranding;
-    public float playerPercentRightQue_URLOrAttachment;
-    public float playerPercentRightQue_RequestInfo;
-    public float playerPercentRightQue_Urgency;
-    public float playerPercentRightQue_PosesAs;
+    public float playerPercentRightQue_Error = 0;
+    public float playerPercentRightQue_SenderDomain = 0;
+    public float playerPercentRightQue_TooGoodToBeTrue = 0;
+    public float playerPercentRightQue_GenericGreeting = 0;
+    public float playerPercentRightQue_LogoImitiation = 0;
+    public float playerPercentRightQue_NoBranding = 0;
+    public float playerPercentRightQue_URLOrAttachment = 0;
+    public float playerPercentRightQue_RequestInfo = 0;
+    public float playerPercentRightQue_Urgency = 0;
+    public float playerPercentRightQue_PosesAs = 0;
 }
 
 
