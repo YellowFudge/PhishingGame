@@ -118,14 +118,6 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
-    - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1751315264228037694, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: Shipped Items
@@ -480,14 +472,6 @@ PrefabInstance:
         Supplies
 
 '
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196246712033716381, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196246712033716381, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Size

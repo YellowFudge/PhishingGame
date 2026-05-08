@@ -70,17 +70,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
-      value: "Hello {Boss},\r\n\r\nWe know you\u2019r dark secerets, and it sickess
-        we, if you dont pay us many GP we will show world you\u2019r true shoes this
-        informition to workers and the world!!!\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 10
+      value: "Hello {Boss},\n\nWe know you\u2019r dark secerets, and it sickess we,
+        if you dont pay us many GP we will show world you\u2019r true shoes this
+        informition to workers and the world!!!\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1831528766500276704, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_IsActive
@@ -392,7 +384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Value
-      value: 0.99300337
+      value: 0.9930031
       objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text

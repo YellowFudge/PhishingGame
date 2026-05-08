@@ -40,6 +40,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 354591327065853412, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1223223627674705595, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -78,19 +94,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
-      value: "Hi Gwendolen,\r\nI\u2019ve prepared the supply order for next month
-        based on the requests we received from the research and arcane communications
-        teams.\r\nBefore sending it to the suppliers, I just need a quick confirmation
-        from you that everything looks correct from a budget perspective.\r\nYou
-        can review the order list through the rune here:\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675962321474784320, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 10
+      value: "Hi Gwendolen,\nI\u2019ve prepared the supply order for next month based
+        on the requests we received from the research and arcane communications teams.\nBefore
+        sending it to the suppliers, I just need a quick confirmation from you that
+        everything looks correct from a budget perspective.\nYou can review the order
+        list through the rune here:\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1751315264228037694, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
@@ -115,14 +123,6 @@ PrefabInstance:
     - target: {fileID: 2398543086475009157, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
       value: "If everything looks fine, I\u2019ll go ahead and stamp it this afternoon."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2398543086475009157, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSize
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2398543086475009157, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2427330185761776052, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Pivot.x
@@ -432,21 +432,13 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
-    - target: {fileID: 7196246712033716381, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSize
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196246712033716381, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Size
-      value: 0.413306
+      value: 0.41330597
       objectReference: {fileID: 0}
     - target: {fileID: 7426820287125603869, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 7974465335920721050, guid: 3b8d5129b54c3124a8011397aec1f40f, type: 3}
       propertyPath: m_text
