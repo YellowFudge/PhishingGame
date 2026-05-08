@@ -12,13 +12,15 @@ public class ScoreCalculate : MonoBehaviour
 
     //Initiate
     public void StartCalculation(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue, CueTypes[] dailyCue) { //Send mailtype + que Enums + Day
-        EvaluatePlayerScore(playerMailType, realMailType, emailCue, playerCue);
+        //foreach (var c in playerCue) { Debug.Log(c); }
+        //foreach (var c in dailyCue) { Debug.Log(c); }
+        EvaluatePlayerScore(playerMailType, realMailType, emailCue, playerCue, dailyCue);
     }
 
     /// <summary>
     /// Compares the mail type against players selected type - Itterates ScoreScriptableObjectScripts accordingly
     /// </summary>
-    private void EvaluatePlayerScore(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue)
+    private void EvaluatePlayerScore(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue, CueTypes[] dailyCue)
     {
         //ScripatbleObj Variables
         PlayerScore newScore = new PlayerScore(); //Instanciate new collection of data for current
@@ -41,7 +43,7 @@ public class ScoreCalculate : MonoBehaviour
             if (realMailType == true)
             { // If the mail is phising: Runs que calculation and itterate totalCorrectPhis
                 scoreScriptableObjectScript.totalCorrectPhis = scoreScriptableObjectScript.totalCorrectPhis + 1;
-                CheckPlayerCorrectQueTypes(emailCue, playerCue);
+                CheckPlayerCorrectQueTypes(emailCue, playerCue, dailyCue);
             } 
 
             else
@@ -72,7 +74,7 @@ public class ScoreCalculate : MonoBehaviour
     /// Compares the mailQueType against player selected queTypes
     /// itterates playerChoseCorrectQue_ or playerChoseWrongQue_ accordingly
     /// </summary>
-    private void CheckPlayerCorrectQueTypes(CueTypes[] emailCue, CueTypes[] playerCue)
+    private void CheckPlayerCorrectQueTypes(CueTypes[] emailCue, CueTypes[] playerCue, CueTypes[] dailyCue)
     {
         // Catch values that are equal in emailCue and playerCue
         // Also catch values that exist in emailCue but not playerCue
@@ -94,6 +96,14 @@ public class ScoreCalculate : MonoBehaviour
             if (!emailCue.Contains(compareType))
             {
                 HandleWrongCueTypes(compareType);
+            }
+        }
+
+        foreach (CueTypes compareType in dailyCue)
+        {
+            if (!emailCue.Contains(compareType) && !playerCue.Contains(compareType))
+            {
+                HandleCorrectCueTypes(compareType);
             }
         }
     }
