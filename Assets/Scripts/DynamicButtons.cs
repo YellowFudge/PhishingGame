@@ -15,6 +15,7 @@ public class DynamicButtons : MonoBehaviour
     
     // Key = CueType (Name of button), Value = int (If toggled)
     Dictionary<CueTypes, int> enumDict = new Dictionary<CueTypes, int>();           // Stores QueTypes and toggled(0/1)
+    Dictionary<CueTypes, int> allCuesDict = new Dictionary<CueTypes, int>();           // Stores QueTypes and toggled(0/1)
     private List<GameObject> buttons = new List<GameObject>();                   // Stores UI Toggles and state
     
     private int day;
@@ -24,6 +25,7 @@ public class DynamicButtons : MonoBehaviour
     void Start()
     {
         enumDict.Clear();
+        allCuesDict.Clear();
         buttons.Clear();
         mailNo = levelManager.CurrentDay - 1;
         //Debug.Log(mailNo);
@@ -169,17 +171,27 @@ public class DynamicButtons : MonoBehaviour
         UpdateCueList();
     }
     
-    public List<CueTypes> ConvertEnumToList() 
+    public List<CueTypes> GetDailyPlayerCues() 
     {
-        List<CueTypes> playerCueArray = new List<CueTypes>();
+        List<CueTypes> playerCueList = new List<CueTypes>();
         foreach (KeyValuePair<CueTypes, int> item in GetEnumDict())
         {
             if (item.Value.Equals(1))
             {
-                playerCueArray.Add(item.Key);
+                playerCueList.Add(item.Key);
             }
         }
 
-        return playerCueArray; 
+        return playerCueList; 
+    }
+    public List<CueTypes> GetDailyCues() 
+    {
+        List<CueTypes> dailyCueList = new List<CueTypes>();
+        foreach (KeyValuePair<CueTypes, int> item in GetEnumDict())
+        {
+            dailyCueList.Add(item.Key);
+        }
+
+        return dailyCueList; 
     }
 }

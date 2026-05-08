@@ -11,7 +11,7 @@ public class ScoreCalculate : MonoBehaviour
     public ScoreScriptableObjectScript scoreScriptableObjectScript; //SO for storing player results
 
     //Initiate
-    public void StartCalculation(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue) { //Send mailtype + que Enums + Day
+    public void StartCalculation(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue, CueTypes[] dailyCue) { //Send mailtype + que Enums + Day
         EvaluatePlayerScore(playerMailType, realMailType, emailCue, playerCue);
     }
 
