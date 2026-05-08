@@ -12,7 +12,7 @@ public class ScoreCalculate : MonoBehaviour
 
     //Initiate
     public void StartCalculation(bool playerMailType, bool realMailType, CueTypes[] emailCue, CueTypes[] playerCue, CueTypes[] dailyCue) { //Send mailtype + que Enums + Day
-        //foreach (var c in playerCue) { Debug.Log(c); }
+        foreach (var c in playerCue) { Debug.Log(c); }
         //foreach (var c in dailyCue) { Debug.Log(c); }
         EvaluatePlayerScore(playerMailType, realMailType, emailCue, playerCue, dailyCue);
     }
