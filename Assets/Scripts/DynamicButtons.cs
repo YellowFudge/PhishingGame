@@ -48,6 +48,7 @@ public class DynamicButtons : MonoBehaviour
         foreach (GameObject button in buttons)
         {
             Destroy(button);
+            enumDict.Clear();
         }
         buttons.Clear();
         foreach (KeyValuePair<CueTypes, int> item in enumDict)
@@ -106,7 +107,7 @@ public class DynamicButtons : MonoBehaviour
         Dictionary<CueTypes, int> dict = GetEnumDict();
         foreach (KeyValuePair<CueTypes, int> item in dict)
         {
-            //Debug.unityLogger.Log("ToggleQueButtons " + item.Key + ", " + item.Value);
+            Debug.unityLogger.Log("ToggleQueButtons " + item.Key + ", " + item.Value);
         }
     }
     public void ToggleCounter(CueTypes cueType, int toggled)
@@ -117,7 +118,7 @@ public class DynamicButtons : MonoBehaviour
         
         //Debug.Log(qb.cueType + " updated to: " + state);
         //Debug.Log(GetResult());
-        PrintActiveStates();
+        //PrintActiveStates();
     }
 
     public List<int> GetResult()
