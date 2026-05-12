@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 423b7692005fdad47867546395632b09
+guid: 1c66393ef9d35054cb1320772eb3eb8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4480418084583338984
-    second: scroll_closed_277x35_0
+      213: 520667434927253833
+    second: scroll_closed_277x35_v3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scroll_closed_277x35_0
+      name: scroll_closed_277x35_v3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e373d87284ad2e30800000000000000
-      internalID: 4480418084583338984
+      spriteID: 949e3f00648c93700800000000000000
+      internalID: 520667434927253833
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      scroll_closed_277x35_0: 4480418084583338984
+      scroll_closed_277x35_v3_0: 520667434927253833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
