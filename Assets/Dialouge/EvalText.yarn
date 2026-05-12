@@ -289,7 +289,7 @@ title: R3_3
 <<trigger_talk>>
 Gwendolen: Thanks for giving me the scroll from Shoshanna so quickly!
 <<trigger_talk>>
-Gwendolen: I let her know I needed those spider silk parchments in a separate delivery, and wouldn’t you know, the delivery was on my desk this morning! 
+Gwendolen: I let her know I needed those spider silk parchments in a separate delivery, and wouldn’t you know, the delivery was on my desk this evening! 
 <<set_mood "Happy">>
 <<trigger_talk>>
 Gwendolen: She must have bypassed Brooms Express or something just to bring them to me in time.
@@ -319,7 +319,7 @@ Gwendolen: On a different note, you don’t have to avoid making eye contact wit
 Gwendolen: The rumours of me casting vanishing spells left and right is a cruel joke on new employees by my old friend Vincent Crysologus.
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwendolen: Carry on with the good work.
+Gwendolen: Good evening and carry on with the good work.
 <<end_of_response>>
 ===
 
