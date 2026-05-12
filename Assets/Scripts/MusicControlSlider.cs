@@ -39,9 +39,10 @@ public class MusicControlSlider : MonoBehaviour
 
     void NewMusicVolume()
     {
-        percentageText.text = $"Volume: {Mathf.Round(_audioSource.volume*100)}%";//will beckome 99 at most now 
-        if (_inStart) return;
-        _audioSource.volume = _slider.value;
+        if (!_inStart){
+            _audioSource.volume = _slider.value;
+        }
+        percentageText.text = $"Volume: {Mathf.Round(_audioSource.volume * 100)}%";
     }
 
 
