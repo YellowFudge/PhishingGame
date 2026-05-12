@@ -1,11 +1,19 @@
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(TMP_Text))]
 public class ScoreText : MonoBehaviour
 {
     [SerializeField] ScoreScriptableObjectScript scoreScriptObj;
-    TMP_Text _textAsset;
+    [SerializeField] TMP_Text errorText;
+    [SerializeField] TMP_Text senderDomainText;
+    [SerializeField] TMP_Text tooGoodToBeTrueText;
+    [SerializeField] TMP_Text genericGreetingText;
+    [SerializeField] TMP_Text logoImitiationText;
+    [SerializeField] TMP_Text noBrandingText;
+    [SerializeField] TMP_Text uRLOrAttachment;
+    [SerializeField] TMP_Text requestInfo;
+    [SerializeField] TMP_Text urgencyText;
+    [SerializeField] TMP_Text posesAsText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +42,18 @@ public class ScoreText : MonoBehaviour
         PosesAs
         */
 
+        errorText.text = $"Error: {scoreScriptObj.playerPercentRightQue_Error}%";
+        senderDomainText.text = $"Sender Domain: {scoreScriptObj.playerPercentRightQue_SenderDomain}%";
+        tooGoodToBeTrueText.text = $"Too Good To Be True: {scoreScriptObj.playerPercentRightQue_TooGoodToBeTrue}%";
+        genericGreetingText.text = $"Generic Greeting: {scoreScriptObj.playerPercentRightQue_GenericGreeting}%";
+        logoImitiationText.text = $"Logo Imitiation: {scoreScriptObj.playerPercentRightQue_LogoImitiation}%";
+        noBrandingText.text = $"No Branding: {scoreScriptObj.playerPercentRightQue_NoBranding}%";
+        uRLOrAttachment.text = $"URL Or Attachment: {scoreScriptObj.playerPercentRightQue_URLOrAttachment}%";
+        requestInfo.text = $"Request Info: {scoreScriptObj.playerPercentRightQue_RequestInfo}%";
+        urgencyText.text = $"Urgency: {scoreScriptObj.playerPercentRightQue_Urgency}%";
+        posesAsText.text = $"Poses As: {scoreScriptObj.playerPercentRightQue_PosesAs}%";
+
+        /*
         _textAsset = GetComponent<TMP_Text>();
         _textAsset.text =
             $"Error: {scoreScriptObj.playerPercentRightQue_Error}%\n" +
@@ -46,5 +66,6 @@ public class ScoreText : MonoBehaviour
             $"Request Info: {scoreScriptObj.playerPercentRightQue_RequestInfo}%\n" +
             $"Urgency: {scoreScriptObj.playerPercentRightQue_Urgency}%\n" +
             $"Poses As: {scoreScriptObj.playerPercentRightQue_PosesAs}%\n";
+        */
     }
 }
