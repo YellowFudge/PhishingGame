@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: a28afd4e7d2cc71d49376055e4b55be2
+guid: 462024b41f03ca0b29f41fba3392ce6e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3392610752946161745
-    second: tab_symbols_13x15_0
+      213: 4280513042100438887
+    second: phish_ham_spritesheet_37x17_0
+  - first:
+      213: 5944438295749651744
+    second: phish_ham_spritesheet_37x17_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tab_symbols_13x15_0
+      name: phish_ham_spritesheet_37x17_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 13
-        height: 15
+        width: 37
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,96 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 158c6864189f41f20800000000000000
-      internalID: 3392610752946161745
+      spriteID: 767c2d2ceef676b30800000000000000
+      internalID: 4280513042100438887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tab_symbols_13x15_1
+      name: phish_ham_spritesheet_37x17_1
       rect:
         serializedVersion: 2
-        x: 13
+        x: 37
         y: 0
-        width: 13
-        height: 15
+        width: 37
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a179883081040641ca657f4fa9f4af81
-      internalID: 289575436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tab_symbols_13x15_2
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8db3d8f51b0dbf9449ba1f70f22bdbdc
-      internalID: 1947989122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tab_symbols_13x15_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb308dbf92a313c60b39416e7596816c
-      internalID: 1137807809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tab_symbols_13x15_4
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46a428f22745c0bf78d504d501d3276d
-      internalID: -1196605179
+      spriteID: 02de26f8223ee7250800000000000000
+      internalID: 5944438295749651744
       vertices: []
       indices: 
       edges: []
@@ -213,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e7d769c1866f00be1ab9743b581466ac
+    spriteID: ebea50ec8892d45c38e3a47f856e9dd3
     internalID: 0
     vertices: []
     indices: 
@@ -223,11 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tab_symbols_13x15_0: 3392610752946161745
-      tab_symbols_13x15_1: 289575436
-      tab_symbols_13x15_2: 1947989122
-      tab_symbols_13x15_3: 1137807809
-      tab_symbols_13x15_4: -1196605179
+      phish_ham_spritesheet_37x17_0: 4280513042100438887
+      phish_ham_spritesheet_37x17_1: 5944438295749651744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
