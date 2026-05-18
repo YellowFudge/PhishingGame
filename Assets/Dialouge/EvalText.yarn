@@ -301,7 +301,7 @@ Gwendolen: She’s a saviour, and so are you!
 
 title: R3_4
 ---
-<<if change_person("Bearmun", "Neutral")>>//you need if for it to work :(
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
