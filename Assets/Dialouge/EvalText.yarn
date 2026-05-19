@@ -29,6 +29,19 @@ Hilaire: Let me know if you recall anything.
 
 title: R1_2
 ---
+<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwendolen: Hello assistant. Thank the magical wonders that you brought me Meredith’s scroll!
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwendolen: If I would have ignored her scrolls three times in a row, the skies would have turned purple and the thunder would be the least of our worries.
+<<end_of_response>>
+===
+
+title: R1_3
+---
 <<if change_person("Gwen", "Angry")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
@@ -42,19 +55,6 @@ Gwendolen: Can you help me set up this arrangement ASAP? I will send over their 
 <<set_mood "Happy">>
 <<trigger_talk>>
 Gwendolen: Thanks for letting me know this info, you’re a lifesaver!
-<<end_of_response>>
-===
-
-title: R1_3
----
-<<if change_person("Gwen", "Happy")>>//you need if for it to work :(
-<<endif>>
-<<wait_until_entered>>
-<<trigger_talk>>
-Gwendolen: Hello assistant. Thank the magical wonders that you brought me Meredith’s scroll!
-<<set_mood "Neutral">>
-<<trigger_talk>>
-Gwendolen: If I would have ignored her scrolls three times in a row, the skies would have turned purple and the thunder would be the least of our worries.
 <<end_of_response>>
 ===
 
@@ -84,6 +84,26 @@ Cressida: If you’ll excuse me, I’ll go have a word with Tilly now…
 
 title: R1_5
 ---
+<<if change_person("Meredith", "Neutral")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Meredith: Greetings, attendant.
+<<set_mood "Angry">>
+<<trigger_talk>>
+Meredith: Gwendolen has been ignoring me for three days now. 
+<<trigger_talk>>
+Meredith: When I confronted her, she said she only remembers ignoring me for two of those days!
+<<trigger_talk>>
+Meredith: Can you believe her!?
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Meredith: Would you PLEASE, make sure she gets my scrolls?
+<<end_of_response>>
+===
+
+title: R1_6
+---
 <<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
@@ -100,26 +120,6 @@ Gwendolen: If I had gotten such a scroll I would have sent them all my gold…
 <<set_mood "Neutral">>
 <<trigger_talk>> 
 Gwendolen: Keep your eyes peeled!
-<<end_of_response>>
-===
-
-title: R1_6
----
-<<if change_person("Meredith", "Neutral")>>//you need if for it to work :(
-<<endif>>
-<<wait_until_entered>>
-<<trigger_talk>>
-Meredith: Greetings, attendant.
-<<set_mood "Angry">>
-<<trigger_talk>>
-Meredith: Gwendolen has been ignoring me for three days now. 
-<<trigger_talk>>
-Meredith: When I confronted her, she said she only remembers ignoring me for two of those days!
-<<trigger_talk>>
-Meredith: Can you believe her!?
-<<set_mood "Neutral">>
-<<trigger_talk>>
-Meredith: Would you PLEASE, make sure she gets my scrolls?
 <<end_of_response>>
 ===
 
