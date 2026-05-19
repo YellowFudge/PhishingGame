@@ -228,14 +228,14 @@ title: R2_6
 Gwendolen: Hello attendant!
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwen: The Pendragon arcane and communications conference committee issued a warning about impersonators asking for employees' magical seals through scrolls.
+Gwendolen: The Pendragon arcane and communications conference committee issued a warning about impersonators asking for employees' magical seals through scrolls.
 <<set_mood "Happy">>
 <<trigger_talk>>
-Gwen: Since I never received such a scroll, it must mean that your second day at work went great!
+Gwendolen: Since I never received such a scroll, it must mean that your second day at work went great!
 <<trigger_talk>>
-Gwen: Keep up the good work.
+Gwendolen: Keep up the good work.
 <<trigger_talk>>
-Gwen: Now, maybe we should assign you to read all the scrolls at this place.
+Gwendolen: Now, maybe we should assign you to read all the scrolls at this place.
 <<end_of_response>>
 ===
 
@@ -301,25 +301,25 @@ Gwendolen: She’s a saviour, and so are you!
 
 title: R3_4
 ---
-<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<if change_person("Bearmun", "Neutral")>>//you need if for it to work :(
 <<endif>>
 <<wait_until_entered>>
 <<trigger_talk>>
-Gwendolen: Greetings, attendant.
+Bearmun: Greetings, attendant.
 <<trigger_talk>>
-Gwendolen: Arthur brought to my attention that you had noticed someone impersonating me. 
+Bearmun: Arthur brought to my attention that you had noticed someone impersonating me. 
 <<set_mood "Happy">>
 <<trigger_talk>>
-Gwendolen: I want to personally thank you and ensure you that this issue has been taken care of. 
+Bearmun: I want to personally thank you and ensure you that this issue has been taken care of. 
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwendolen: On a different note, you don’t have to avoid making eye contact with me. 
+Bearmun: On a different note, you don’t have to avoid making eye contact with me. 
 <<set_mood "Happy">>
 <<trigger_talk>>
-Gwendolen: The rumours of me casting vanishing spells left and right is a cruel joke on new employees by my old friend Vincent Crysologus.
+Bearmun: The rumours of me casting vanishing spells left and right is a cruel joke on new employees by my old friend Vincent Crysologus.
 <<set_mood "Neutral">>
 <<trigger_talk>>
-Gwendolen: Good evening and carry on with the good work.
+Bearmun: Good evening and carry on with the good work.
 <<end_of_response>>
 ===
 
