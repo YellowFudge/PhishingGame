@@ -242,23 +242,8 @@ Gwendolen: Now, maybe we should assign you to read all the scrolls at this place
 //---------------------------//
 //          DAY 3            //
 //---------------------------//
-title: R3_1
----
-<<if change_person("Gwen", "Angry")>>//you need if for it to work :(
-<<endif>>
-<<wait_until_entered>>
-<<trigger_talk>>
-Gwendolen: Attendant.
-<<trigger_talk>>
-Gwendolen: You should really know what our emblem looks like.
-<<trigger_talk>>
-Gwendolen: It’s literally on the cover of your tome. I noticed the difference immediately.
-<<trigger_talk>>
-Gwendolen: In the future, don’t bring me such apparent scams as I am already severely overworked
-<<end_of_response>>
-===
 
-title: R3_2
+title: R3_1
 ---
 <<if change_person("Berg", "Neutral")>>//you need if for it to work :(
 <<endif>>
@@ -281,7 +266,7 @@ Berg: Say hi to little Rufus for me, will you?
 <<end_of_response>>
 ===
 
-title: R3_3
+title: R3_2
 ---
 <<if change_person("Gwen", "Happy")>>//you need if for it to work :(
 <<endif>>
@@ -299,7 +284,61 @@ Gwendolen: She’s a saviour, and so are you!
 <<end_of_response>>
 ===
 
+title: R3_3
+---
+<<if change_person("Gwen", "Angry")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwendolen: Attendant.
+<<trigger_talk>>
+Gwendolen: You should really know what our emblem looks like.
+<<trigger_talk>>
+Gwendolen: It’s literally on the cover of your tome. I noticed the difference immediately.
+<<trigger_talk>>
+Gwendolen: In the future, don’t bring me such apparent scams as I am already severely overworked
+<<end_of_response>>
+===
+
 title: R3_4
+---
+<<if change_person("Berg", "Neutral")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Berg: Hi attendant, do you have time?
+<<set_mood "Angry">>
+<<trigger_talk>>
+Berg: Can you do me a huge favor and tell me if Gwen still is mad at me for forgetting to feed her dragon? 
+<<trigger_talk>>
+Berg: She refuses to send replies for my scrolls. I really need her to sign off those orders or she will be the least of my problems.
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Berg: I almost forgot, do you know if Rufus got the treats I left at Gwen’s desk after the incident...? 
+<<end_of_response>>
+===
+
+title: R3_5
+---
+<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
+<<endif>>
+<<wait_until_entered>>
+<<trigger_talk>>
+Gwendolen: Hi attendant.
+<<trigger_talk>>
+Gwendolen: Do you happen to know where my spider silk parchments and seal wax have gone? 
+<<trigger_talk>>
+Gwendolen: Shoshanna hasn’t reached out to me, and she always does whenever there is a delay. 
+<<set_mood "Angry">>
+<<trigger_talk>>
+Gwendolen: I just hope she hasn’t let the gold she’s getting from that Claude-Jaques-person go to her head. 
+<<set_mood "Neutral">>
+<<trigger_talk>>
+Gwendolen: I need her at Papyrus & Quill. 
+<<end_of_response>>
+===
+
+title: R3_6
 ---
 <<if change_person("Bearmun", "Neutral")>>//you need if for it to work :(
 <<endif>>
@@ -320,44 +359,6 @@ Bearmun: The rumours of me casting vanishing spells left and right is a cruel jo
 <<set_mood "Neutral">>
 <<trigger_talk>>
 Bearmun: Good evening and carry on with the good work.
-<<end_of_response>>
-===
-
-title: R3_5
----
-<<if change_person("Berg", "Neutral")>>//you need if for it to work :(
-<<endif>>
-<<wait_until_entered>>
-<<trigger_talk>>
-Berg: Hi attendant, do you have time?
-<<set_mood "Angry">>
-<<trigger_talk>>
-Berg: Can you do me a huge favor and tell me if Gwen still is mad at me for forgetting to feed her dragon? 
-<<trigger_talk>>
-Berg: She refuses to send replies for my scrolls. I really need her to sign off those orders or she will be the least of my problems.
-<<set_mood "Neutral">>
-<<trigger_talk>>
-Berg: I almost forgot, do you know if Rufus got the treats I left at Gwen’s desk after the incident...? 
-<<end_of_response>>
-===
-
-title: R3_6
----
-<<if change_person("Gwen", "Neutral")>>//you need if for it to work :(
-<<endif>>
-<<wait_until_entered>>
-<<trigger_talk>>
-Gwendolen: Hi attendant.
-<<trigger_talk>>
-Gwendolen: Do you happen to know where my spider silk parchments and seal wax have gone? 
-<<trigger_talk>>
-Gwendolen: Shoshanna hasn’t reached out to me, and she always does whenever there is a delay. 
-<<set_mood "Angry">>
-<<trigger_talk>>
-Gwendolen: I just hope she hasn’t let the gold she’s getting from that Claude-Jaques-person go to her head. 
-<<set_mood "Neutral">>
-<<trigger_talk>>
-Gwendolen: I need her at Papyrus & Quill. 
 <<end_of_response>>
 ===
 
